@@ -1,0 +1,128 @@
+<style>
+    tbody {
+      counter-reset: rowsCounter;
+    }
+    tbody > tr.count{
+      counter-increment: rowsCounter;
+    }
+    .rowC::after {
+      content: "[" counter(rowsCounter) "]";
+    }
+    </style>
+    <div style="width: 99%; text-align: justify;">Увага! Оплата цього рахунку означає погодження з умовами поставки товарів. Повідомлення про оплату є обов'язковим, в іншому випадку не гарантується наявність товарів на складі. Товар відпускається за фактом надходження коштів на п/р Постачальника, самовивозом, за наявності довіренності та паспорта.</div>
+    <p style="text-align: center;"><span style="font-size: 14pt;"><span style="font-size: 18.6667px;"><strong>Зразок заповнення платіжного доручення</strong></span></span></p>
+    <table style="border-collapse: collapse; width: 99.8943%; border-style: none;" border="0">
+    <tbody>
+    <tr>
+    <td style="width: 14.2923%;">Одержувач</td>
+    <td style="width: 26.4745%;">ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ "ТЕХНАРІ БІЗНЕС"</td>
+    <td style="width: 2.11012%;"> </td>
+    <td style="width: 22.3431%;"> </td>
+    <td style="width: 2.42788%;"> </td>
+    <td style="width: 30.1903%;"> </td>
+    </tr>
+    <tr>
+    <td style="width: 14.2923%;">Код</td>
+    <td style="width: 26.4745%; border-style: solid;">39955802</td>
+    <td style="width: 2.11012%;"> </td>
+    <td style="width: 22.3431%;"> </td>
+    <td style="width: 2.42788%;"> </td>
+    <td style="width: 30.1903%;">КРЕДИТ рах. N</td>
+    </tr>
+    <tr>
+    <td style="width: 14.2923%;">Банк одержувача</td>
+    <td style="width: 26.4745%;"> </td>
+    <td style="width: 2.11012%;"> </td>
+    <td style="width: 22.3431%;">Код Банку</td>
+    <td style="width: 2.42788%;"> </td>
+    <td style="width: 30.1903%; border-style: solid;">UA363348510000000026002128810</td>
+    </tr>
+    <tr>
+    <td style="width: 14.2923%;"> </td>
+    <td style="width: 26.4745%;">ПАТ "ПУМБ", м. Київ</td>
+    <td style="width: 2.11012%;"> </td>
+    <td style="width: 22.3431%; border-style: solid;">334851</td>
+    <td style="width: 2.42788%;"> </td>
+    <td style="width: 30.1903%;"> </td>
+    </tr>
+    </tbody>
+    </table>
+    <p style="text-align: center;"> </p>
+    <p style="text-align: center;"><span style="font-size: 14pt;"><strong>Счет № #СЧЕТ-НОМЕР от #ДАТА-ВЫСТАВЛЕНИЯ-СЧЕТА</strong> </span></p>
+    <div style="width: 100%; border-bottom: 3px solid black;"> </div>
+    <p> </p>
+    <table style="width: 100%;">
+    <tbody>
+    <tr>
+    <td style="width: 113px; text-align: left; vertical-align: top;">
+    <p>Постачальник:</p>
+    </td>
+    <td>
+    <p>ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ "ТЕХНАРІ БІЗНЕС"</p>
+    <p><strong>П/р UA363348510000000026002128810, Банк ПАТ "ПУМБ", м. Київ, МФО 334851   </strong></p>
+    <p><strong>03187 , м. Київ, Голосіївський район, вул. Заболотного, будинок 5, тел.: 0442245029,</strong></p>
+    <p><strong>код за ЄДРПОУ 39955802, ІПН 399558026504,</strong></p>
+    <p> </p>
+    <p><strong>Платник податку на прибуток на загальних підставах</strong></p>
+    </td>
+    </tr>
+    <tr>
+    <td style="width: 113px; text-align: left; vertical-align: top;">
+    <p>Покупець:</p>
+    </td>
+    <td style="width: 722px;">
+    <p><strong>"#КЛИЕНТ-ИМЯ"</strong></p>
+    <p><strong>#КЛИЕНТ-АДРЕС</strong></p>
+    </td>
+    </tr>
+    <tr>
+    <td style="width: 113px; text-align: left; vertical-align: top;">
+    <p>Договір:</p>
+    </td>
+    <td style="width: 722px;">
+    <p><strong>Основной договір</strong></p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <p> </p>
+    <p style="text-align: left;"> </p>
+    <table class="Products b-table b-table_style_simple" style="width: 100%; height: 129px;">
+    <thead>
+    <tr style="height: 33px;">
+    <th style="width: 30px; height: 33px;">№</th>
+    <th style="height: 33px;">Товари (роботи, послуги)</th>
+    <th style="width: 60px; height: 33px;">Кількість</th>
+    <th style="width: 80px; height: 33px;">Ціна, #ВАЛЮТА</th>
+    <th style="width: 80px; height: 33px;">Сума, #ВАЛЮТА</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="count" style="height: 33px;">
+    <td style="height: 33px;">#СТРОКА</td>
+    <td style="height: 33px;">
+    <p>#ПРОДУКТ-НАИМЕНОВАНИЕ</p>
+    </td>
+    <td style="text-align: center; height: 33px;">#ПРОДУКТ-КОЛВО</td>
+    <td style="text-align: right; height: 33px;">#ПРОДУКТ-ЦЕНА</td>
+    <td style="text-align: right; height: 33px;">#ПРОДУКТ-СУММА</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr style="height: 33px;">
+    <td class="no-border" style="text-align: right; height: 33px;" colspan="4">Всього:</td>
+    <td style="font-weight: bold; text-align: right; height: 33px;">#ИТОГО-СУММА</td>
+    </tr>
+    <tr style="height: 15px;">
+    <td class="no-border" style="height: 15px;" colspan="4">
+    <p class="rowC">Всього найменувань :</p>
+    , на суму: #ИТОГО-СУММА (<em><strong>#СУММА-ПРОПИСЬЮ)</strong></em></td>
+    <td class="no-border" style="height: 15px;"> </td>
+    </tr>
+    </tfoot>
+    </table>
+    <p> </p>
+    <p> </p>
+    <p style="text-align: right;">​Виписав: ___________________</p>
+    <p style="text-align: right;">#СЧЕТ-СОЗДАЛ</p>
+    <p> </p>

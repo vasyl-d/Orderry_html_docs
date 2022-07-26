@@ -1,0 +1,113 @@
+<style>
+    @page {margin: 4mm 4mm 4mm 4mm;}
+   .flexrow {display:flex; flex-direction:row; height:100%; width:100%;}
+   .flexcell_1 {width: 25%; border:0; margin-right:4px; margin-left: 4px;}
+   .flexcell_2 {width: 75%; border:0; padding-left:4px; border-left:1px solid black;}
+   p, span {margin:0; padding:0; border:0; font-size: 10pt;}
+   .pidpis {text-align:center; font-size:7pt; vertical-align: top;}
+   .podch {width: 100%; border-bottom: 1px solid black;}
+   h1 {font-size: 24pt; }
+   h2 {text-align:center; font-size: 11pt; }
+   h3 {font-size: 13pt;}
+</style>
+<div class="flexrow">
+<div class="flexcell_1">
+<p style="text-align: center;"> </p>
+<h3 class="podch" style="text-align: center;">Индивидуальный предприниматель Трушов Виктор Сергеевич</h3>
+<p class="pidpis">организация</p>
+<h2>КВИТАНЦИЯ</h2>
+<p style="text-align: center;">к приходному кассовому ордеру <br />№ #ЗАКАЗ-НОМЕР от #ДАТА-СЕГОДНЯ г.</p>
+<br />
+<p>Принято от:</p>
+<p>#КЛИЕНТ-ИМЯ</p>
+<br />
+<p>Основание: оплата заказа</p>
+<p>___________________________<br /><br /></p>
+<p>Сумма: <span class="podch">#ЗАКАЗ-СУММА</span></p>
+<p class="pidpis">цифрами</p>
+<p>#ЗАКАЗ-СУММА-ПРОПИСЬЮ</p>
+<br />
+<p>В том числе НДС: (Без НДС) 0.00 руб</p>
+<br />
+<p style="text-align: center;">М.П. <span class="podch">#ДАТА-СЕГОДНЯ</span></p>
+<br />
+<p>Гл. бухгалтер:</p>
+<p>_______________Трушов В.С.</p>
+<p class="pidpis">подпись расшифровка подписи</p>
+<br />
+<p>Кассир:</p>
+<p>_______________#ИСПОЛНИТЕЛЬ-ИМЯ</p>
+<p class="pidpis">подпись расшифровка подписи</p>
+</div>
+<div class="flexcell_2">
+<h1 class="podch" style="text-align: left; width: 100%;"><strong>Акт № #ЗАКАЗ-НОМЕР <span style="font-size: 14pt;">от #ДАТА- СЕГОДНЯ г. </span></strong></h1>
+<table style="border-collapse: collapse; width: 100%;" border="0">
+<tbody>
+<tr style="height: 12pt;">
+<td style="width: 16.0363%; height: 12pt;">Исполнитель:</td>
+<td style="width: 83.9637%; height: 12pt;">
+<p><strong><span style="font-size: 13.3333px;">Индивидуальный предприниматель Трушов Виктор Сергеевич</span></strong></p>
+</td>
+</tr>
+<tr style="height: 12pt;">
+<td style="width: 16.0363%; height: 12pt;">Заказчик:</td>
+<td style="width: 83.9637%; height: 12pt;">#КЛИЕНТ-ИМЯ, #КЛИЕНТ-ТЕЛЕФОН</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: left;"> </p>
+<table class="Products b-table b-table_style_simple" style="border-collapse: collapse; width: 100%;">
+<thead>
+<tr>
+<th style="width: 11.807%;"><span style="font-size: 12pt;">№</span></th>
+<th style="width: 45.4115%;"><span style="font-size: 12pt;">Наименование работ, услуг</span></th>
+<th style="width: 14.2289%;"><span style="font-size: 12pt;">Кол-во</span></th>
+<th style="width: 14.2289%;"><span style="font-size: 12pt;">Цена</span></th>
+<th style="width: 14.2289%;"><span style="font-size: 12pt;">Сумма, #ВАЛЮТА</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="center" style="width: 11.807%;"><span style="font-size: 12pt;">#СТРОКА</span></td>
+<td style="width: 45.4115%;"><span style="font-size: 12pt;">#ПРОДУКТ-НАИМЕНОВАНИЕ</span></td>
+<td class="center" style="width: 14.2289%;"><span style="font-size: 12pt;">#ПРОДУКТ-КОЛВО</span></td>
+<td style="width: 14.2289%;"><span style="font-size: 12pt;">#ПРОДУКТ-ЦЕНА</span></td>
+<td class="right" style="width: 14.2289%;"><span style="font-size: 12pt;">#ПРОДУКТ-СУММА</span></td>
+</tr>
+</tbody>
+<tfoot style="display: table-row-group;">
+<tr>
+<td class="report-total-cell no-border" style="width: 71.4475%;" colspan="3"><span style="font-size: 12pt;">Всего:</span></td>
+<td style="width: 14.2289%;"><span style="font-size: 12pt;"> </span></td>
+<td class="right" style="font-weight: bold; width: 14.2289%;"><span style="font-size: 12pt;">#ИТОГО-СУММА</span></td>
+</tr>
+</tfoot>
+</table>
+<p> </p>
+<table class="Services b-table b-table_style_simple" style="border-collapse: collapse; width: 100%;" cellspacing="0" cellpadding="0">
+<tfoot style="display: table-row-group;">
+<tr>
+<td class="report-total-cell no-border" style="width: 99.9245%; text-align: left;" colspan="3"><strong style="font-size: 16px;">Всего оказано услуг, на сумму: #ИТОГО-СУММА-ПРОПИСЬЮ . Без НДС</strong></td>
+</tr>
+</tfoot>
+</table>
+<p style="text-align: center;">Вышеперечисленные услуги выполнены полностью и в срок. Заказчик претензий по объемам, качеству и срокам оказания услуг не имеет.</p>
+<p class="podch" style="width: 100%;"> </p>
+<p> </p>
+<p> </p>
+<table style="border-collapse: collapse; width: 100%;" border="0">
+<tbody>
+<tr>
+<td style="width: 51.7398%; vertical-align: top;" valign="top">
+<p style="text-align: left; font-size: 12pt;">Исполнитель</p>
+<p>Индивидуальный предприниматель Трушов Виктор Сергеевич<br /><br /><u>                                                                         </u> </p>
+</td>
+<td style="width: 48.2602%; vertical-align: top;">
+<p style="text-align: left; font-size: 12pt;">Заказчик</p>
+<p>#КЛИЕНТ-ИМЯ</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>

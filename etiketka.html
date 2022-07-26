@@ -1,0 +1,38 @@
+<style type="text/css">
+    @page {
+      margin: 0;
+    }
+  
+  body{
+  border: 0;
+  width:48mm;
+  height: 25mm;
+  margin: 0; padding: 0;
+  }
+  
+  .vertical {position: relative;
+      top: -6mm;
+      right: -16mm;
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg);
+      transform-origin: bottom right;
+    }
+  .scale {
+      -webkit-transform: scale(0.8);
+      -moz-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+      -o-transform: scale(0.8);
+      transform: scale(0.8);
+  }
+  </style>
+  <div style="border: 0; height: 25mm; width: 36mm; margin: 0; padding: 0 0 0 1mm;">
+  <p>#ЗАКАЗ-НОМЕР</p>
+  <p style="height: 50%; overflow: hidden;">#КЛИЕНТ-ИМЯ</p>
+  <p>#ОРИЕНТИР-ЦЕНА#ВАЛЮТА</p>
+  </div>
+  <div class="vertical" style="border: 0; width: 31mm; height: 6mm; padding: 0; margin: 0; text-align: center; vertical-align: center; overflow: hidden;">
+  <div class="scale">#ШТРИХ-КОД</div>
+  </div>

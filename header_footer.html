@@ -1,0 +1,130 @@
+<style>
+    /* Styles go here */
+    .page-header, .page-header-space {
+      height: 10px;
+    }
+    
+    .page-footer, .page-footer-space {
+      height: 5cm;
+    
+    }
+    
+    .page-footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      border-top: 1px solid black; /* for demo */
+      background: white; /* for demo */
+    }
+    
+    .page-header {
+      position: fixed;
+      top: 0mm;
+      width: 100%;
+      border-bottom: 1px solid black; /* for demo */
+      background: white; /* for demo */
+    }
+    
+    .page {
+      width:100%;
+      page-break-after: always;
+    }
+    
+    @page {
+      margin: 2mm;
+    }
+    
+       thead {display: table-header-group;} 
+       tfoot {display: table-footer-group;}
+    
+      
+       body {margin: 0;}
+    </style>
+    <p> </p>
+    <p> </p>
+    <!--header вставлять тут-->
+    <div class="page-header" style="text-align: center;"> </div>
+    <!--футер всталять сюда-->
+    <div class="page-footer">
+    <table style="height: 207px; width: 90%;">
+    <tbody>
+    <tr style="height: 18px;">
+    <td style="width: 71.0158%; height: 18px;"> </td>
+    <td style="width: 28.2837%; height: 18px;">
+    <p> </p>
+    <p><strong>Прайм Севис</strong></p>
+    <p>благодарит вас за посещение.</p>
+    <p>Если вы хотите поделится отзывом и поставить оценку, перейдите по ссылке в QR-коде.</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    <table style="width: 100%;">
+    <thead>
+    <tr>
+    <td style="width: 935.508px;"><!--place holder for the fixed-position header-->
+    <div class="page-header-space"> </div>
+    </td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td style="width: 100%;"><!--*** CONTENT GOES HERE ***-->
+    <div class="page">
+    <table style="width: 98.0522%; height: 131px;" border="0">
+    <tbody>
+    <tr>
+    <td style="width: 65.2589%;">
+    <p><strong><span style="text-align: right;">Сервисный центр</span></strong></p>
+    <p><strong><span style="text-align: right;">"ПРАЙМ сервис"</span></strong></p>
+    <p>623280, Свердловская обл.,</p>
+    <p>г. Ревда, ул. П.Зыкина, 32, оф. 310</p>
+    <p>тел.: +7 (982) 662-62-62</p>
+    <p>Email: info@prime96.ru</p>
+    <p>режим работы: </p>
+    <p>пн-пт с 9-18 часов  </p>
+    <p>сб-вс с 9-16 часов </p>
+    <p> </p>
+    </td>
+    <td style="text-align: right; width: 52.5184%;"><img id="company-logo" src="https://storage.remonline.ru/uploads/28287/b882526918874c4f860f1c6259e29c52.jpg" width="200" /></td>
+    </tr>
+    </tbody>
+    </table>
+    <p> </p>
+    <p style="text-align: center;"><span style="text-decoration: underline;"><span style="text-align: center;">Акт выполненных работ </span><strong style="text-align: center;">№ #ЗАКАЗ-НОМЕР</strong><span style="text-align: center;"> </span></span></p>
+    <p style="text-align: center;"><span style="text-decoration: underline;"><em><span style="text-align: center;">от</span></em></span><em><span style="text-align: center;">_____</span></em><span style="text-decoration: underline;"><em>#ДАТА-ЗАКАЗ-ЗАКРЫТ</em></span><em>____</em></p>
+    <p style="text-align: left;"><em> </em></p>
+    <table style="height: 207px; width: 98.4643%;" border="0">
+    <tbody>
+    <tr style="height: 197px;">
+    <td style="height: 197px; width: 100%;">
+    <p><strong>Клиент:</strong> #КЛИЕНТ-ИМЯ, #КЛИЕНТ-ТЕЛЕФОН</p>
+    <p><strong>Устройство:</strong>#ЗАКАЗ-ТИП-ИЗДЕЛИЯ-658077  #ЗАКАЗ-БРЕНД-658083  #ЗАКАЗ-МОДЕЛЬ-658085</p>
+    <p><strong>Серийный номер:</strong> #ЗАКАЗ-СЕРИЙНЫЙ-НОМЕР-658086</p>
+    <p> </p>
+    <p><strong>Дефект:</strong> #ЗАКАЗ-НЕИСПРАВНОСТЬ</p>
+    <p>Согласен (-на) #ЗАКАЗ-СПИСОК-ДАННЫХ-НА-УСТРОЙСТВЕ-1076635</p>
+    <p><strong>Заметки мастера:</strong> #ЗАМЕТКИ-ИСПОЛНИТЕЛЯ</p>
+    <p> </p>
+    <p><strong>Гарантийный период:</strong> ГАРАНТИЯ ______________месяцев</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <p> </p>
+    <p>#ТАБЛИЦА-РАБОТЫ-ЗАПЧАСТИ</p>
+    <p> </p>
+    <p>Представитель сервисного центра  _______________</p>
+    </div>
+    <!-- Если нужна доп страница <div class="page" style="line-height: 3;"> </div> --></td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+    <td style="width: 935.508px;"><!--place holder for the fixed-position footer-->
+    <div class="page-footer-space"> </div>
+    </td>
+    </tr>
+    </tfoot>
+    </table>

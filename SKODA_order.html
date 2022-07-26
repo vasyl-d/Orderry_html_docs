@@ -1,0 +1,223 @@
+<style type="text/css">
+
+    td, th {
+              border-bottom: 1px solid black;
+    }
+    .t {
+        transform-origin: bottom left;
+        z-index: 2;
+        position: absolute;
+        white-space: pre;
+        overflow: hidden;
+        line-height: 1.5;
+    }
+    .text-container {
+        white-space: pre;
+    }
+    #t1_1{left:101px;bottom:1017px;letter-spacing:0.03px;border-bottom:1pt solid black; width:246px;}
+    #t2_1{left:353px;bottom:1017px;letter-spacing:-0.12px; border-bottom:1pt solid black; width:500px;}
+    #t3_1{left:101px;bottom:995px;letter-spacing:-0.05px;word-spacing:-0.07px;}
+    #t4_1{left:101px;bottom:978px;letter-spacing:-0.1px;word-spacing:-0.01px; border-bottom:1px solid black; width:246px;}
+    #t5_1{left:354px;bottom:996px;letter-spacing:0.46px;}
+    #t6_1{left:354px;bottom:978px;letter-spacing:-0.12px;word-spacing:-0.02px;border-bottom:1px solid black; width:500px;}
+    #t7_1{left:101px;bottom:958px;letter-spacing:0.29px;word-spacing:-0.08px;}
+    #t8_1{left:101px;bottom:940px;letter-spacing:-0.16px;word-spacing:0.04px;border-bottom:1px solid black; width:246px;}
+    #t9_1{left:353px;bottom:958px;letter-spacing:-0.07px;}
+    #ta_1{left:353px;bottom:940px;letter-spacing:-0.08px;border-bottom:1px solid black; width:121px;}
+    #tb_1{left:480px;bottom:958px;letter-spacing:0.36px;word-spacing:-0.15px; }
+    #tc_1{left:478px;bottom:940px;letter-spacing:-0.1px;border-bottom:1px solid black; width:375px;}
+    #td_1{left:733px;bottom:958px;letter-spacing:0.42px;}
+    #te_1{left:733px;bottom:940px;letter-spacing:-0.12px;border-bottom:1px solid black; width:121px;}
+    #tf_1{left:102px;bottom:920px;letter-spacing:0.49px;}
+    #tg_1{left:101px;bottom:903px;letter-spacing:-0.07px;word-spacing:-0.37px;border-bottom:1px solid black; width:246px;}
+    #th_1{left:354px;bottom:920px;letter-spacing:0.43px;}
+    #ti_1{left:352px;bottom:903px;letter-spacing:-0.28px;word-spacing:0.15px;border-bottom:1px solid black; width:121px;}
+    #tj_1{left:480px;bottom:920px;letter-spacing:0.39px;word-spacing:-0.14px;}
+    #tk_1{left:479px;bottom:903px;border-bottom:1px solid black; width:121px;}
+    #tl_1{left:607px;bottom:920px;letter-spacing:0.34px;word-spacing:-0.08px;}
+    #tm_1{left:605px;bottom:903px;letter-spacing:-0.02px;border-bottom:1px solid black; width:121px;}
+    #tn_1{left:733px;bottom:920px;letter-spacing:0.33px;word-spacing:-0.08px;}
+    #to_1{left:733px;bottom:903px;letter-spacing:0.02px;border-bottom:1px solid black; width:121px;}
+    #tp_1{left:101px;bottom:883px;letter-spacing:0.23px;word-spacing:-0.03px;}
+    #tq_1{left:99px;bottom:865px;letter-spacing:-0.2px;word-spacing:0.07px;border-bottom:1px solid black; width:246px;}
+    #tr_1{left:228px;bottom:883px;letter-spacing:0.35px;}
+    #ts_1{left:225px;bottom:865px;letter-spacing:-0.2px;word-spacing:0.07px;border-bottom:1px solid black; width:121px;}
+    #tt_1{left:354px;bottom:883px;letter-spacing:0.4px;word-spacing:-0.17px;}
+    #tu_1{left:353px;bottom:865px;letter-spacing:-0.09px;border-bottom:1px solid black; width:121px;}
+    #tv_1{left:480px;bottom:883px;letter-spacing:0.36px;word-spacing:-0.14px;}
+    #tw_1{left:480px;bottom:865px;letter-spacing:-0.09px;word-spacing:-0.04px;border-bottom:1px solid black; width:246px;}
+    #tx_1{left:733px;bottom:883px;letter-spacing:0.37px;}
+    #ty_1{left:733px;bottom:865px;letter-spacing:0.32px;border-bottom:1px solid black; width:121px;}
+    #tz_1{left:102px;bottom:845px;letter-spacing:0.4px;}
+    #t10_1{left:101px;bottom:827px;letter-spacing:0.32px;border-bottom:1px solid black; width:246px;}
+    #t11_1{left:354px;bottom:845px;letter-spacing:0.38px;word-spacing:-0.12px;}
+    #t12_1{left:354px;bottom:827px;letter-spacing:0.32px;border-bottom:1px solid black; width:121px;}
+    #t13_1{left:480px;bottom:845px;letter-spacing:0.34px;word-spacing:-0.08px;}
+    #t14_1{left:480px;bottom:827px;letter-spacing:-0.18px;border-bottom:1px solid black; width:121px;}
+    #t15_1{left:607px;bottom:845px;letter-spacing:0.34px;word-spacing:-0.11px;}
+    #t16_1{left:606px;bottom:827px;letter-spacing:-0.11px;border-bottom:1px solid black; width:121px;}
+    #t17_1{left:733px;bottom:845px;letter-spacing:0.36px;word-spacing:-0.15px;}
+    #t18_1{left:733px;bottom:827px;letter-spacing:-0.04px;border-bottom:1px solid black; width:121px;}
+    #t19_1{left:100px;bottom:790px;letter-spacing:-0.01px;word-spacing:-0.11px;}
+    #t1a_1{left:101px;bottom:768px;letter-spacing:-0.08px;word-spacing:-0.03px;}
+    #t1b_1{left:101px;bottom:751px;letter-spacing:-0.07px;word-spacing:-0.04px;}
+    #t1c_1{left:101px;bottom:727px;letter-spacing:0.13px;}
+    #t1d_1{left:127px;bottom:727px;letter-spacing:0.35px;word-spacing:-0.12px;}
+    #t1e_1{left:228px;bottom:727px;letter-spacing:0.36px;word-spacing:-0.14px;}
+    #t1f_1{left:606px;bottom:727px;letter-spacing:0.34px;word-spacing:-0.11px;}
+    #t1g_1{left:100px;top:480px;}
+    #t1h_1{left:228px;bottom:704px;letter-spacing:-0.05px;word-spacing:-0.06px;}
+    #t1i_1{left:100px;bottom:682px;}
+    #t1j_1{left:127px;bottom:682px;letter-spacing:-0.07px;}
+    #t1k_1{left:227px;bottom:682px;letter-spacing:-0.07px;word-spacing:-0.05px;}
+    #t1l_1{left:101px;bottom:661px;}
+    #t1m_1{left:100px;bottom:639px;}
+    #t1n_1{left:101px;bottom:617px;}
+    #t1o_1{left:101px;bottom:596px;}
+    #t1p_1{left:100px;bottom:574px;}
+    #t1q_1{left:101px;bottom:553px;}
+    #t1r_1{left:101px;bottom:531px;}
+    #t1s_1{left:100px;bottom:509px;letter-spacing:0.02px;}
+    #t1t_1{left:607px;bottom:489px;letter-spacing:0.36px;word-spacing:-0.12px;}
+    #t1u_1{left:606px;bottom:471px;letter-spacing:-0.05px;word-spacing:-0.07px;border-bottom:1px solid black; width:246px}
+    #t1v_1{left:606px;bottom:451px;letter-spacing:0.35px;word-spacing:-0.12px;}
+    #t1w_1{left:606px;bottom:433px;letter-spacing:0.01px;word-spacing:-0.14px;border-bottom:1px solid black; width:246px}
+    #t1x_1{left:102px;bottom:1162px;letter-spacing:0.29px;}
+    #t1y_1{left:100px;bottom:1144px;letter-spacing:-0.16px;word-spacing:0.05px;}
+    #t1z_1{left:101px;bottom:1128px;letter-spacing:-0.05px;word-spacing:-0.06px;}
+    #t20_1{left:100px;bottom:1111px;letter-spacing:-0.15px;word-spacing:0.04px;}
+    #t21_1{left:101px;bottom:1094px;letter-spacing:-0.06px;word-spacing:-0.08px;}
+    #t22_1{left:101px;bottom:1081px;letter-spacing:0.41px;word-spacing:-0.17px;}
+    #t23_1{left:101px;bottom:1214px;letter-spacing:0.35px;word-spacing:-0.14px;}
+    #t24_1{left:99px;bottom:1191px;letter-spacing:0.08px;}
+    #t25_1{left:101px;bottom:444px;letter-spacing:0.3px;word-spacing:-0.09px;}
+    #t26_1{left:101px;bottom:431px;letter-spacing:0.29px;word-spacing:-0.08px;}
+    #t27_1{left:101px;bottom:418px;letter-spacing:0.31px;word-spacing:-0.09px;}
+    #t28_1{left:101px;bottom:405px;letter-spacing:0.28px;word-spacing:-0.08px;}
+    #t29_1{left:101px;bottom:392px;letter-spacing:0.32px;word-spacing:-0.11px;}
+    #t2a_1{left:101px;bottom:371px;letter-spacing:0.3px;word-spacing:-0.15px;}
+    #t2b_1{left:101px;bottom:358px;letter-spacing:0.3px;word-spacing:-0.09px;}
+    #t2c_1{left:101px;bottom:345px;letter-spacing:0.3px;word-spacing:-0.09px;}
+    #t2d_1{left:101px;bottom:332px;letter-spacing:0.31px;word-spacing:-0.11px;}
+    #t2e_1{left:101px;bottom:319px;letter-spacing:0.31px;word-spacing:-0.1px;}
+    #t2f_1{left:101px;bottom:306px;letter-spacing:0.31px;word-spacing:-0.1px;}
+    #t2g_1{left:101px;bottom:293px;letter-spacing:0.28px;word-spacing:-0.08px;}
+    #t2h_1{left:101px;bottom:280px;letter-spacing:0.31px;word-spacing:-0.1px;}
+    #t2i_1{left:101px;bottom:267px;letter-spacing:0.32px;word-spacing:-0.1px;}
+    #t2j_1{left:346px;bottom:444px;letter-spacing:0.32px;word-spacing:-0.12px;}
+    #t2k_1{left:346px;bottom:431px;letter-spacing:0.3px;word-spacing:-0.09px;}
+    #t2l_1{left:346px;bottom:418px;letter-spacing:0.3px;word-spacing:-0.1px;}
+    #t2m_1{left:346px;bottom:405px;letter-spacing:0.31px;word-spacing:-0.1px;}
+    #t2n_1{left:346px;bottom:392px;letter-spacing:0.3px;word-spacing:-0.07px;}
+    #t2o_1{left:101px;bottom:491px;letter-spacing:0.28px;word-spacing:-0.09px;}
+    #t2p_1{left:101px;bottom:478px;letter-spacing:0.29px;word-spacing:-0.08px;}
+    #t2q_1{left:346px;bottom:491px;letter-spacing:0.3px;word-spacing:-0.09px;}
+    #t2r_1{left:346px;bottom:477px;letter-spacing:0.29px;word-spacing:-0.09px;}
+    #t2s_1{left:346px;bottom:464px;letter-spacing:0.33px;word-spacing:-0.12px;}
+    #t2t_1{left:495px;bottom:464px;letter-spacing:0.43px;}
+    #t2u_1{left:607px;bottom:404px;letter-spacing:0.32px;word-spacing:-0.11px;}
+    #t2v_1{left:607px;bottom:391px;letter-spacing:0.39px;word-spacing:-0.16px;}
+    #t2w_1{left:101px;bottom:217px;letter-spacing:-0.01px;word-spacing:-0.14px;border-top:1px solid black; width:240px}
+    #t2x_1{left:346px;bottom:217px;letter-spacing:-0.02px;word-spacing:-0.12px;border-top:1px solid black; width:246px}
+    #t2y_1{left:101px;bottom:183px;letter-spacing:0.02px;word-spacing:-0.13px;border-bottom:1px solid black; width:240px}
+    #t2z_1{left:346px;bottom:183px;letter-spacing:-0.01px;word-spacing:-0.12px;border-bottom:1px solid black; width:246px}
+    #t30_1{left:101px;bottom:162px;letter-spacing:0.32px;word-spacing:-0.09px;}
+    #t31_1{left:101px;bottom:144px;letter-spacing:0.04px;border-bottom:1px solid black; width:240px}
+    #t32_1{left:346px;bottom:162px;letter-spacing:0.38px;word-spacing:-0.14px;}
+    #t33_1{left:346px;bottom:144px;letter-spacing:0.32px;border-bottom:1px solid black; width:246px}
+    #t34_1{left:101px;bottom:124px;letter-spacing:0.35px;word-spacing:-0.14px;}
+    #t35_1{left:101px;bottom:106px;letter-spacing:0.04px;border-bottom:1px solid black; width:240px}
+    #t36_1{left:346px;bottom:124px;letter-spacing:0.37px;word-spacing:-0.15px;}
+    #t37_1{left:346px;bottom:106px;letter-spacing:0.32px;border-bottom:1px solid black; width:246px}
+    #t38_1{left:101px;bottom:86px;letter-spacing:0.37px;word-spacing:-0.16px;}
+    #t39_1{left:101px;bottom:68px;letter-spacing:-0.17px;border-bottom:1px solid black; width:240px;}
+    #t3a_1{left:101px;bottom:15px;letter-spacing:0.01px;word-spacing:-0.15px;border-top:1px solid black; width:240px}
+    #t3b_1{left:346px;bottom:15px;letter-spacing:-0.02px;word-spacing:-0.12px;border-top:1px solid black; width:246px;}
+    #t3c_1{left:607px;bottom:183px;letter-spacing:-0.08px;border-bottom:1px solid black; width:246px}
+    #t3d_1{left:607px;bottom:162px;letter-spacing:0.35px;word-spacing:-0.14px;;}
+    #t3e_1{left:607px;bottom:144px;letter-spacing:-0.17px;border-bottom:1px solid black; width:246px;}
+    #t3f_1{left:607px;bottom:124px;letter-spacing:0.35px;word-spacing:-0.13px;}
+    #t3g_1{left:607px;bottom:106px;letter-spacing:-0.17px;border-bottom:1px solid black; width:246px;}
+    #t3h_1{left:607px;bottom:86px;letter-spacing:0.41px;}
+    #t3i_1{left:607px;bottom:68px;letter-spacing:-0.17px;border-bottom:1px solid black; width:246px}
+    #t3j_1{left:607px;bottom:15px;letter-spacing:-0.01px;word-spacing:-0.13px;border-top:1px solid black; width:246px;}
+    
+    .s1_1{font-size:14px;font-family:SKODANext-Bold_aq;color:#000;}
+    .s2_1{font-size:14px;font-family:SKODANext-Regular_k-;color:#000;}
+    .s3_1{font-size:11px;font-family:SKODANext-Bold_aq;color:#000;}
+    .s4_1{font-size:11px;font-family:SKODANext-Regular_k-;color:#000;}
+    .s5_1{font-size:18px;font-family:SKODANext-Bold_aq;color:#000;}
+    
+    @font-face { font-family: 'SKODANext-Bold_aq';  src: local('SKODANext-Bold_aq'), url('https://nomail.com.ua/files/woff/374e2272670257fe3e88eb2551854f6a.woff') format('woff'); }
+    
+    @font-face { font-family: 'SKODANext-Regular_k-';  src: local('SKODANext-Regular_k-'), url('https://nomail.com.ua/files/woff/7c599cd4a71030dd1aeef66776ec0c75.woff') format('woff'); }
+    
+    </style>
+    <div id="p1" style="overflow: hidden; position: relative; background-color: white; width: 909px; height: 1286px;">
+    <div id="pg1" style="user-select: none;"></div>
+    <div style="position: absolute; top: 50px; right: 50px;"><img src="https://i.ibb.co/sgysm7q/logo.png" alt="logo" height="155" border="0" /></div>
+    <div style="position: absolute; top: 50px; left: 350px;">#ШТРИХ-КОД</div>
+    <div class="text-container"><span id="t1_1" class="t s1_1">Zákazník </span><span id="t2_1" class="t s1_1">Vozidlo </span> <span id="t3_1" class="t s2_1">Oldřich Hofman </span> <span id="t4_1" class="t s2_1">#КЛИЕНТ-ИМЯ </span> <span id="t5_1" class="t s3_1">Model </span> <span id="t6_1" class="t s2_1">#ИЗДЕЛИЕ-МОДЕЛЬ</span> <span id="t7_1" class="t s3_1">Č. schvál. LS </span> <span id="t8_1" class="t s2_1">Xyz Xyz </span> <span id="t9_1" class="t s3_1">Typ </span> <span id="ta_1" class="t s2_1">#ИЗДЕЛИЕ-МОДИФИКАЦИЯ</span> <span id="tb_1" class="t s3_1">Identiﬁkační č. vozidla (VIN) </span> <span id="tc_1" class="t s2_1">#ИЗДЕЛИЕ-СЕРИЙНЫЙ-НОМЕР</span> <span id="td_1" class="t s3_1">Barva </span> <span id="te_1" class="t s2_1">#ИЗДЕЛИЕ-ЦВЕТ</span> <span id="tf_1" class="t s3_1">Bytem </span> <span id="tg_1" class="t s2_1">#КЛИЕНТ-АДРЕС </span> <span id="th_1" class="t s3_1">Reg.značka </span> <span id="ti_1" class="t s2_1">#ИЗДЕЛИЕ-ГОСНОМЕР-3417305 </span> <span id="tj_1" class="t s3_1">Datum prodeje </span> <span id="tk_1" class="t s2_1">29.5.2007 </span> <span id="tl_1" class="t s3_1">Kód motoru </span> <span id="tm_1" class="t s2_1">JCR </span> <span id="tn_1" class="t s3_1">Stav km </span> <span id="to_1" class="t s2_1">50.000 </span> <span id="tp_1" class="t s3_1">Tel. č. mob </span> <span id="tq_1" class="t s2_1">#КЛИЕНТ-ТЕЛЕФОН</span> <span id="tr_1" class="t s3_1">Firma/domů </span> <span id="ts_1" class="t s2_1">+420 12 34567 </span> <span id="tt_1" class="t s3_1">Příjem zakázky </span> <span id="tu_1" class="t s2_1">#ДАТА-ЗАКАЗ-СОЗДАН </span> <span id="tv_1" class="t s3_1">Vůz do servisu předal </span> <span id="tw_1" class="t s2_1">#ИЗДЕЛИЕ-ВЛАДЕЛЕЦ </span> <span id="tx_1" class="t s3_1">Stanoviště </span> <span id="ty_1" class="t s2_1">#ИЗДЕЛИЕ-СОСТОЯНИЕ</span> <span id="tz_1" class="t s3_1">E-mail </span> <span id="t10_1" class="t s2_1">#КЛИЕНТ-EMAIL</span> <span id="t11_1" class="t s3_1">Odpovědný mech. </span> <span id="t12_1" class="t s2_1">#ИСПОЛНИТЕЛЬ-ИМЯ</span> <span id="t13_1" class="t s3_1">Stav PHM </span> <span id="t14_1" class="t s2_1">0/R </span> <span id="t15_1" class="t s3_1">Záruční oprava </span> <span id="t16_1" class="t s2_1">Žádný </span> <span id="t17_1" class="t s3_1">Staré díly </span> <span id="t18_1" class="t s2_1">Likvidovat </span> <span id="t19_1" class="t s1_1"><br /></span> <span id="t1a_1" class="t s2_1"><br /></span> <span id="t1b_1" class="t s2_1"><br /></span> <span id="t1d_1" class="t s3_1"><br /></span><span id="t1e_1" class="t s3_1"><br /></span><span id="t1f_1" class="t s3_1"><br /></span>
+    <div id="t1g_1" class="t s2_1">
+    <table class="Services" style="border-collapse: collapse; width: 753px; height: 46px; float: left;" cellpadding="2px">
+    <thead>
+    <tr>
+    <th style="text-align: left;" colspan="7"><span style="font-family: SKODANext-Bold_aq; font-size: 11px; font-weight: 400; letter-spacing: 0.36px; text-align: start; word-spacing: -0.14px;"><strong>Výbava vozidla/poškození </strong><br /></span></th>
+    </tr>
+    <tr>
+    <th style="width: 18px; text-align: left;" colspan="7"><span style="font-family: SKODANext-Bold_aq; font-size: 11px; font-weight: 400; letter-spacing: 0.36px; text-align: start; word-spacing: -0.14px;">Reﬂexní vesta, trojúhelník, Sada pro opravu pneu, Klíč na kola, Adaptér/bezpečnostní šrouby, Protokol o dopravní nehodě, <br /></span><span style="font-family: SKODANext-Bold_aq; font-size: 11px; font-weight: 400; letter-spacing: 0.34px; text-align: start; word-spacing: -0.11px;">Náhradní sada žárovek, Rádio, Satelitní navigace </span><span style="font-family: SKODANext-Bold_aq; font-size: 11px; font-weight: 400; letter-spacing: 0.34px; text-align: start; word-spacing: -0.11px;"><br /></span></th>
+    </tr>
+    <tr>
+    <th style="width: 25px;"><span style="font-family: SKODANext-Bold_aq; font-size: 11px; font-weight: 400; letter-spacing: 0.13px; text-align: start;">Č</span></th>
+    <th style="width: 7.96875px; border-style: none;"><span style="font-family: SKODANext-Bold_aq; font-size: 11px; font-weight: 400; letter-spacing: 0.35px; text-align: start; word-spacing: -0.12px;"> </span></th>
+    <th style="width: 96px;"><span style="font-family: SKODANext-Bold_aq; font-size: 11px; font-weight: 400; letter-spacing: 0.35px; text-align: start; word-spacing: -0.12px;">Pracovní pozice </span></th>
+    <th style="width: 6.32812px; border-style: none;"><span style="font-family: SKODANext-Bold_aq; font-size: 11px; font-weight: 400; letter-spacing: 0.36px; text-align: start; word-spacing: -0.14px;"> </span></th>
+    <th style="width: 371px;"><span style="font-family: SKODANext-Bold_aq; font-size: 11px; font-weight: 400; letter-spacing: 0.36px; text-align: start; word-spacing: -0.14px;">Popis prací / požadavky zákazníka </span></th>
+    <th style="width: 5.64453px; border-style: none;"><span style="font-family: SKODANext-Bold_aq; font-size: 11px; font-weight: 400; letter-spacing: 0.34px; text-align: start; word-spacing: -0.11px;"> </span></th>
+    <th style="width: 244px;"><span style="font-family: SKODANext-Bold_aq; font-size: 11px; font-weight: 400; letter-spacing: 0.34px; text-align: start; word-spacing: -0.11px;">Vyjádření opravny </span></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td class="center" style="width: 25px; text-align: left;">#СТРОКА</td>
+    <td style="width: 7.96875px; border-style: none; text-align: center;"> </td>
+    <td style="width: 96px; text-align: center;">#ПРОДУКТ-КОД</td>
+    <td style="width: 6.32812px; border-style: none; text-align: center;"> </td>
+    <td class="center" style="width: 371px; text-align: center;">#ПРОДУКТ-НАИМЕНОВАНИЕ</td>
+    <td style="width: 5.64453px; border-style: none; text-align: center;"> </td>
+    <td class="right" style="width: 244px; text-align: center;">#ПРОДУКТ-СУММА</td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    <span id="t1h_1" class="t s2_1"><br /></span> <span id="t1i_1" class="t s2_1"><br /></span><span id="t1j_1" class="t s2_1"><br /></span><span id="t1k_1" class="t s2_1"><br /></span> <span id="t1l_1" class="t s2_1"><br /></span> <br /><span id="t1n_1" class="t s2_1"><br /></span> <span id="t1o_1" class="t s2_1"><br /></span> <span id="t1p_1" class="t s2_1"><br /></span> <span id="t1q_1" class="t s2_1"><br /></span> <span id="t1r_1" class="t s2_1"><br /></span> <span id="t1s_1" class="t s2_1"><br /></span> <span id="t1t_1" class="t s3_1">Předběžný termín dokončení </span> <span id="t1u_1" class="t s2_1">#ДАТА-ЗАКАЗ-ГОТОВ </span> <span id="t1v_1" class="t s3_1">Odhad ceny vč. DPH: </span> <span id="t1w_1" class="t s2_1">#ЗАКАЗ-СУММА Kč </span> <span id="t1x_1" class="t s3_1">Provozovna </span> <span id="t1y_1" class="t s2_1">TESTOVACÍ velká spol, s.r.o. 1 </span> <span id="t1z_1" class="t s2_1">Boleslavská 111, Boleslav </span> <span id="t20_1" class="t s2_1">Tel.: 5123456789 </span> <span id="t21_1" class="t s2_1">Mob: 739123456 </span> <span id="t22_1" class="t s4_1">IČ: 64949681 </span> <span id="t23_1" class="t s3_1">Zakázkový list pro zakázku č.: </span> <span id="t24_1" class="t s5_1">#ЗАКАЗ-НОМЕР</span> <span id="t25_1" class="t s4_1">Zákazník bere na vědomí, že veškeré opravy </span> <span id="t26_1" class="t s4_1">budou provedeny podle všeobecných (resp. </span> <span id="t27_1" class="t s4_1">záručních) podmínek pro opravy motorových </span> <span id="t28_1" class="t s4_1">vozidel. Tyto podmínky jsou zveřejněny v </span> <span id="t29_1" class="t s4_1">prostoru příjmu zakázek. </span> <span id="t2a_1" class="t s4_1">Souhlasím se zpracováním svých osobních údajů společností ŠKODA AUTO a.s., se sídlem tř. Václava Klementa 869, Mladá Boleslav II, 293 01 Mladá </span> <span id="t2b_1" class="t s4_1">Boleslav, IČO 00177041, zapsané u Městského soudu v Praze, sp. zn. B/332, jako správcem osobních údajů nebo subjekty smluvně pověřenými ke </span> <span id="t2c_1" class="t s4_1">zpracování osobních údajů za účelem nabízení produktů a služeb značky ŠKODA, zjišťování spokojenosti zákazníků a pro potřeby průzkumu trhu, </span> <span id="t2d_1" class="t s4_1">jakož i za účelem šíření obchodních sdělení dle zákona č. 480/2004 Sb ., o některých službách informační společnosti, ve znění pozdějších předpisů. </span> <span id="t2e_1" class="t s4_1">Takto získané údaje mohou být poskytnuty subjektům, které jsou členy autorizované distribuční sítě vozidel značky ŠKODA. Souhlas se zpracováním </span> <span id="t2f_1" class="t s4_1">osobních údajů a s využitím elektronického kontaktu poskytuji dobrovolně na dobu neurčitou. Dále prohlašuji, že poskytnuté údaje jsou pravdivé. </span> <span id="t2g_1" class="t s4_1">Tento souhlas může být kdykoliv písemně odvolán. Zákazník je srozuměn s tím, že má právo přístupu ke svým osobním údajům a další práva dle §11 a </span> <span id="t2h_1" class="t s4_1">§ 21 zákona č. 101/2000 Sb., o ochraně osobních údajů, ve znění pozdějších předpisů. V případě odvolání souhlasu je nedílnou součástí tohoto dokla- </span> <span id="t2i_1" class="t s4_1">du příloha s písemným odvoláním souhlasu se zpracováním osobních údajů podepsaná zákazníkem. </span> <span id="t2j_1" class="t s4_1">Na originální díly je poskytována záruka podle </span> <span id="t2k_1" class="t s4_1">platných podmínek, které jsou zveřejněny v </span> <span id="t2l_1" class="t s4_1">prostoru příjmu zakázek. Zákazník souhlasí s </span> <span id="t2m_1" class="t s4_1">tím, že demontované díly určené pro výměnný </span> <span id="t2n_1" class="t s4_1">program budou ponechány v provozovně. </span> <span id="t2o_1" class="t s4_1">Řidič vozidla prohlašuje, že je zmocněn </span> <span id="t2p_1" class="t s4_1">vlastníkem vozu k objednání této opravy. </span> <span id="t2q_1" class="t s4_1">Zákazník bere na vědomí, že dle povahy opravy </span> <span id="t2r_1" class="t s4_1">bude provedena zkušební jízda. </span> <span id="t2s_1" class="t s4_1">Nesouhlas označte křížkem. </span><span id="t2t_1" class="t s3_1">Nesouhlasím: [ ] </span> <span id="t2u_1" class="t s3_1">Cena je splatná při převzetí vozidla hotově </span> <span id="t2v_1" class="t s3_1">nebo kartou. </span> <span id="t2w_1" class="t s4_1">Podpis servis. poradce: Radim Žatečka </span><span id="t2x_1" class="t s4_1">Datum, čas a podpis zákazníka </span> <span id="t2y_1" class="t s1_1">Příjetí rozšíření zakázky dne </span><span id="t2z_1" class="t s1_1">Dohodnuta s </span> <span id="t30_1" class="t s3_1">Celková max. cena v Kč </span> <span id="t31_1" class="t s2_1">0.000,00 </span> <span id="t32_1" class="t s3_1">Nový termín dokončení </span> <span id="t33_1" class="t s2_1">xyz </span> <span id="t34_1" class="t s3_1">Cena rozšíření zak. v Kč </span> <span id="t35_1" class="t s2_1">0.000,00 </span> <span id="t36_1" class="t s3_1">Doba rozšíření zak.(min,hod): </span> <span id="t37_1" class="t s2_1">xyz </span> <span id="t38_1" class="t s3_1">Rozšíření prací </span> <span id="t39_1" class="t s2_1">Xyz </span> <span id="t3a_1" class="t s4_1">Podpis servis. poradce </span><span id="t3b_1" class="t s4_1">Datum, čas a podpis zákazníka </span> <span id="t3c_1" class="t s1_1">Kontrola </span> <span id="t3d_1" class="t s3_1">Kontrola kvality </span> <span id="t3e_1" class="t s2_1">Xyz </span> <span id="t3f_1" class="t s3_1">Výstupní kontrola </span> <span id="t3g_1" class="t s2_1">Xyz </span> <span id="t3h_1" class="t s3_1">Poznámka </span> <span id="t3i_1" class="t s2_1">Xyz </span> <span id="t3j_1" class="t s4_1">Vůz ze servisu převzal, Podpis servis. poradce </span></div>
+    </div>
+    <p><!-- pagebreak --></p>
+    <div id="p1" style="overflow: hidden; position: relative; background-color: white; width: 909px; height: 1286px;">
+    <div id="pg1" style="user-select: none;"></div>
+    <div style="position: absolute; top: 50px; right: 50px;"><img src="https://i.ibb.co/sgysm7q/logo.png" alt="logo" height="155" border="0" /></div>
+    <div class="text-container">
+    <p class="s1_1" style="position: absolute; left: 100px; top: 50px;">NÁJEMNÍ SMLOUVA</p>
+    <p class="s2_1" style="position: absolute; left: 100px; top: 250px; width: 750px; border-bottom: 1pt solid black;">Záznamy o škodě</p>
+    <p style="position: absolute; left: 100px; bottom: 50px; width: 750px; border-bottom: 1pt solid black;"> </p>
+    <p class="s2_1" style="position: absolute; left: 100px; top: 70px; line-height: 60%;">Doklad č.</p>
+    <div style="position: absolute; left: 100px; top: 90px; line-height: 60%;">
+    <p class="s3_1">Pronajímatel</p>
+    <p class="s4_1">ŠKODA AUTO a.s. – PAM2/1 C</p>
+    <p class="s4_1">tr. Václava Klementa 869, Mladá Boleslav II</p>
+    <p class="s4_1">29360 Mladá Boleslav, Czech Republic</p>
+    <p class="s4_1">Založil: Kraus Jiří</p>
+    <p class="s4_1">Tel.: +420 222 333 555, Fax: +420 222 333 999</p>
+    <p class="s4_1">DIČ: CZ001770041, IČO: 001770041</p>
+    <p class="s4_1">Bankovní spojení: Česká spořitelna a.s., účet č. 1234567890/0811</p>
+    <p> </p>
+    </div>
+    <div style="position: absolute; left: 475px; top: 125px; line-height: 60%;">
+    <p class="s4_1">Nájemní smlouvu č.</p>
+    <p class="s4_1">Vystavil: Kraus Jiří</p>
+    <p class="s4_1">stav: Půjčené</p>
+    <p class="s4_1"> </p>
+    <p class="s4_1">Strana 2/2</p>
+    </div>
+    </div>
+    </div>
