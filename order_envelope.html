@@ -1,7 +1,9 @@
 <style>
     @page {size: 101mm 54mm; margin: 2mm 2mm 2mm 2mm;}
      body {width: 97mm; height: 50mm; margin:0; padding:2mm; border:0:}
-     .code {margin:0; padding:0; border:1px solid; position:absolute; top: 40px; left: 250px; transform: rotate(-90deg); }
+     .code {font-size: 7pt; text-align:center; margin:0; padding:1mm; border:0; position:absolute; top: 50px; left: 250px; transform: rotate(-90deg); }
+     .bar {height: 6mm; overflow:hidden;}
+     .wo {margin: 0 auto;}
     </style>
     <p><strong><span style="font-size: 7pt;">Erstellt: {Order Created By}</span></strong></p>
     <p><span style="font-size: 8pt;"><strong><span style="font-size: 7pt;">Hersteller:</span> <span style="font-size: 10pt;">{Order Manufacture 1757854}</span></strong></span></p>
@@ -9,4 +11,7 @@
     <p><strong><span style="font-size: 7pt;">ReturnID: {Order Number}</span></strong></p>
     <p><strong><span style="font-size: 7pt;">PlentyID: {Order OrderID 1757852}</span></strong></p>
     <p><strong><span style="font-size: 7pt;">Defekte (Kunde): {Order Info ReturnLabel 1757862}</span></strong></p>
-    <div class="code">{Barcode}</div>
+    <div class="code">
+    <p class="wo">Work Order: {Order Number}</p>
+    <p class="bar">{Barcode}</p>
+    </div>
