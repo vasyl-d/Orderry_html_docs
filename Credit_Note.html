@@ -1,0 +1,301 @@
+<style>
+    /* Styles go here */
+    /*шаблон для инвойса с отрицательными суммаи и Трюком для итого налоги */
+       * {color: black; font-family:Arial, sans-serif !important; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt !important; 
+         margin:0; padding:0;}
+    
+        .page-header, .page-header-space {
+          height: 4.5cm;
+        }
+        
+        .page-footer, .page-footer-space {
+          height: 2cm;
+        
+        }
+        
+        .page-footer {
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          border-top: 1px solid black; /* for demo */
+          counter-increment: page;
+        }
+        
+        .page-header {
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
+        
+        .page {
+          width:100%;
+          page-break-after: always;
+        }
+        
+        @page {size: A4 portrait;
+          margin: 10mm;
+    
+             }
+        
+           thead {display: table-header-group;} 
+           tfoot {display: table-footer-group;}
+          
+           body {margin: 0;}
+        .s1 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 19pt; }
+        .s2 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 10pt; }
+        .s3 { color: black; font-family:Arial, sans-serif !important; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt !important; }
+        p { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; margin:0pt; }
+        .s4 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+        table, tbody {vertical-align: top; overflow: visible; }
+        .fl {width: 99%; display: flex; flex-direction: row; margin-top: 4mm;}
+        .cl_a {flex: 1; text-align: left;}
+        .cl_b {margin-left:auto;text-align:right;}
+        .im {width:99%;}
+       .pp::after { content:" " counter(page)}
+        .nal * {text-align: right !important; margin-right: 0 !important; margin-left: auto !important; display: inline !mportant; }
+        .nal  *:has(>td) >*::before {content: "- ";}
+        </style>
+    <!--header вставлять тут-->
+    <div class="page-header" style="text-align: center;">
+    <div class="im"><img src="https://i.postimg.cc/fRMf9Ywq/invoice-top-2022-09-06.png" width="100%" /></div>
+    </div>
+    <!--футер всталять сюда-->
+    <div class="page-footer">
+    <table style="border-collapse: collapse; width: 99%;" cellspacing="0">
+    <tbody>
+    <tr style="height: 8px;">
+    <td style="width: 270pt; border-top-width: 0.5pt; height: 8px;">
+    <p class="s3" style="padding-top: 1pt; padding-left: 1pt; text-indent: 0pt; text-align: left;"><span style="font-size: 9pt; font-family: helvetica, arial, sans-serif;">THOR AUTOCENTER APS</span></p>
+    </td>
+    <td style="width: 167pt; border-top-width: 0.5pt; height: 8px;">
+    <p class="s3" style="padding-top: 1pt; padding-left: 9px; text-indent: 0pt; text-align: left;"><span style="font-size: 9pt; font-family: helvetica, arial, sans-serif;">Tlf. nr.: 52 22 27 02</span></p>
+    </td>
+    <td style="width: 115pt; border-top-width: 0.5pt; height: 8px;">
+    <p class="s3" style="padding-top: 1pt; text-indent: 0pt; text-align: left;"><span style="font-size: 9pt; font-family: helvetica, arial, sans-serif;">CVR: 42935964</span></p>
+    </td>
+    </tr>
+    <tr style="height: 8px;">
+    <td style="width: 270pt; height: 8px;">
+    <p class="s3" style="padding-left: 1pt; text-indent: 0pt; text-align: left;"><span style="font-size: 9pt; font-family: helvetica, arial, sans-serif;">IBAN: DK3630000013374961 </span></p>
+    <p class="s3" style="padding-left: 1pt; text-indent: 0pt; text-align: left;"><span style="font-size: 9pt; font-family: helvetica, arial, sans-serif;">SWIFT: DABADKKK</span></p>
+    </td>
+    <td style="width: 167pt; height: 8px;">
+    <p style="padding-left: 9px; text-indent: 0pt;"><span style="font-size: 9pt; font-family: helvetica, arial, sans-serif;"><a class="s4" href="mailto:hej@thorauto.dk" target="_blank" rel="noopener">Email: hej@thorauto.dk</a></span></p>
+    </td>
+    <td style="width: 115pt; text-align: left; height: 8px;"><span style="font-size: 9pt; font-family: helvetica, arial, sans-serif;">Nyholms Alle 28 5, 2610</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <!--футер конец--></div>
+    <table style="width: 100%;">
+    <thead>
+    <tr>
+    <td style="width: 935.508px;"><span style="font-family: helvetica, arial, sans-serif;"><!--place holder for the fixed-position header--></span>
+    <div class="page-header-space"> </div>
+    </td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td style="width: 100%;"><!--*** CONTENT GOES HERE ***-->
+    <div class="page">
+    <p style="text-indent: 0pt; text-align: center;"><span style="font-size: 12pt; font-family: helvetica, arial, sans-serif;"><span style="font-weight: bold;">CREDIT NOTE: </span><span style="font-weight: bold;">#ЗАКАЗ-НОМЕР-ИНВОЙСА-5578915</span></span></p>
+    <p style="text-indent: 0pt; text-align: center;"> </p>
+    <table style="border-collapse: collapse; width: 99%;" cellspacing="0">
+    <tbody>
+    <tr style="height: 8px;">
+    <td style="width: 14.0469%; border-top: 2pt solid #ededed; height: 8px; text-align: center;">
+    <p class="s3" style="padding-left: 6pt; text-indent: 0pt; text-align: center;"> </p>
+    <p class="s3" style="padding-left: 6pt; text-indent: 0pt; text-align: center;"><span style="font-size: 11pt; font-family: helvetica, arial, sans-serif;"><strong style="text-indent: 0pt; text-align: left;">Fakt. dato</strong></span></p>
+    </td>
+    <td style="width: 17.994%; border-top: 2pt solid #ededed; height: 8px; text-align: center;">
+    <p class="s3" style="padding-left: 17pt; text-indent: 0pt; text-align: center;"> </p>
+    <p class="s3" style="padding-left: 17pt; text-indent: 0pt; text-align: center;"><span style="font-size: 11pt; font-family: helvetica, arial, sans-serif;"><strong style="text-indent: 0pt; text-align: left;">Kundenr.</strong></span></p>
+    </td>
+    <td style="width: 15.9043%; border-top: 2pt solid #ededed; height: 8px; text-align: center;">
+    <p class="s3" style="padding-left: 20pt; padding-right: 18pt; text-indent: 0pt; text-align: center;"> </p>
+    <p class="s3" style="padding-left: 20pt; padding-right: 18pt; text-indent: 0pt; text-align: center;"><span style="font-size: 11pt; font-family: helvetica, arial, sans-serif;"><strong style="text-indent: 0pt; text-align: left;">Cvr. nr.</strong></span></p>
+    </td>
+    <td style="width: 26.5846%; border-top: 2pt solid #ededed; height: 8px; text-align: center;">
+    <p class="s3" style="padding-left: 13pt; text-indent: 0pt; text-align: center;"> </p>
+    <p class="s3" style="padding-left: 13pt; text-indent: 0pt; text-align: center;"><span style="font-size: 11pt; font-family: helvetica, arial, sans-serif;"><strong style="text-align: left;">Kundenavn</strong></span></p>
+    </td>
+    <td style="width: 13.8147%; border-top: 2pt solid #ededed; height: 8px;">
+    <p style="text-indent: 0pt; text-align: center;"> </p>
+    <p style="text-indent: 0pt; text-align: center;"> </p>
+    </td>
+    <td style="width: 11.609%; border-top: 2pt solid #ededed; height: 8px; text-align: center;">
+    <p class="s3" style="padding-left: 13pt; text-indent: 0pt; text-align: center;"> </p>
+    <p class="s3" style="padding-left: 13pt; text-indent: 0pt; text-align: center;"> </p>
+    </td>
+    </tr>
+    <tr style="height: 8px;">
+    <td style="width: 14.0469%; height: 8px;">
+    <p class="s2" style="padding-left: 6pt; text-indent: 0pt; line-height: 11pt; text-align: center;"><span style="font-size: 10pt; font-weight: 400; font-family: helvetica, arial, sans-serif;">#ЗАКАЗ-ДАТА-ИНВОЙСА-5618822<br /></span></p>
+    </td>
+    <td style="width: 17.994%; height: 8px;">
+    <p class="s2" style="padding-left: 17pt; text-indent: 0pt; line-height: 11pt; text-align: center;"><span style="font-family: helvetica, arial, sans-serif;"><span style="font-weight: 400;">#КЛИЕНТ-ТЕЛЕФОН</span><strong><span style="font-size: 10pt;"><br /></span></strong></span></p>
+    </td>
+    <td style="width: 15.9043%; height: 8px;">
+    <p class="s2" style="padding-left: 17pt; padding-right: 20pt; text-indent: 0pt; line-height: 11pt; text-align: center;"><span style="font-family: helvetica, arial, sans-serif;"><span style="font-weight: 400;">#КЛИЕНТ-ОГРН</span><strong><span style="font-size: 10pt;"><br /></span></strong></span></p>
+    </td>
+    <td style="width: 26.5846%; height: 8px;">
+    <p class="s2" style="padding-left: 13pt; text-indent: 0pt; line-height: 11pt; text-align: center;"><span style="font-weight: 400; font-family: helvetica, arial, sans-serif;">#КЛИЕНТ-ИМЯ</span></p>
+    </td>
+    <td style="width: 13.8147%; height: 8px;">
+    <p class="s2" style="text-indent: 0pt; line-height: 11pt; text-align: center;"><span style="font-family: helvetica, arial, sans-serif;"><strong><span style="font-size: 10pt; text-align: center;"> </span></strong></span></p>
+    </td>
+    <td style="width: 11.609%; height: 8px;">
+    <p class="s2" style="padding-left: 13pt; text-indent: 0pt; line-height: 11pt; text-align: center;"><span style="font-family: helvetica, arial, sans-serif;"><strong><span style="font-size: 10pt;"> </span></strong></span></p>
+    </td>
+    </tr>
+    <tr style="height: 8px;">
+    <td style="width: 14.0469%; height: 8px;">
+    <p class="s2" style="padding-left: 6pt; text-indent: 0pt; line-height: 11pt; text-align: center;"><span style="font-size: 10pt; font-weight: 400; font-family: helvetica, arial, sans-serif;"><span style="font-size: 16px; font-weight: bold; text-align: left;"> </span></span></p>
+    </td>
+    <td style="width: 17.994%; height: 8px;">
+    <p class="s2" style="padding-left: 17pt; text-indent: 0pt; line-height: 11pt; text-align: center;"><span style="font-size: 10pt; font-weight: 400; font-family: helvetica, arial, sans-serif;"> </span></p>
+    </td>
+    <td style="width: 15.9043%; height: 8px;">
+    <p class="s2" style="padding-left: 17pt; padding-right: 20pt; text-indent: 0pt; line-height: 11pt; text-align: center;"><span style="font-family: helvetica, arial, sans-serif;"><strong><span style="font-size: 10pt;"> </span></strong></span></p>
+    </td>
+    <td style="width: 26.5846%; height: 8px;">
+    <p class="s2" style="padding-left: 13pt; text-indent: 0pt; line-height: 11pt; text-align: center;"><span style="font-size: 10pt; font-weight: 400; font-family: helvetica, arial, sans-serif;"> </span></p>
+    </td>
+    <td style="width: 13.8147%; height: 8px;">
+    <p class="s2" style="text-indent: 0pt; line-height: 11pt; text-align: center;"><span style="font-size: 10pt; font-weight: 400; text-align: center; font-family: helvetica, arial, sans-serif;"> </span></p>
+    </td>
+    <td style="width: 11.609%; height: 8px;">
+    <p class="s2" style="padding-left: 13pt; text-indent: 0pt; line-height: 11pt; text-align: center;"><span style="font-size: 10pt; font-weight: 400; font-family: helvetica, arial, sans-serif;"> </span></p>
+    </td>
+    </tr>
+    <tr style="height: 8px;">
+    <td style="width: 14.0469%; height: 8px;">
+    <p class="s2" style="padding-left: 6pt; text-indent: 0pt; line-height: 11pt; text-align: center;"><span style="font-size: 10pt; font-weight: 400; font-family: helvetica, arial, sans-serif;"><span style="font-size: 11pt;"><strong>Bilmærke</strong></span><br /></span></p>
+    </td>
+    <td style="width: 17.994%; height: 8px;">
+    <p class="s2" style="padding-left: 17pt; text-indent: 0pt; line-height: 11pt; text-align: center;"><span style="font-size: 10pt; font-weight: 400; font-family: helvetica, arial, sans-serif;"><span style="font-size: 11pt;"><strong>Bilmodel</strong></span><br /></span></p>
+    </td>
+    <td style="width: 15.9043%; height: 8px;">
+    <p class="s2" style="padding-left: 17pt; padding-right: 20pt; text-indent: 0pt; line-height: 11pt; text-align: center;"><span style="font-family: helvetica, arial, sans-serif;"><span style="font-size: 11pt;"><strong>Reg. nr.</strong></span><strong><span style="font-size: 10pt;"><br /></span></strong></span></p>
+    </td>
+    <td style="width: 26.5846%; height: 8px;">
+    <p class="s2" style="padding-left: 13pt; text-indent: 0pt; line-height: 11pt; text-align: center;"><span style="font-size: 10pt; font-weight: 400; font-family: helvetica, arial, sans-serif;"><span style="font-size: 11pt;"><strong>Stel nr.</strong></span><br /></span></p>
+    </td>
+    <td style="width: 13.8147%; height: 8px;">
+    <p class="s2" style="text-indent: 0pt; line-height: 11pt; text-align: center;"><span style="font-size: 10pt; font-weight: 400; text-align: center; font-family: helvetica, arial, sans-serif;"><span style="font-size: 11pt;"><strong>Årgang</strong></span><br /></span></p>
+    </td>
+    <td style="width: 11.609%; height: 8px;">
+    <p class="s2" style="padding-left: 13pt; text-indent: 0pt; line-height: 11pt; text-align: center;"><span style="font-size: 10pt; font-weight: 400; font-family: helvetica, arial, sans-serif;"><span style="font-size: 11pt;"><strong>Km</strong></span><br /></span></p>
+    </td>
+    </tr>
+    <tr style="height: 8px;">
+    <td style="width: 14.0469%; height: 8px;">
+    <p class="s2" style="padding-left: 6pt; text-indent: 0pt; line-height: 11pt; text-align: center;"><span style="font-size: 10pt; font-weight: 400; font-family: helvetica, arial, sans-serif;">#ИЗДЕЛИЕ-БРЕНД</span></p>
+    </td>
+    <td style="width: 17.994%; height: 8px;">
+    <p class="s2" style="padding-left: 17pt; text-indent: 0pt; line-height: 11pt; text-align: center;"><span style="font-size: 10pt; font-weight: 400; font-family: helvetica, arial, sans-serif;">#ИЗДЕЛИЕ-МОДЕЛЬ</span></p>
+    </td>
+    <td style="width: 15.9043%; height: 8px;">
+    <p class="s2" style="padding-left: 17pt; padding-right: 20pt; text-indent: 0pt; line-height: 11pt; text-align: center;"><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;"><strong>#ИЗДЕЛИЕ-ГОС-НОМЕР</strong></span></p>
+    </td>
+    <td style="width: 26.5846%; height: 8px;">
+    <p class="s2" style="padding-left: 13pt; text-indent: 0pt; line-height: 11pt; text-align: center;"><span style="font-size: 10pt; font-weight: 400; font-family: helvetica, arial, sans-serif;">#ИЗДЕЛИЕ-СЕРИЙНЫЙ-НОМЕР</span></p>
+    </td>
+    <td style="width: 13.8147%; height: 8px;">
+    <p class="s2" style="text-indent: 0pt; line-height: 11pt; text-align: center;"><span style="font-size: 10pt; font-weight: 400; text-align: center; font-family: helvetica, arial, sans-serif;">#ИЗДЕЛИЕ-ГОД</span></p>
+    </td>
+    <td style="width: 11.609%; height: 8px;">
+    <p class="s2" style="padding-left: 13pt; text-indent: 0pt; line-height: 11pt; text-align: center;"><span style="font-size: 10pt; font-weight: 400; font-family: helvetica, arial, sans-serif;">#ЗАКАЗ-ODOMETER-5615844</span></p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <p style="text-indent: 0pt; text-align: left;"> </p>
+    <p style="text-indent: 0pt; text-align: left;">   #ЗАМЕТКИ-МЕНЕДЖЕРА</p>
+    <p style="text-indent: 0pt; text-align: left;"> </p>
+    <table class="Products" style="border-collapse: collapse; width: 99%; border-color: #ffffff;">
+    <thead>
+    <tr style="height: 18px; border-style: solid; border-color: #ededed #ffffff #ffffff; border-top-width: 2pt;">
+    <th style="width: 37.1232%; height: 18px; text-align: left;"><span style="font-family: helvetica, arial, sans-serif; font-size: 11pt; font-weight: bold; text-align: center;">Varenavn</span></th>
+    <th style="width: 8.90495%; height: 18px; text-align: left;"><span style="font-family: helvetica, arial, sans-serif; font-size: 11pt; font-weight: bold; text-align: center;">Antal</span></th>
+    <th style="width: 9.36755%; height: 18px; text-align: left;"><span style="font-family: helvetica, arial, sans-serif; font-size: 11pt; font-weight: bold; text-align: center;">Rabat %</span></th>
+    <th style="width: 17.6943%; height: 18px; text-align: left;"><span style="font-family: helvetica, arial, sans-serif; font-size: 11pt; font-weight: bold; text-align: center;">Stk.pris m.rabat</span></th>
+    <th style="width: 14.6874%; text-align: left; height: 18px;"><span style="font-family: helvetica, arial, sans-serif; font-size: 11pt; font-weight: bold; text-align: center;">Samlet rabat</span></th>
+    <th style="width: 12.837%; height: 18px; text-align: left;"><span style="font-family: helvetica, arial, sans-serif; font-size: 11pt; font-weight: bold; text-align: center;">I alt</span></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr style="height: 18px; border-color: #ffffff;">
+    <td style="width: 37.1232%; height: 18px;"><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;">#ПРОДУКТ-НАИМЕНОВАНИЕ</span></td>
+    <td style="width: 8.90495%; height: 18px; text-align: left;"><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt; text-align: center;">#ПРОДУКТ-КОЛВО</span></td>
+    <td style="width: 9.36755%; height: 18px; text-align: left;"><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt; text-align: center;">#ПРОДУКТ-СКИДКА-ПРОЦЕНТ</span></td>
+    <td style="width: 17.6943%; height: 18px;"><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt; text-align: center;">#ПРОДУКТ-ЦЕНА-БЕЗ-НАЛОГОВ</span></td>
+    <td style="width: 14.6874%; height: 18px;"><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;"><strong><span style="text-align: center;">#ПРОДУКТ-СКИДКА-СУММА</span></strong></span></td>
+    <td style="width: 12.837%; height: 18px; text-align: left;">
+    <p><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt; text-align: left; background-color: #ffffff;"> - #ПРОДУКТ-СУММА-БЕЗ-НАЛОГОВ</span></p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <p style="text-indent: 0pt; text-align: left;"> </p>
+    <table class="Products" style="border-collapse: collapse; width: 99%;" cellspacing="0">
+    <tfoot>
+    <tr style="height: 8px;">
+    <td style="width: 286pt; border-top: 2pt solid #ededed; height: 8px;">
+    <p class="s2" style="padding-top: 4pt; padding-left: 6pt; text-indent: 0pt; text-align: left;"><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;">Forfaldsdato: <span class="s3">2 hverdage fra fakturaens udstedelsesdato</span></span></p>
+    </td>
+    <td style="width: 187pt; border-top: 2pt solid #ededed; height: 8px;">
+    <p class="s2" style="padding-top: 4pt; padding-right: 35pt; text-indent: 0pt; text-align: right;"><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;">Rabat i alt uden moms:</span></p>
+    </td>
+    <td style="width: 79pt; border-top: 2pt solid #ededed; height: 8px;">
+    <p class="s3" style="padding-top: 5pt; padding-right: 6pt; text-indent: 0pt; text-align: right;"><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;"><strong>- #ИТОГО-СКИДКА-СУММА</strong></span></p>
+    </td>
+    </tr>
+    <tr style="height: 8px;">
+    <td style="width: 286pt; height: 8px;">
+    <p class="s2" style="padding-left: 6pt; text-indent: 0pt; line-height: 13pt; text-align: left;"><span style="font-size: 10pt; font-weight: 400; font-family: helvetica, arial, sans-serif;">Beløbet indbetales til vor bank: Danske Bank</span></p>
+    </td>
+    <td style="width: 187pt; height: 8px;">
+    <p class="s2" style="padding-right: 35pt; text-indent: 0pt; line-height: 13pt; text-align: right;"><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;">Total uden moms:</span></p>
+    </td>
+    <td style="width: 79pt; height: 8px;">
+    <p class="s3" style="padding-right: 6pt; text-indent: 0pt; text-align: right;"><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;">- #ИТОГО-СУММА-БЕЗ-НАЛОГОВ</span></p>
+    </td>
+    </tr>
+    <tr style="height: 8px;">
+    <td style="width: 286pt; height: 8px;">
+    <p class="s3" style="padding-left: 6pt; text-indent: 0pt; line-height: 12pt; text-align: left;"><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;"><strong>DanskeBank: </strong>reg.nr.: <span class="s2">3409 </span>kontonr: <span class="s2">13374961</span></span></p>
+    </td>
+    <td style="width: 187pt; height: 8px;">
+    <p class="s2" style="padding-right: 35pt; text-indent: 0pt; line-height: 13pt; text-align: right;"><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;">Moms total:</span></p>
+    </td>
+    <td class="nal" style="width: 79pt; height: 8px;">
+    <p class="s3" style="padding-right: 13pt; text-indent: 0pt; text-align: right;"><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;">#ИТОГО-СУММА-НАЛОГА</span></p>
+    </td>
+    </tr>
+    <tr style="height: 8px;">
+    <td style="width: 286pt; height: 8px;">
+    <p class="s3" style="padding-left: 6pt; text-indent: 0pt; line-height: 12pt; text-align: left;"><span style="font-size: 10pt; font-weight: bold; font-family: helvetica, arial, sans-serif;">MobilePay: 752425</span></p>
+    </td>
+    <td style="width: 187pt; height: 8px;">
+    <p class="s2" style="padding-right: 35pt; text-indent: 0pt; line-height: 12pt; text-align: right;"><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;">Total inkl. moms:</span></p>
+    </td>
+    <td style="width: 79pt; height: 8px;">
+    <p class="s3" style="padding-right: 6pt; text-indent: 0pt; line-height: 11pt; text-align: right;"><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;">- #ИТОГО-СУММА</span></p>
+    </td>
+    </tr>
+    </tfoot>
+    </table>
+    <!-- end of page content--></div>
+    <!-- Если нужна доп страница <div class="page" style="line-height: 3;"> </div> --></td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+    <td style="width: 935.508px;"><span style="font-family: helvetica, arial, sans-serif;"><!--place holder for the fixed-position footer--></span>
+    <div class="page-footer-space"> </div>
+    </td>
+    </tr>
+    </tfoot>
+    </table>
