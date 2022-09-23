@@ -1,0 +1,100 @@
+<style>
+    @page {size: A4 landscape; margin:5mm 5mm 5mm 5mm;}
+     * {font-size: 10pt; margin:0;padding:0; word-break:break-all; line-height:98%;}
+     span.dt {display: inline-block; height: 1em; width: 5.5em; overflow:hidden; padding:0; margin:0;
+      position:relative; top: 0.2em;}
+     .fl {width:99%; }
+     .fl tr:nth-child(n+3) {display:none; height: 1px;}
+     .add {border-top: 0;}
+    .container {
+      display: grid;
+      border-collapse: collapse;
+      min-width: 100%;
+      min-height: 2rem;
+      border-bottom: 1px solid black;
+      grid-template-columns: 8% 8% 8% 8% 8% 8% 8% 8% 8% 8% 10% 10%;
+        }
+    .container:last-child {border-bottom: 0;}
+     .cell {font-size:7pt; border-right: 1px solid black; padding:2px;}
+     .cell:last-child {border-right: 0;}
+    </style>
+    <table class="fl">
+    <tbody>
+    <tr>
+    <td style="text-align: center;">Маршрутний лист майстра на <span class="dt">#ДАТА-ЗАКАЗ-ЗАПЛАНИРОВАН-НА</span></td>
+    </tr>
+    <tr>
+    <td style="text-align: left;">Бригада: #ИСПОЛНИТЕЛЬ-ИМЯ,  Показания одометра на начало дня #ЗАКАЗ-ПОКАЗАНИЯ-ОДОМЕТРА-5605897</td>
+    </tr>
+    </tbody>
+    </table>
+    <p> </p>
+    <p> </p>
+    <table class="b-table b-table_style_simple" style="border-collapse: collapse; width: 100%; height: 16px;" cellspacing="0" cellpadding="0" data-orders-table="">
+    <thead>
+    <tr style="height: 10px;">
+    <th style="width: 2.21914%; text-align: center; height: 10px;">№</th>
+    <th style="width: 6.38003%; text-align: center; height: 10px;">Замовлення</th>
+    <th style="width: 12.7601%; text-align: center; height: 10px;">Виріб</th>
+    <th style="width: 21.3606%; text-align: center; height: 10px;">Клієнт</th>
+    <th style="width: 9.84609%; text-align: center; height: 10px;">Телефон</th>
+    <th style="width: 18.3079%; text-align: center; height: 10px;">Адреса</th>
+    <th style="width: 9.43135%; text-align: center; height: 10px;">Час</th>
+    <th style="width: 6.38003%; text-align: center; height: 10px;">Підпис клієнта</th>
+    <th style="width: 13.3148%; text-align: center; height: 10px;">Прим.</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr style="height: 10px;">
+    <td style="width: 2.21914%; text-align: center; height: 10px;">#СТРОКА</td>
+    <td style="width: 6.38003%; height: 10px;">
+    <p>#ЗАКАЗ-НОМЕР</p>
+    <p><span style="color: #000000; font-size: 11pt;">#ЗАКАЗ-ТИП</span></p>
+    </td>
+    <td style="width: 12.7601%; height: 10px;">#ИЗДЕЛИЕ-ГРУППА #ИЗДЕЛИЕ-БРЕНД #ИЗДЕЛИЕ-МОДЕЛЬ</td>
+    <td style="width: 21.3606%; height: 10px;">
+    <p>#КЛИЕНТ-ИМЯ</p>
+    <p>#КЛИЕНТ-ВИД-РОБІТ-5546412</p>
+    </td>
+    <td style="width: 9.84609%; height: 10px;">#КЛИЕНТ-ТЕЛЕФОН</td>
+    <td style="width: 18.3079%; height: 10px;">#КЛИЕНТ-АДРЕС</td>
+    <td style="width: 9.43135%; text-align: right; height: 10px;"><span style="font-size: 9pt; color: #000000;">#ДАТА-ЗАКАЗ-ЗАПЛАНИРОВАН-НА</span></td>
+    <td style="width: 6.38003%; text-align: right; height: 10px;"> </td>
+    <td style="width: 13.3148%; text-align: right; height: 10px;"> </td>
+    </tr>
+    <tr>
+    <td colspan="9">
+    <div class="add">
+    <div class="container">
+    <div class="cell">Труба, ізоляція 1/4</div>
+    <div class="cell">Труба, ізоляція 3/8</div>
+    <div class="cell">Труба, ізоляція 1/2</div>
+    <div class="cell">Труба, ізоляція 5/8</div>
+    <div class="cell">Труба, ізоляція 3/4</div>
+    <div class="cell">Кабель 4*1</div>
+    <div class="cell">Кабель 4*1,5</div>
+    <div class="cell">Кабель 3*1,5</div>
+    <div class="cell">Кабель 3*2,5</div>
+    <div class="cell">М/П16</div>
+    <div class="cell">Кронштейн К1</div>
+    <div class="cell">Кронштейн К2</div>
+    </div>
+    <div class="container">
+    <div class="cell"> </div>
+    <div class="cell"> </div>
+    <div class="cell"> </div>
+    <div class="cell"> </div>
+    <div class="cell"> </div>
+    <div class="cell"> </div>
+    <div class="cell"> </div>
+    <div class="cell"> </div>
+    <div class="cell"> </div>
+    <div class="cell"> </div>
+    <div class="cell"> </div>
+    <div class="cell"> </div>
+    </div>
+    </div>
+    </td>
+    </tr>
+    </tbody>
+    </table>
