@@ -51,13 +51,14 @@
         .cl_a {flex: 1; text-align: left;}
         .cl_b {margin-left:auto;text-align:right;}
         .im {width:99%;}
-       .pp::after { content:" " counter(page)}
-        .nal * {text-align: right !important; margin-right: 0 !important; margin-left: auto !important; display: inline !important; }
-        .nal *:has(>td) >*::before {content: "- ";}
+        .pp::after { content:" " counter(page)}
+        .nal * {padding:0; text-align: right !important; margin-right: 0 !important; margin-left: auto !important;}
+        .nal  *:has(>td) >*::before {content: "- ";}
+        img {max-width: 100%; max-height: 100%;}
         </style>
     <!--header вставлять тут-->
     <div class="page-header" style="text-align: center;">
-    <div class="im"><img src="https://i.postimg.cc/fRMf9Ywq/invoice-top-2022-09-06.png" width="100%" /></div>
+    <div class="im"><img src="https://i.postimg.cc/fRMf9Ywq/invoice-top-2022-09-06.png" max-height="100%" /></div>
     </div>
     <!--футер всталять сюда-->
     <div class="page-footer">
@@ -90,7 +91,7 @@
     <table style="width: 100%;">
     <thead>
     <tr>
-    <td style="width: 935.508px;"><span style="font-family: helvetica, arial, sans-serif;"><!--place holder for the fixed-position header--></span>
+    <td style="width: 100%;"><span style="font-family: helvetica, arial, sans-serif;"><!--place holder for the fixed-position header--></span>
     <div class="page-header-space"> </div>
     </td>
     </tr>
@@ -293,7 +294,7 @@
     </tbody>
     <tfoot>
     <tr>
-    <td style="width: 935.508px;"><span style="font-family: helvetica, arial, sans-serif;"><!--place holder for the fixed-position footer--></span>
+    <td style="width: 100%;"><span style="font-family: helvetica, arial, sans-serif;"><!--place holder for the fixed-position footer--></span>
     <div class="page-footer-space"> </div>
     </td>
     </tr>
