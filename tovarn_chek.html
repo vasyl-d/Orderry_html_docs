@@ -1,0 +1,70 @@
+<style>
+    tbody {
+      counter-reset: rowsCounter;
+    }
+    tbody > tr {
+      counter-increment: rowsCounter;
+    }
+    .rowC::after {
+      content: "[" counter(rowsCounter) "]";
+    }
+    </style>
+    <p style="margin: 0px; padding: 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px;">#КОМПАНИЯ-НАЗВАНИЕ</p>
+    <p style="margin: 0px; padding: 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px;">#КОМПАНИЯ-АДРЕС</p>
+    <p style="text-align: center;"><span style="font-size: medium;"><strong>ТОВАРНЫЙ ЧЕК</strong></span></p>
+    <p style="text-align: center;">#ДАТА-СЕГОДНЯ г.</p>
+    <p style="text-align: center;"> </p>
+    <table class="Products b-table b-table_style_simple" style="width: 100%;">
+    <thead>
+    <tr>
+    <th style="width: 5%;">№</th>
+    <th>Наименование работ и запчастей</th>
+    <th style="width: 8%;">Гарантия</th>
+    <th style="width: 8%;">Кол-во</th>
+    <th style="width: 12%;">Цена, #ВАЛЮТА</th>
+    <th style="width: 12%;">Сумма, #ВАЛЮТА</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td class="center">#СТРОКА</td>
+    <td>
+    <p>#ПРОДУКТ-НАИМЕНОВАНИЕ</p>
+    </td>
+    <td class="center">#ПРОДУКТ-ГАРАНТИЯ-КЛИЕНТУ</td>
+    <td class="center">#ПРОДУКТ-КОЛВО</td>
+    <td class="right">#ПРОДУКТ-ЦЕНА</td>
+    <td class="right">#ПРОДУКТ-СУММА</td>
+    </tr>
+    </tbody>
+    <tfoot style="display: table-row-group;">
+    <tr>
+    <td class="report-total-cell no-border" colspan="5">Итого:      #ИТОГО-КОЛВО
+    <p class="rowC">Всего строк:</p>
+    </td>
+    <td class="right" style="font-weight: bold;">#ИТОГО-СУММА</td>
+    </tr>
+    <tr>
+    <td class="report-total-cell no-border" colspan="5">Сумма скидки:</td>
+    <td class="right" style="font-weight: bold;">#ИТОГО-СКИДКА-СУММА</td>
+    </tr>
+    <tr>
+    <td class="report-total-cell no-border" colspan="5">Всего с учетом скидки:</td>
+    <td class="right" style="font-weight: bold;">#ИТОГО-СУММА</td>
+    </tr>
+    <tr>
+    <td class="report-total-cell no-border" style="text-align: left;" colspan="5">Всего наименований #ВСЕГО-НАИМЕНОВАНИЙ, на сумму #ИТОГО-СУММА руб. </td>
+    <td class="report-total-cell no-border" style="font-weight: bold;"> </td>
+    </tr>
+    <tr>
+    <td class="report-total-cell no-border" style="text-align: left;" colspan="5"><strong>Сумма к оплате (прописью): </strong><em>#ИТОГО-СУММА-ПРОПИСЬЮ</em></td>
+    <td class="report-total-cell no-border" style="font-weight: bold;"> </td>
+    </tr>
+    </tfoot>
+    </table>
+    <p style="text-align: center;"> </p>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <p style="text-align: right;">Подпись продавца:_______________________</p>

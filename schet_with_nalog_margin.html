@@ -1,0 +1,113 @@
+<style>
+    * {font-size: 11pt;}
+    table { 
+      counter-reset: rowsCounter;
+      line-height: 98%;
+    }
+    table>tbody>tr {
+      counter-increment: rowsCounter;
+    }
+    .rowC::after{
+      content: " " counter(rowsCounter) " ";
+    }
+    p, span {margin:0; padding:0; border:0;}
+    .right > * {text-align: right !important; margin-right: 0 !important; margin-left: auto !important; }
+    .row {display: flex; flex-flow: row nowrap; height: 11pt;}
+    .cell {margin-top: auto !important; margin-bottom:0 !important;}
+    </style>
+    <table style="width: 100%;" border="0">
+    <tbody>
+    <tr>
+    <td style="width: 50%;">
+    <p><strong><span style="text-align: right;"><img id="company-logo" src="https://storage.remonline.app/uploads/43849/34b1f78474f2475182dba089a4caa511.png" width="200" /></span></strong></p>
+    </td>
+    <td style="text-align: right;">
+    <p>#КОМПАНИЯ-РЕКВИЗИТЫ</p>
+    <p> </p>
+    <p>#ШТРИХ-КОД</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <p> </p>
+    <p style="text-align: center;"><span style="text-decoration: underline;">Рахунок <strong>№ #ЗАКАЗ-НОМЕР</strong> від #ДАТА-СЕГОДНЯ</span></p>
+    <p style="text-align: center;"> </p>
+    <table style="width: 100%;" border="0">
+    <tbody>
+    <tr>
+    <td style="width: 50%;">
+    <p><strong>Клієнт</strong><strong>:</strong> #КЛИЕНТ-ИМЯ, #КЛИЕНТ-ТЕЛЕФОН</p>
+    <p><strong>Адреса:</strong> #КЛИЕНТ-АДРЕС<br /><strong>Виріб:</strong> #ИЗДЕЛИЕ-ГРУППА, #ИЗДЕЛИЕ-БРЕНД, #ИЗДЕЛИЕ-МОДЕЛЬ</p>
+    <p><strong>Тип панелей: </strong>#ЗАКАЗ-КОЛІР-ЛАМІНАЦІЇ</p>
+    <p><strong>Колір панелей:</strong> #ЗАКАЗ-КОЛІР-ПАНЕЛЕЙ-5432504</p>
+    <p><strong>Фактура панелей:</strong> #ЗАКАЗ-ФАКТУРА-ПАНЕЛЕЙ-5432018</p>
+    </td>
+    <td style="width: 49.5249%;" valign="top">
+    <p><strong>Нотатки менеджера</strong><strong>:</strong> #ЗАМЕТКИ-МЕНЕДЖЕРА</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <p style="text-align: center;"> </p>
+    <table class="Products b-table b-table_style_simple" style="border-collapse: collapse; width: 98.97%;">
+    <thead>
+    <tr style="height: 10px;">
+    <th style="width: 6.62892%; height: 10px;">№</th>
+    <th style="width: 50.1904%; height: 10px;">Найменування робіт, послуг і матеріалів</th>
+    <th style="width: 10.0381%; height: 10px;">Кількість</th>
+    <th style="width: 10.0381%; height: 10px;">Ціна, ГРН</th>
+    <th style="width: 5.01904%;">Знижка, ГРН</th>
+    <th style="width: 8.0494%; height: 10px;">ПДВ, 20%</th>
+    <th style="width: 10.0381%; height: 10px;">Сума, з ПДВ ГРН</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr style="counter-increment: rowsCounter 1; height: 10px;">
+    <td class="center" style="width: 6.62892%; height: 10px; text-align: center;">#СТРОКА</td>
+    <td style="width: 50.1904%; height: 10px; text-align: center;">#ПРОДУКТ-НАИМЕНОВАНИЕ</td>
+    <td class="center" style="width: 10.0381%; height: 10px; text-align: center;">#ПРОДУКТ-КОЛВО</td>
+    <td style="width: 10.0381%; height: 10px; text-align: right;">#ПРОДУКТ-ЦЕНА</td>
+    <td style="width: 5.01904%; text-align: right;">#ПРОДУКТ-СКИДКА-СУММА</td>
+    <td class="right" style="width: 8.0494%; height: 10px; text-align: right;">#ПРОДУКТ-СУММА-НАЛОГА</td>
+    <td class="right" style="width: 10.0381%; text-align: right; height: 10px;">#ПРОДУКТ-СУММА</td>
+    </tr>
+    </tbody>
+    <tfoot style="display: table-row-group;">
+    <tr style="height: 10px;">
+    <td class="report-total-cell no-border" style="width: 89.9639%; height: 10px;" colspan="6">Сума знижки:</td>
+    <td class="right" style="font-weight: bold; width: 10.0381%; text-align: right; height: 10px;">#ИТОГО-СКИДКА-СУММА</td>
+    </tr>
+    <tr style="height: 10px;">
+    <td class="report-total-cell no-border" style="width: 89.9639%; height: 10px;" colspan="6">Всього зi знижкою, без ПДВ:</td>
+    <td class="right" style="font-weight: bold; width: 10.0381%; text-align: right; height: 10px;">#ИТОГО-СУММА-БЕЗ-НАЛОГОВ</td>
+    </tr>
+    <tr style="height: 10px;">
+    <td class="report-total-cell no-border" style="width: 89.9639%; height: 10px;" colspan="6">ПДВ 20%: </td>
+    <td class="right" style="font-weight: bold; width: 10.0381%; height: 10px; text-align: right;">#ИТОГО-СУММА-НАЛОГА</td>
+    </tr>
+    <tr style="height: 10px;">
+    <td class="report-total-cell no-border" style="width: 89.9639%; height: 10px;" colspan="6">Всього, з ПДВ:</td>
+    <td style="font-weight: bold; width: 10.0381%; text-align: right; height: 10px;">#ИТОГО-СУММА</td>
+    </tr>
+    <tr style="height: 10px;">
+    <td class="report-total-cell no-border" style="height: 10px; width: 89.9639%;" colspan="6">
+    <p style="text-align: left;"><span class="rowC">Всього </span>найменувань,</p>
+    <p style="text-align: left;">Всього до сплати: #ИТОГО-СУММА-ПРОПИСЬЮ,</p>
+    <div class="row">
+    <div class="cell">В тому числі ПДВ:</div>
+    <div class="cell">#ИТОГО-СУММА-НАЛОГА</div>
+    </div>
+    </td>
+    <td class="report-total-cell no-border" style="height: 10px; width: 10.0381%;"> </td>
+    </tr>
+    </tfoot>
+    </table>
+    <p> </p>
+    <table style="border-collapse: collapse; width: 100%;" border="0">
+    <tbody>
+    <tr>
+    <td style="width: 99.9975%;" valign="top">Менеджер: _____________________ #ЗАКАЗ-СОЗДАЛ</td>
+    </tr>
+    </tbody>
+    </table>
+    <p style="text-align: center;"> </p>

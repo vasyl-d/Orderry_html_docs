@@ -1,0 +1,84 @@
+<style>
+    .flex-parent {
+      display: flex;  
+   }
+  .flex-child {  
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 50%;
+    white-space: nowrap;
+    display: flex;   
+    flex-direction:column;
+    justify-content: flex-start;
+  }
+   .flex-child:nth-of-type(1) {}
+  
+  .flex-child:nth-of-type(2) {
+    border-left: 1px solid #000;
+  }
+  </style>
+  <div class="flex-parent">
+  <div class="flex-child">
+  <p>#КОМПАНИЯ-НАЗВАНИЕ</p>
+  <p><br /><br /></p>
+  <table class="Services b-table b-table_style_simple" style="width: 99.4728%; height: 63px;">
+  <thead>
+  <tr>
+  <th style="width: 9.61878%;">№</th>
+  <th style="width: 32.8821%;">Наименование работы</th>
+  <th style="width: 20.7617%;">Сумма, #ВАЛЮТА</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td class="center" style="width: 9.61878%;">#СТРОКА</td>
+  <td style="width: 32.8821%;">#ПРОДУКТ-НАИМЕНОВАНИЕ
+  <p><img style="text-align: center;" src="https://barcode.tec-it.com/barcode.ashx?data=#ПРОДУКТ-КОД&amp;code=Ean13&amp;translate-esc=on" alt="Barcode" /></p>
+  </td>
+  <td class="right" style="width: 20.7617%;">#ПРОДУКТ-СУММА</td>
+  </tr>
+  </tbody>
+  <tfoot style="display: table-row-group;">
+  <tr>
+  <td class="report-total-cell no-border" style="width: 42.5009%;" colspan="2">Всего:</td>
+  <td class="right" style="font-weight: bold; width: 20.7617%;">#ИТОГО-СУММА</td>
+  </tr>
+  </tfoot>
+  </table>
+  <p> </p>
+  <p> </p>
+  <table class="Parts b-table b-table_style_simple" style="width: 100%; height: 48px;">
+  <thead>
+  <tr style="height: 16px;">
+  <th style="width: 14.1247%; height: 16px;">№</th>
+  <th style="width: 45.3017%; height: 16px;">Установленные запчасти</th>
+  <th style="width: 29.0817%; height: 16px;">Сумма, #ВАЛЮТА</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr style="height: 16px;">
+  <td class="center" style="width: 14.1247%; height: 16px;">#СТРОКА</td>
+  <td style="width: 45.3017%; height: 16px;">#ПРОДУКТ-НАИМЕНОВАНИЕ</td>
+  <td class="right" style="width: 29.0817%; height: 16px;">#ПРОДУКТ-СУММА</td>
+  </tr>
+  </tbody>
+  <tfoot style="display: table-row-group;">
+  <tr style="height: 16px;">
+  <td class="report-total-cell no-border" style="width: 59.4264%; height: 16px;" colspan="2">Всего:</td>
+  <td class="right" style="font-weight: bold; width: 29.0817%; height: 16px;">#ИТОГО-СУММА</td>
+  </tr>
+  </tfoot>
+  </table>
+  <p> </p>
+  <p> </p>
+  <p>#ИТОГО-СУММА-ПРОПИСЬЮ</p>
+  </div>
+  <div class="flex-child">
+  <p>TEXT2</p>
+  <p> </p>
+  <p> </p>
+  <p>#КОМПАНИЯ-РЕКВИЗИТЫ<br /><br /></p>
+  <p>#КЛИЕНТ-ИМЯ, #КЛИЕНТ-ТЕЛЕФОН<br />#КЛИЕНТ-АДРЕС</p>
+  </div>
+  </div>
