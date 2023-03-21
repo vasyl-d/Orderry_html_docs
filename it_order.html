@@ -1,0 +1,150 @@
+<style>
+    @page {size:A4 portrait; margin: 10mm;}
+    * {font-size: 12pt; line-height: 120%;}
+    p {margin:0; padding:0;}
+    .logo {width:70%}
+    .bar {width:30%}
+    .hed, .user {width:100%}
+    .client {width: 60%}
+    .asset {width:40%}
+    .podch {width:100%; border-bottom: 1px solid black;text-align: left;}
+    .user th td {border-bottom: 1px solid black;}
+</style>
+<table class="hed">
+<tbody>
+<tr>
+<td class="logo">
+<p><img id="company-logo" src="https://storage.orderry.com/uploads/61838/b5674e580c314661842d4123b89c51ad.png" width="120" /></p>
+<p>Viale delle nazioni 1 CC Adigeo - 37135 Verona (VR)</p>
+<p>Tel. 045 4734056</p>
+<p>Mail: info@ilovemyphone.it</p>
+<p>Web: www.ilovemyphone.it</p>
+</td>
+<td class="bar">
+<p>MODULO RIPARAZIONE</p>
+<p>{Barcode}</p>
+<p style="text-align: right;">{Order Created Date}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table class="user">
+<thead>
+<tr>
+<td style="border-bottom: 1px solid #000000;">Informazioni cliente</td>
+<td style="border-bottom: 1px solid #000000;">Dati prodotto</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="client">
+<p>{Client Name}</p>
+<p>{Client Address}</p>
+<p> </p>
+<p>P.IVA</p>
+<p>Recapito Telefonico: {Client Phone}</p>
+<p>Email: {Client Email}</p>
+</td>
+<td class="asset" style="vertical-align: top;">
+<p>Modello: {Asset Brand}, {Asset Model}</p>
+<p>IMEI/ SN: {Asset Serial Number}</p>
+<p>Codice di Sblocco: </p>
+<p>Condizioni Estetiche: {Asset State}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p class="podch">Diagnosi / Descrizione del problema</p>
+<p>Problema riscontrato: {Order Malfunction}</p>
+<div> </div>
+<p class="podch">Preventivo di riparazione</p>
+<table class="Products">
+<thead>
+<tr>
+<td style="width: 10%;">Codice</td>
+<td style="width: 50%;">Prodotto / Riparazione</td>
+<td style="width: 10%;">Prezzo</td>
+<td style="width: 10%;">Quantità</td>
+<td style="width: 10%;">Sconto</td>
+<td style="width: 10%;">Importo</td>
+</tr>
+</thead>
+<tbody style="height: 10em;">
+<tr style="vertical-align: top;">
+<td style="width: 10%;">{Row Number}</td>
+<td style="width: 50%;">{Product Name}</td>
+<td style="width: 10%;">{Product Price Without Discount And Without Taxes}</td>
+<td style="width: 10%;">{Product Amount}</td>
+<td style="width: 10%;">{Product Discount Sum}</td>
+<td style="width: 10%;">{Product Amount}</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="vertical-align: bottom; width: 60%;" colspan="2">Conferma d'ordine</td>
+<td style="border-top: 1px solid black;" colspan="2">
+<p>Totale:</p>
+<p>Iva:</p>
+<p>Tot. Documento:</p>
+<p>Acconto</p>
+</td>
+<td style="border-top: 1px solid black;" colspan="2">
+<p>{Total Amount Without Taxes}</p>
+<p>{Tax Value}</p>
+<p>{Total Amount}</p>
+<p> </p>
+</td>
+</tr>
+</tfoot>
+</table>
+<p style="width: 100%; border-top: 1px solid black;">Autorizzazione del servizio di assistenza.</p>
+<p><span style="font-size: 10pt;">Accetto che i Termini e condizioni di riparazione riportati sul retro di questa pagina verranno applicati al servizio di assistenza per il prodotto sopra indicato; che nel corso dell'intervento di assistenza re:store non è responsabile dell'eventuale perdita, danneggiamento o violazione dei dati archiviati sul prodotto; che, poiché l'espletamento del servizio di assistenza può comportare la perdita di dati, è mia responsabilità effettuare una copia di backup di tali dati prima di consegnare il prodotto a re:store.</span></p>
+<p> </p>
+<table>
+<tbody>
+<tr>
+<td style="border-bottom: 1px solid black; margin-right: 2em; width: 50%;">Rilascio del dispostivo</td>
+<td style="border-bottom: 1px solid black; margin-left: 2em; width: 50%;">Ritiro del dispositivo</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-size: 10pt;">Firmando accetta il preventivo qui sopra indicato e tutti i Termini e condizioni.</span></td>
+<td style="vertical-align: top;"><span style="font-size: 10pt;">Il cliente dichiara che il dispositivo è stato restituito dall'operatore regolarmente funzionante e in un buono stato di conservazione, non rinvenendo alcun danno al dispositivo</span></td>
+</tr>
+<tr>
+<td>_________________{Today Datetime}</td>
+<td>_________________</td>
+</tr>
+</tbody>
+</table>
+<p><span style="text-decoration: underline;"><!-- pagebreak --></span></p>
+<p><span style="text-decoration: underline;">INFORMATIVA SULLA GARANZIA DI RIPARAZIONE</span></p>
+<p> </p>
+<ul>
+<li>Le riparazioni sono garantite per il tempo di 180 giorni solari a partire dal ritiro del bene presso il centro di assistenza di I love my phone.</li>
+<li>Nel caso in cui il pezzo da noi installato sul telefono fosse difettoso, provvederemo alla riparazione o sostituzionedel pezzo senza alcuna spesa a carico dell'acquirente.</li>
+<li>La riparazione offre una garanzia che copre esclusivamente l'intervento eseguito e riguarda esclusivamente il pezzo sostituito. Nonsi offrono garanzie per altre parti non riparate/sostituite.</li>
+<li><strong>I love my phone si riserva il diritto di visionare il materiale prima di convalidare la Garanzia.</strong></li>
+<li>Se si tratta di componentistica <strong>non installata da noi</strong>, la garanzia di I love my phone decade in quanto:</li>
+<ol type="a">
+<li>I love my phone non si assume alcuna responsabilità su installazioni effettuate da terzi e NON ne riconosce la garanzia ed assistenza.</li>
+<li>I love my phone sarà responsabile del telefono solo per il periodo di permanenza del medesimo nelcentro.</li>
+</ol>
+</ul>
+<p> </p>
+<p><strong>LIMITAZIONI DI GARANZIA SULLE RIPARAZIONI</strong></p>
+<ol start="3" type="a">
+<li>Tutte le situazioni di cui al punto e) porteranno ad una cessazione di garanzia della riparazione o della vendita dell'oggetto.</li>
+<li>Nel momento in cui il materiale testato risulti funzionante (quindi non siano riscontrati i problemi lamentati e segnalati dal cliente), fuori garanzia oppure rientrante nelle limitazioni, saranno addebitate al cliente i costi di manodopera e di eventuali costi di riparazione del dispositivo.</li>
+<li>Rotture causate da incidenti o da cadute in acqua- Rotture causate da un uso improprio - Rotture di eventuali vetri ecristalli - Degrado naturale causato dal Tempo - Prodotti con evidenti segni di manomissione - Rotture o malfunzionamenti causati dal trasporto non assicurato - Da un imballaggio non idoneo - Installazione dei componenti non eseguite da I love my phone.</li>
+</ol>
+<p><strong>GARANZIA SULLA SOSTITUZIONE DI BATTERIE</strong></p>
+<ol start="6" type="a">
+<li>Le batterie sostituite da I love my phone sono garantite 12 mesi.</li>
+<li>La garanzia non è valida nei seguenti casi:</li>
+<ol type="1">
+<li>quando la batteria risulta scarica a causa di inutilizzo, assorbimento di corrente della scheda logica,connettori ossidati o non ben collegati;</li>
+<li>se il malfunzionamento è dovuto ad uso improprio, applicazioni non consigliate o errate, trascuratezza nell’uso, manomissione, errata installazione o manutenzione, negligenza, ovvero da circostanze che, comunque, non possono riferirsi a difetti di funzionamento del prodotto stesso.</li>
+</ol>
+</ol>

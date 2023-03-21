@@ -1,2 +1,2 @@
 # Orderry_html_docs
-Its small collection of printable form templates for Orderry / RemOnline users.
+This is a small collection of custom printable form templates for Orderry / RemOnline users.
