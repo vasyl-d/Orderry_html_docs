@@ -1,0 +1,164 @@
+<style>
+@page {margin: 5mm;}
+td {padding:4px; margin:0; line-height:110%;}
+tr {padding:0; margin:0;}
+</style>
+<div style="height: 6mm; overflow: hidden;">{Barcode}</div>
+<div style="border: 2px solid; height: 98%; width: 100%; position: fixed; bottom: 0;">
+<table style="border-collapse: collapse; width: 100%; height: auto;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="width: 50%; text-align: left; border-bottom: 2px solid;" colspan="3"><strong style="font-size: 24px;">CENOVA PONUKA</strong><strong style="font-size: 24px;"><br /></strong></td>
+<td style="width: 50%; text-align: right; border-bottom: 2px solid; border-left: 2px solid;"><strong style="font-size: 24px;">{Order Number}</strong></td>
+</tr>
+<tr>
+<td style="width: 27.3666%; vertical-align: top;" colspan="2">
+<p><strong>FILKORN s. r. o.</strong></p>
+<p> </p>
+<p>Riazanská 684/72</p>
+<p>83103 Bratislava - Nové Mesto</p>
+<p>Slovensko</p>
+</td>
+<td style="width: 18.3305%;"><img id="company-logo" style="float: right;" src="https://storage.remonline.app/uploads/156507/e5a0eed8ffca4267b53d097d0f9874e0.png" width="150" /></td>
+<td style="vertical-align: top; width: 54.3029%; border-left: 2px solid; border-bottom: 2px solid;" rowspan="12">
+<p><strong>Ponuka pre: </strong></p>
+<p> </p>
+<p>{Client Name}</p>
+<p>{Client Address}</p>
+<p> </p>
+<p>{Client Phone}</p>
+<p> </p>
+<p>{Client Identification Number Company}</p>
+</td>
+</tr>
+<tr>
+<td style="width: 13.6833%;">IČO:</td>
+<td style="width: 32.0138%;" colspan="2">55466052</td>
+</tr>
+<tr>
+<td style="width: 13.6833%;">IČDPH:</td>
+<td style="width: 32.0138%;" colspan="2">SK2122011661</td>
+</tr>
+<tr>
+<td style="width: 45.6971%;" colspan="3">Platiteľ DPH</td>
+</tr>
+<tr>
+<td style="width: 13.6833%;">TELEFÓN:</td>
+<td style="width: 32.0138%;" colspan="2"> +421951881240</td>
+</tr>
+<tr>
+<td style="width: 13.6833%;">EMAIL:</td>
+<td style="width: 32.0138%;" colspan="2">spongecleaning@gmail.com</td>
+</tr>
+<tr>
+<td style="width: 13.6833%;">WEB:</td>
+<td style="width: 32.0138%;" colspan="2">http://www.spongecleaning.sk/</td>
+</tr>
+<tr>
+<td style="width: 13.6833%;">IBAN:</td>
+<td style="width: 32.0138%;" colspan="2">SK68 1100 0000 0029 4415 2107</td>
+</tr>
+<tr>
+<td style="width: 13.6833%;">SWIFT:</td>
+<td style="width: 32.0138%;" colspan="2">TATRSKBX</td>
+</tr>
+<tr>
+<td style="width: 13.6833%;">BANKA:</td>
+<td style="width: 32.0138%;" colspan="2">Tatra Banka</td>
+</tr>
+<tr>
+<td style="width: 13.6833%;">ÚČET:</td>
+<td style="width: 32.0138%;" colspan="2">2944152107/1100 </td>
+</tr>
+<tr>
+<td style="width: 45.6971%; border-top: 2px solid; border-bottom: 2px solid;" colspan="3">
+<p>Dátum vystavenia: </p>
+<p style="text-align: center;">{Order Created Date}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div> </div>
+<div>
+<table class="Products b-table b-table_style_simple" style="border-collapse: collapse; width: 95.0129%; height: auto; margin-left: auto; margin-right: auto;" border="0" cellspacing="0" cellpadding="0">
+<thead>
+<tr>
+<th style="width: 46.8057%; height: auto;">Popis položky</th>
+<th style="width: 6.48897%; height: auto;">MJ</th>
+<th style="width: 9.89302%; height: auto;">Množstvo</th>
+<th style="width: 9.78664%; height: auto;">Cena za MJ</th>
+<th style="width: 9.78664%; height: auto; text-align: right;"> Celkom bez DPH</th>
+<th style="width: 9.78664%; height: auto; text-align: right;">DPH</th>
+<th style="width: 7.33998%; height: auto; text-align: right;">Celkom s DPH</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 46.8057%; height: auto;">{Product Name}</td>
+<td class="center" style="text-align: center; width: 6.48897%;">{Product UoM}</td>
+<td class="center" style="width: 9.89302%; text-align: center;">{Product Qty}</td>
+<td class="right" style="text-align: right; width: 9.78664%;">{Product Price Without Taxes}</td>
+<td style="text-align: right; width: 9.78664%;">{Product Amount Without Taxes}</td>
+<td class="right" style="text-align: right; width: 9.78664%;">{Product Tax Amount}</td>
+<td class="right" style="text-align: right; width: 7.33998%;">{Product Amount}</td>
+</tr>
+</tbody>
+<tfoot style="display: table-row-group; border-style: none;">
+<tr>
+<td class="report-total-cell no-border" style="font-weight: bold; width: 46.8057%; text-align: left;">Zľava ({Total Discount Pct}%):</td>
+<td style="font-weight: bold; width: 6.48897%; text-align: center;">ks</td>
+<td style="font-weight: bold; width: 9.89302%; text-align: center;">1</td>
+<td style="text-align: right; font-weight: bold; width: 9.78664%;">- {Total Discount Sum}</td>
+<td style="text-align: right; font-weight: bold; width: 9.78664%;">- {Total Discount Sum}</td>
+<td style="text-align: right; font-weight: bold; width: 9.78664%;"> </td>
+<td style="font-weight: bold; text-align: right; width: 7.33998%;">- {Total Discount Sum}</td>
+</tr>
+<tr>
+<td class="report-total-cell no-border" style="font-weight: bold; width: 72.9743%; text-align: right;" colspan="4">Spolu:</td>
+<td style="text-align: right; font-weight: bold; width: 9.78664%;">{Total Amount Without Taxes}</td>
+<td style="text-align: right; font-weight: bold; width: 9.78664%;">{Tax Value}</td>
+<td style="font-weight: bold; text-align: right; width: 7.33998%;">{Total Amount}</td>
+</tr>
+</tfoot>
+</table>
+</div>
+<p> </p>
+<div style="width: 95%; margin: 0 auto;">
+<p>ZMLUVNÉ PODMIENKY:</p>
+<p>Uvedená cena je orientačná a môže sa líšiť od konečnej ceny. Konečná cena závisí od stupňa znečistenia a bude stanovená na základe osobnej obhliadky vašich priestorov alebo v deň vykonania prác.</p>
+<p>Zľava sa vzťahuje na faktúry zaplatené v určený dátum alebo pred ním.</p>
+<p> </p>
+<p>PLATOBNÉ PODMIENKY:</p>
+<p>Platba sa uskutočňuje v hotovosti alebo prevodom na uče, najneskôr v deň vykonania objednávky</p>
+<p> </p>
+</div>
+<table class="Products" style="border-collapse: collapse; width: 100%; height: auto; position: fixed; bottom: 0;" border="1" cellspacing="0" cellpadding="0">
+<tfoot>
+<tr style="height: auto;">
+<td style="width: 25.2663%; vertical-align: top; height: auto;" rowspan="5">Vyhotovil:</td>
+<td style="width: 24.9631%; height: auto; vertical-align: top;" rowspan="5">Prevzal: </td>
+<td style="width: 24.9631%; height: auto;">Zľava:</td>
+<td style="width: 24.9631%; height: auto; text-align: right;">{Total Discount Pct} EUR</td>
+</tr>
+<tr style="height: auto;">
+<td style="width: 24.9631%; height: auto;">Celková suma bez DPH:</td>
+<td style="width: 24.9631%; height: auto; text-align: right;">{Total Amount Without Taxes} EUR</td>
+</tr>
+<tr style="height: auto;">
+<td style="width: 24.9631%; height: auto;">DPH:</td>
+<td style="width: 24.9631%; height: auto; text-align: right;">{Tax Value} EUR</td>
+</tr>
+<tr style="height: auto;">
+<td style="width: 24.9631%; height: auto;">Celková suma s DPH:</td>
+<td style="width: 24.9631%; height: auto; text-align: right;">{Total Amount} EUR</td>
+</tr>
+<tr style="height: auto;">
+<td style="height: auto; width: 49.9262%;" colspan="2">
+<p>K úhrade:</p>
+<p style="text-align: center;"><strong><span style="font-size: 18pt;">{Total Amount}</span></strong></p>
+<p style="text-align: center;"><span style="font-size: 8pt;">{Total Amount Spelled Out}</span><strong><span style="font-size: 18pt;"> </span></strong></p>
+</td>
+</tr>
+</tfoot>
+</table>
+</div>
