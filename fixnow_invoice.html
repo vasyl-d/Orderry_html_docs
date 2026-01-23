@@ -1,0 +1,242 @@
+<style>
+    /* Styles go here */
+    .Products tr,
+    td {
+        border: 0;
+    }
+
+    .Products tr:nth-child(even) {
+        background-color: #f2f2f2
+    }
+
+    .page-header,
+    .page-header-space {
+        height: 0;
+    }
+
+    .page-footer,
+    .page-footer-space {
+        height: 5cm;
+    }
+
+    .page-footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        border-top: 1px solid black;
+        /* for demo */
+        counter-increment: page;
+    }
+
+    .page-header {
+        position: fixed;
+        top: 0mm;
+        width: 100%;
+    }
+
+    .page {
+        width: 100%;
+        page-break-after: auto;
+    }
+
+    @page {
+        size: A4 portrait;
+        margin: 10mm;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tfoot {
+        display: table-footer-group;
+    }
+
+    body {
+        margin: 0;
+    }
+</style>
+<!--header вставлять тут-->
+<div class="page-header" style="text-align: center;"> </div>
+<!--футер всталять сюда-->
+<div class="page-footer">
+    <table class="Products b-table b-table_style_simple" style="border-collapse: collapse; width: 100%;" border="0">
+        <tfoot style="display: table-row-group;">
+            <tr>
+                <td class="no-border" style="width: 23%; text-align: right; border-style: none; border-width: 0px;"> 
+                </td>
+                <td style="text-align: right; width: 12%; border-style: none; border-width: 0px;">0% BTW</td>
+                <td style="text-align: right; width: 12%; border-style: none; border-width: 0px;">6% BTW</td>
+                <td style="text-align: right; width: 12%; border-style: none; border-width: 0px;">12% BTW</td>
+                <td style="text-align: right; width: 12%; border-style: none; border-width: 0px;">21% BTW</td>
+                <td style="font-weight: bold; text-align: right; width: 12%; border-style: none; border-width: 0px;">
+                    TOTAAL</td>
+            </tr>
+            <tr>
+                <td class="no-border" style="width: 23%; text-align: right; border-style: none; border-width: 0px;">
+                    EXCL. BTW</td>
+                <td style="width: 9.01961%; text-align: right; border-style: none; border-width: 0px;">0,00 € </td>
+                <td style="width: 9.01961%; text-align: right; border-style: none; border-width: 0px;">0,00 €</td>
+                <td style="width: 9.01961%; text-align: right; border-style: none; border-width: 0px;">0,00 €</td>
+                <td style="width: 6.9281%; text-align: right; border-style: none; border-width: 0px;">{Total Amount
+                    Without Taxes}</td>
+                <td class="no-border" style="width: 12%; text-align: right; border-style: none; border-width: 0px;">
+                    {Total Amount Without Taxes}</td>
+            </tr>
+            <tr>
+                <td style="width: 23%; text-align: right; border-style: none; border-width: 0px;">BTW</td>
+                <td style="width: 9.01961%; text-align: right; border-style: none; border-width: 0px;"><span
+                        style="background-color: #f2f2f2;">0,00 €</span></td>
+                <td style="width: 9.01961%; text-align: right; border-style: none; border-width: 0px;"><span
+                        style="background-color: #f2f2f2;">0,00 €</span></td>
+                <td style="width: 9.01961%; text-align: right; border-style: none; border-width: 0px;"><span
+                        style="background-color: #f2f2f2;">0,00 €</span></td>
+                <td style="width: 6.9281%; text-align: right; border-style: none; border-width: 0px;">{Tax Value}</td>
+                <td style="width: 12%; text-align: right; border-style: none; border-width: 0px;">{Tax Value}</td>
+            </tr>
+            <tr>
+                <td style="width: 23%; text-align: right; background-color: #236fa1; border-color: #236fa1;">INCL. BTW
+                </td>
+                <td style="width: 9.01961%; text-align: right; background-color: #236fa1; border-color: #236fa1;">0,00 €
+                </td>
+                <td style="width: 9.01961%; text-align: right; background-color: #236fa1; border-color: #236fa1;">0,00 €
+                </td>
+                <td style="width: 9.01961%; text-align: right; background-color: #236fa1; border-color: #236fa1;">0,00 €
+                </td>
+                <td style="width: 6.9281%; text-align: right; background-color: #236fa1; border-color: #236fa1;">{Total
+                    Amount}</td>
+                <td style="width: 12%; text-align: right; background-color: #236fa1; border-color: #236fa1;">{Total
+                    Amount}</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p> </p>
+    <p style="width: 90%; margin: 0 auto; height: 2px; border-bottom: 1px solid grey;"> </p>
+    <p> </p>
+    <table style="border-collapse: collapse; width: 100%; height: auto;" border="0">
+        <tbody>
+            <tr>
+                <td style="width: 24.5757%;">Contact www.billit.be support@billit.be +3232830909</td>
+                <td style="width: 24.5757%;"> </td>
+                <td style="width: 24.5757%; text-align: right; vertical-align: top;">
+                    <p>OGM</p>
+                    <p>KBC</p>
+                </td>
+                <td style="width: 24.5757%; text-align: right;">
+                    <p>+++512/2246/76263+++</p>
+                    <p>BE06 7360 6555 8122</p>
+                    <p>KREDBEBB</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!--футер конец-->
+</div>
+<table style="width: 100%;">
+    <thead>
+        <tr>
+            <td style="width: 935.508px;"><!--place holder for the fixed-position header-->
+                <div class="page-header-space"> </div>
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="width: 100%;">
+                <div class="page"><!--*** CONTENT GOES HERE ***-->
+                    <table style="border-collapse: collapse; width: 100%; height: auto;" border="0">
+                        <tbody>
+                            <tr>
+                                <td style="width: 49.5333%;"><img id="company-logo"
+                                        src="https://storage.roapp.io/media/company-assets/135535/company-logo/f5e5d101efb24b39be3d7f86cc78abe4.PNG"
+                                        width="200" /></td>
+                                <td style="width: 49.5333%;"><span style="color: #e67e23; font-size: 14pt;">Factuur
+                                        {Invoice Number}</span></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 49.5333%;">
+                                    <p>Fixnow BV</p>
+                                    <p>Pavlo Maksymenko</p>
+                                    <p>Helder Camaralaan 3</p>
+                                    <p>1860 MEISE</p>
+                                    <p>België</p>
+                                    <p>BE 0804.999.634</p>
+                                    <p>GLN: {Legal Entity TIN}</p>
+                                    <p>DUNS: {Legal Entity Registration Number}</p>
+                                </td>
+                                <td style="width: 49.5333%;">
+                                    <p>{Client Name}</p>
+                                    <p>{Client Address}</p>
+                                    <p> </p>
+                                    <p>GLN: {Client Tax Identification Number}</p>
+                                    <p>DUNS: {Client Business Registration Number}</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p> </p>
+                    <p style="width: 90%; margin: 0 auto; height: 2px; border-bottom: 1px solid grey;"> </p>
+                    <p> </p>
+                    <table style="border-collapse: collapse; width: 100%; height: auto;" border="0">
+                        <tbody>
+                            <tr>
+                                <td style="width: 24.9666%;">Datum:</td>
+                                <td style="width: 24.9666%;">{Invoice Date}</td>
+                                <td style="width: 25.1001%;">Betreft:</td>
+                                <td style="width: 25.1001%;"> </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 24.9666%;">Leveringsdatum:</td>
+                                <td style="width: 24.9666%;"> </td>
+                                <td style="width: 25.1001%;"> </td>
+                                <td style="width: 25.1001%;"> </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 24.9666%;">Vervaldag:</td>
+                                <td style="width: 24.9666%;">{Invoice Due Date}</td>
+                                <td style="width: 25.1001%;"> </td>
+                                <td style="width: 25.1001%;"> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p> </p>
+                    <table class="Products" style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th
+                                    style="width: 51.9359%; text-align: left; background-color: #236fa1; border-color: #236fa1;">
+                                    OMSCHRIJVING</th>
+                                <th style="width: 9.07877%; background-color: #236fa1; border-color: #236fa1;">AANTAL
+                                </th>
+                                <th style="width: 11.0814%; background-color: #236fa1; border-color: #236fa1;">PRIJS
+                                    PER </th>
+                                <th style="width: 5.07343%; background-color: #236fa1; border-color: #236fa1;">EXCL</th>
+                                <th style="width: 11.482%; background-color: #236fa1; border-color: #236fa1;">BTW</th>
+                                <th style="width: 11.482%; background-color: #236fa1; border-color: #236fa1;">INCL.</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 51.9359%;">{Product Name}</td>
+                                <td style="text-align: center; width: 9.07877%;">{Product Qty}</td>
+                                <td style="text-align: right; width: 11.0814%;">{Product Price}</td>
+                                <td style="text-align: right; width: 5.07343%;">{Product Amount Without Taxes}</td>
+                                <td style="text-align: right; width: 11.482%;">21%</td>
+                                <td style="text-align: right; width: 11.482%;">{Product Amount}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- end of page content-->
+                </div>
+                <!-- Если нужна доп страница <div class="page" style="line-height: 3;"> </div> -->
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td style="width: 935.508px;"><!--place holder for the fixed-position footer-->
+                <div class="page-footer-space"> </div>
+            </td>
+        </tr>
+    </tfoot>
+</table>
