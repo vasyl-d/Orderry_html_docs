@@ -1,0 +1,260 @@
+<style>
+    .und_line {
+        width: 100%;
+        height: 2px;
+        margin: 0;
+        border-bottom: 1px solid black;
+    }
+
+    .b-table>thead {
+        background: #f0f0f0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 1px solid;
+    }
+
+    .b-table>thead>th {
+        border-width: 0px;
+        border-style: none;
+    }
+
+    .b-table>tbody>tr:nth-child(2n) {
+        background: #f0f0f0;
+        /* background color */
+    }
+
+    .b-table>tfoot>tr>td.right:nth-child(n+1) {
+        background: #f0f0f0;
+    }
+
+    .b-table>tbody {
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 1px solid;
+    }
+
+    .right>* {
+        text-align: right !important;
+        margin-right: 0 !important;
+        margin-left: auto !important;
+        padding: 0 !important;
+        border: 0 !important;
+    }
+
+    .page-header,
+    .page-header-space {
+        height: 2.2cm;
+    }
+
+    .page-footer,
+    .page-footer-space {
+        height: 2cm;
+    }
+
+    .page-footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        border-top: 1px solid black;
+        /* for demo */
+        counter-increment: page;
+    }
+
+    .page-header {
+        position: fixed;
+        top: 0mm;
+        width: 100%;
+    }
+
+    .page {
+        width: 100%;
+        page-break-after: auto;
+    }
+
+    @page {
+        size: A4 portrait;
+        margin: 10mm;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tfoot {
+        display: table-footer-group;
+    }
+
+    body {
+        margin: 0;
+    }
+</style>
+<!--header вставлять тут-->
+<div class="page-header" style="text-align: left;"> 
+    <p><img id="company-logo"
+            src="https://storage.roapp.io/media/company-assets/196434/company-logo/80712759464244fea0d43705527035e5.jpg"
+            width="100" /></p>
+</div>
+<!--футер всталять сюда-->
+<div class="page-footer">
+    <p class="und_line"> </p>
+    <p style="text-align: center;"><span style="font-size: 10pt;">Pay by bank transfer to the following account number
+            Name: PROJECT X PROJECT SL - Revolut Bank UAB : IBAN ES15 1583 0001 1593 6790 3770 - SWIFT / BIC: REVOESM2
+            Address: C/Gremi Cirurgians i Barbers, 24, Local nº21 (CP:07009) Palma de Mallorca, Islas Baleares, ESPAÑA
+            Address Bank: C/ Principe de Vergara 132, 4 planta (CP: 28002) Madrid, Spain</span></p>
+</div>
+<table style="width: 100%;">
+    <thead>
+        <tr>
+            <td style="width: 935.508px;"><!--place holder for the fixed-position header-->
+                <div class="page-header-space"> </div>
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="width: 100%;">
+                <div class="page"><!--*** CONTENT GOES HERE ***-->
+                    <p class="und_line"> </p>
+                    <p style="text-align: center; line-height: 2em;"><strong><span style="font-size: 14pt;"> INVOICE
+                                {Invoice Number}</span></strong></p>
+                    <p class="und_line"> </p>
+                    <p> </p>
+                    <table style="border-collapse: collapse; width: 99.9839%;" border="0">
+                        <tbody>
+                            <tr>
+                                <td style="width: 50%; background-color: #f0f0f0;">
+                                    <p><strong><span style="font-size: 12pt;">Client</span></strong></p>
+                                    <p><span style="font-size: 12pt;">{Client Name}</span></p>
+                                    <p> </p>
+                                    <p><span style="font-size: 12pt;">VAT Incorporation number {Client Tax
+                                            Identification Number}</span></p>
+                                    <p><span style="font-size: 12pt;">{Client Address}</span></p>
+                                    <p> </p>
+                                </td>
+                                <td style="width: 50%; text-align: right; background-color: #f0f0f0;">
+                                    <p><strong>PROJECT X PROJECT S.L.</strong></p>
+                                    <p><strong>B44683860</strong></p>
+                                    <p>C/Gremi Cirurgians i Barbers, 24, Local nº13</p>
+                                    <p>Palma de Mallorca (07009), Baleares, Spain</p>
+                                    <p>Date: {Invoice Date} </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p> </p>
+                    <p> </p>
+                    <p> </p>
+                    <p> </p>
+                    <p> </p>
+                    <table class="Products b-table b-table_style_simple" style="width: 100.065%;">
+                        <thead>
+                            <tr style="height: 37px;">
+                                <th
+                                    style="width: 46.3356%; border-style: none; border-width: 0px; height: 37px; text-align: left;">
+                                    CONCEPT</th>
+                                <th style="width: 10.4713%; border-style: none; border-width: 0px; height: 37px;">UNITS
+                                </th>
+                                <th style="width: 9.42418%; border-style: none; border-width: 0px; height: 37px;">PRICE
+                                </th>
+                                <th style="width: 11.5184%; border-style: none; border-width: 0px;">SUBTOTAL</th>
+                                <th style="width: 9.29329%; border-style: none; border-width: 0px; height: 37px;">IVA
+                                </th>
+                                <th style="width: 13.0891%; border-style: none; border-width: 0px; height: 37px;">TOTAL
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody style="border-left: 0; border-right: 0; border-bottom: 1px solid;">
+                            <tr class="group-header" style="height: 37px;">
+                                <td class="order-no"
+                                    style="border-left: 0px; border-right: 0px; border-bottom: 1px solid; height: 37px; width: 100.132%;"
+                                    colspan="6">Job #{Order Number}</td>
+                            </tr>
+                            <tr class="group" style="height: 37px;">
+                                <td style="width: 46.3356%; border-width: 0px; border-style: none; height: 37px;">
+                                    {Product Name}</td>
+                                <td
+                                    style="text-align: center; width: 10.4713%; border-width: 0px; border-style: none; height: 37px;">
+                                    {Product Qty}</td>
+                                <td
+                                    style="width: 9.42418%; border-width: 0px; border-style: none; height: 37px; text-align: center;">
+                                    {Product Price} €</td>
+                                <td style="width: 11.5184%; border-width: 0px; border-style: none; text-align: center;">
+                                    {Product Amount Without Taxes} €</td>
+                                <td
+                                    style="width: 9.29329%; border-width: 0px; border-style: none; height: 37px; text-align: center;">
+                                    {Product Tax Amount} €</td>
+                                <td
+                                    style="text-align: right; width: 13.0891%; border-width: 0px; border-style: none; height: 37px;">
+                                    {Product Amount} €</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>​</p>
+                    <p> </p>
+                    <p> </p>
+                    <table class="Products b-table b-table_style_simple"
+                        style="border-collapse: collapse; width: 99%; height: 92.5px;" border="0" cellspacing="0"
+                        cellpadding="0">
+                        <thead>
+                            <tr style="height: 18.5px;">
+                                <td
+                                    style="width: 25%; height: 18.5px; text-align: right; border-style: none; border-width: 0px;">
+                                    SUBTOTAL</td>
+                                <td
+                                    style="width: 25%; height: 18.5px; text-align: right; border-style: none; border-width: 0px;">
+                                    TAX</td>
+                                <td
+                                    style="width: 25%; height: 18.5px; text-align: right; border-style: none; border-width: 0px;">
+                                    TAX AMOUNT </td>
+                                <td
+                                    style="width: 25%; height: 18.5px; text-align: right; border-style: none; border-width: 0px;">
+                                    TOTAL</td>
+                            </tr>
+                        </thead>
+                        <tfoot style="display: table-row-group;">
+                            <tr style="height: 37px;">
+                                <td class="no-border"
+                                    style="width: 25%; height: 37px; text-align: right; border-style: none; border-width: 0px;">
+                                    {Total Amount Without Taxes} €</td>
+                                <td
+                                    style="width: 25%; height: 37px; text-align: right; border-style: none; border-width: 0px;">
+                                    IVA 21%</td>
+                                <td
+                                    style="width: 25%; height: 37px; text-align: right; border-style: none; border-width: 0px;">
+                                    {Tax Value} €</td>
+                                <td
+                                    style="font-weight: bold; width: 25%; height: 37px; text-align: right; border-style: none; border-width: 0px;">
+                                    {Total Amount} €</td>
+                            </tr>
+                            <tr style="height: 37px;">
+                                <td class="no-border"
+                                    style="width: 25%; height: 37px; text-align: right; border-style: none; border-width: 0px;">
+                                    <span style="text-align: right;">{Total Amount Without Taxes} </span>€</td>
+                                <td
+                                    style="width: 25%; height: 37px; text-align: right; border-style: none; border-width: 0px;">
+                                     </td>
+                                <td
+                                    style="width: 25%; height: 37px; text-align: right; border-style: none; border-width: 0px;">
+                                     </td>
+                                <td class="no-border"
+                                    style="width: 25%; height: 37px; text-align: right; border-style: none; border-width: 0px;">
+                                    {Total Amount} €</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <p> </p>
+                    <p> </p>
+                    <!-- end of page content-->
+                </div>
+                <!-- Если нужна доп страница <div class="page" style="line-height: 3;"> </div> -->
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td style="width: 935.508px;"><!--place holder for the fixed-position footer-->
+                <div class="page-footer-space"> </div>
+            </td>
+        </tr>
+    </tfoot>
+</table>

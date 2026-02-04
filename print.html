@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <!--⚠️ WARNING:All styles in this file are preserved for **backward compatibility** with user-defined templates.Editing or removing any rule should be done with **extreme caution** and full understanding of its impact.Even seemingly unused styles may be required by existing customer layouts.-->
+    <style>
+        *,
+        :after,
+        :before {
+            box-sizing: border-box
+        }
+
+        body,
+        html {
+            height: 100%
+        }
+
+        html {
+            font-family: sans-serif;
+            font-size: 10px;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            background-color: #fff;
+            color: #000;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1.2;
+            margin: 0;
+            overflow: visible !important;
+        }
+
+        div {
+            overflow: visible !important;
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        main,
+        nav,
+        section,
+        summary,
+        template {
+            display: block;
+        }
+
+        a {
+            background: transparent;
+            color: #4791d1;
+            text-decoration: none;
+        }
+
+        b,
+        strong {
+            font-weight: 700;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: inherit;
+            font-family: inherit;
+            font-weight: 500;
+            line-height: 1.1
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 21px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            font-size: 18px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        h5 {
+            font-size: 14px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        h6 {
+            font-size: 12px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        p,
+        span {
+            margin: 0;
+            padding: 0;
+        }
+
+        label {
+            display: inline-block;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        optgroup {
+            font-style: normal;
+        }
+
+        img {
+            border: 0;
+            vertical-align: middle;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        pre {
+            background-color: #edf2f7;
+            border-radius: 2px;
+            font-family: Open Sans, sans-serif;
+            padding: 10px;
+        }
+
+        table {
+            background: transparent;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        table col[class*="col-"] {
+            display: table-column;
+            float: none;
+            position: static;
+        }
+
+        table td[class*="col-"],
+        table th[class*="col-"] {
+            display: table-cell;
+            float: none;
+            position: static;
+        }
+
+        thead {
+            display: table-row-group;
+        }
+
+        th {
+            text-align: center;
+        }
+
+        td,
+        th {
+            padding: 0.4em 0.6em;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        .b-print-container {
+            display: block;
+            z-index: 200000;
+            position: relative;
+            background-color: #fff;
+            /* When changing this font, look at barcode in documents templates.You should choose font that doesn't produce scrollbar appearance bug,cos' you can't change overflow:hidden style added by 3rd-party barcode library. */
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        label,
+        .b-label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        .b-label_style_clean {
+            margin-bottom: 0;
+        }
+
+        .pagebreak {
+            page-break-before: always;
+            clear: both;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+            float: inherit;
+        }
+
+        .reveal-modal-bg {
+            z-index: -1;
+            position: inherit;
+        }
+
+        .h-price-label {
+            display: inline-block;
+            margin: -1px;
+        }
+
+        .h-sticker {
+            display: block;
+            page-break-after: always;
+            height: min-content !important;
+        }
+
+        .h-sticker:last-child {
+            page-break-after: avoid;
+        }
+
+        .h-sticker svg text {
+            display: block;
+        }
+
+        .col-md-2,
+        .col-sm-12 {
+            min-height: 1px;
+            padding-left: 15px;
+            padding-right: 15px;
+            position: relative;
+        }
+
+        .la-fx {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+
+        .fx-grow,
+        .la-2form__col2 {
+            -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+        }
+
+        .fx-aib {
+            -webkit-align-items: baseline;
+            -ms-flex-align: baseline;
+            align-items: baseline;
+        }
+
+        .b-winbox__close {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            justify-content: flex-end;
+            -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+        }
+
+        .table {
+            margin-bottom: 20px;
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .table>tbody>tr>td,
+        .table>tbody>tr>th,
+        .table>tfoot>tr>td,
+        .table>tfoot>tr>th,
+        .table>thead>tr>td,
+        .table>thead>tr>th {
+            border-top: 1px solid #ddd;
+            line-height: 1.42857143;
+            padding: 8px;
+            vertical-align: top;
+        }
+
+        .table>thead>tr>th {
+            border-bottom: 2px solid #d9edf7;
+            vertical-align: bottom;
+        }
+
+        .table>caption+thead>tr:first-child>td,
+        .table>caption+thead>tr:first-child>th,
+        .table>colgroup+thead>tr:first-child>td,
+        .table>colgroup+thead>tr:first-child>th,
+        .table>thead:first-child>tr:first-child>td,
+        .table>thead:first-child>tr:first-child>th {
+            border-top: 0;
+        }
+
+        .table tbody+tbody {
+            border-top: 2px solid #d9edf7;
+        }
+
+        .table-bordered,
+        .table-bordered>tbody>tr>td,
+        .table-bordered>tbody>tr>th,
+        .table-bordered>tfoot>tr>td,
+        .table-bordered>tfoot>tr>th,
+        .table-bordered>thead>tr>td,
+        .table-bordered>thead>tr>th {
+            border: 1px solid #d9edf7;
+        }
+
+        .table-bordered>thead>tr>td,
+        .table-bordered>thead>tr>th {
+            border-bottom-width: 2px;
+        }
+
+        .b-in-holder {
+            position: relative;
+        }
+
+        .b-link {
+            text-decoration: none;
+        }
+
+        .b-link_color_blue {
+            color: #4791d1;
+        }
+
+        .b-table {
+            box-shadow: none;
+            border-collapse: collapse;
+            background: #fff;
+            color: #000;
+            display: table;
+            empty-cells: show;
+            line-height: normal;
+            outline: 0;
+            position: relative;
+            width: 100%;
+        }
+
+        .b-table_style_simple {
+            box-shadow: none;
+        }
+
+        .b-table thead {
+            background-color: #ffffe0;
+        }
+
+        .b-table th,
+        .b-table td {
+            border: 1px solid #000;
+            padding: 0 5px;
+        }
+
+        .header {
+            margin-bottom: 20px;
+        }
+
+        .report-title {
+            width: 100%;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .report-timestamp {
+            width: 100%;
+            overflow: hidden;
+            text-align: right;
+            font-style: italic;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+
+        .report-total-cell {
+            font-weight: 700;
+            text-align: right;
+        }
+
+        td.no-border {
+            border: 0;
+        }
+
+        .b-title_style_lvl1 {
+            font-size: 30px;
+            font-weight: 100;
+            line-height: 30px;
+        }
+
+        .h-required:after {
+            color: red;
+            content: "*";
+            font-size: 1.1em;
+            line-height: 1em;
+            margin-left: 2px;
+        }
+
+        .h-d-b {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="b-print-container">
+        <html>
+
+        <head>
+            <style>
+                @page {
+                    margin: 1mm;
+                }
+
+                body {
+                    font-size: 30pt;
+                    line-height: 1.1em;
+                    margin: 0;
+                    padding: 0;
+                    border: 0;
+                    font-weight: 600;
+                }
+
+                table,
+                td {
+                    margin: 0;
+                    padding: 0;
+                    line-height: 90%;
+                }
+
+                span {
+                    margin: 0;
+                    padding: 0;
+                }
+            </style>
+        </head>
+
+        <body>
+            <p style="text-align: center;"> </p>
+            <p style="text-align: center;"><u>ЧЕК</u></p>
+            <p style="text-align: center;"><span style="text-decoration: underline;"><strong style="text-align:
+                        center;">№ #A011</strong></span></p>
+            <p style="text-align: center;"><em>от #28 січня 2026</em></p>
+            <p style="text-align: left;"> </p>
+            <table class="Products b-table b-table_style_simple" style="border-collapse: collapse; width: 100%;
+                height: auto; margin-left: auto; margin-right: auto;" border="1" cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                        <th style="width: 34.4459%;">Найменування товару</th>
+                        <th style="width: 15.3538%;">Кількість</th>
+                        <th style="width: 16.6889%;">Ціна</th>
+                        <th style="width: 16.6889%;">Податки</th>
+                        <th style="width: 16.6889%;">Сума</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="width: 34.4459%;">Miniature Drum Ornament Gold and Purple Design</td>
+                        <td class="center" style="width: 15.3538%; text-align: center;">1</td>
+                        <td class="right" style="width: 16.6889%; text-align: center;">160,00</td>
+                        <td class="right" style="width: 16.6889%; text-align: center;">0,00</td>
+                        <td class="right" style="width: 16.6889%; text-align: right;">160,00</td>
+                    </tr>
+                </tbody>
+                <tfoot style="display: table-row-group; border-style: none;">
+                    <tr>
+                        <td class="report-total-cell no-border" style="text-align: right; font-weight: bold; width:
+                            83.1776%;" colspan="4">Разом:</td>
+                        <td class="right no-border" style="font-weight: bold; text-align: right; width: 16.6889%;">
+                            160,00</td>
+                    </tr>
+                    <tr>
+                        <td class="report-total-cell no-border" style="text-align: right; font-weight: bold; width:
+                            83.1776%;" colspan="4">Сума знижки:</td>
+                        <td class="right no-border" style="font-weight: bold; text-align: right; width: 16.6889%;">
+                            0,00</td>
+                    </tr>
+                    <tr>
+                        <td class="report-total-cell no-border" style="text-align: right; font-weight: bold; width:
+                            83.1776%;" colspan="4">Всього зi знижкою:</td>
+                        <td class="right no-border" style="font-weight: bold; text-align: right; width: 16.6889%;">
+                            160,00</td>
+                    </tr>
+                    <tr>
+                        <td class="report-total-cell no-border" style="text-align: right; font-weight: bold; width:
+                            83.1776%;" colspan="4"><span style="display: inline-flex; justify-content: right;
+                                border: none;"> </span></td>
+                        <td class="right no-border" style="font-weight: bold; text-align: right; width: 16.6889%;">
+                            <span style="display: inline-flex; justify-content: right; border: none;"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="report-total-cell no-border" style="text-align: right; font-weight: bold; width:
+                            83.1776%;" colspan="4">До сплати:</td>
+                        <td class="right no-border" style="font-weight: bold; text-align: right; width: 16.6889%;">
+                            160,00</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <p style="text-align: left;"> </p>
+            <p>sunmi d3 mini</p>
+            <p>_______________________ </p>
+            <p> </p>
+            <p>Hanna Buzovska</p>
+            <p>_______________________</p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+            <div style="width: 100%;">
+                <div style="text-align: center; transform: scale(6);">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="33.350mm" height="11.764mm">
+                        <!--Autogenerated with python-barcode 0.15.1-->
+                        <g id="barcode_group">
+                            <rect width="100%" height="100%" style="fill:white" />
+                            <rect x="1.000mm" y="1.000mm" width="0.330mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="1.660mm" y="1.000mm" width="0.330mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="2.650mm" y="1.000mm" width="0.330mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="3.640mm" y="1.000mm" width="0.660mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="5.290mm" y="1.000mm" width="0.660mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="6.280mm" y="1.000mm" width="0.330mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="6.940mm" y="1.000mm" width="0.330mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="7.930mm" y="1.000mm" width="0.990mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="9.250mm" y="1.000mm" width="0.330mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="10.240mm" y="1.000mm" width="0.990mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="12.220mm" y="1.000mm" width="0.660mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="13.210mm" y="1.000mm" width="0.330mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="13.870mm" y="1.000mm" width="0.330mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="14.860mm" y="1.000mm" width="0.990mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="16.180mm" y="1.000mm" width="0.330mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="16.840mm" y="1.000mm" width="0.330mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="17.500mm" y="1.000mm" width="0.990mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="19.150mm" y="1.000mm" width="0.330mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="19.810mm" y="1.000mm" width="0.990mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="21.460mm" y="1.000mm" width="0.330mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="22.120mm" y="1.000mm" width="0.990mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="23.770mm" y="1.000mm" width="0.330mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="24.430mm" y="1.000mm" width="0.660mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="25.420mm" y="1.000mm" width="0.660mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="26.740mm" y="1.000mm" width="0.660mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="28.060mm" y="1.000mm" width="0.660mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="29.050mm" y="1.000mm" width="0.330mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="30.370mm" y="1.000mm" width="0.330mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="31.360mm" y="1.000mm" width="0.330mm" height="5.000mm"
+                                style="fill:black;" />
+                            <rect x="32.020mm" y="1.000mm" width="0.330mm" height="5.000mm"
+                                style="fill:black;" /> <text x="16.675mm" y="9.000mm"
+                                style="fill:black;font-size:10pt;text-anchor:middle;">2200000000217</text>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <p> </p>
+        </body>
+
+        </html>
+    </div>
+</body>
+
+</html>
