@@ -1,0 +1,322 @@
+<style>
+    tr, td {margin:0; padding:0;}
+    .und_line {
+        width: 100%;
+        height: 2px;
+        margin: 0;
+        border-bottom: 1px solid black;
+    }
+
+    .b-table>thead {
+        background: #f0f0f0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 1px solid;
+    }
+
+    .b-table>thead>th {
+        border-width: 0px;
+        border-style: none;
+    }
+
+    .b-table>tbody>tr:nth-child(2n) {
+        background: #f0f0f0;
+        /* background color */
+    }
+
+    .b-table>tfoot>tr>td.right:nth-child(n+1) {
+        background: #f0f0f0;
+    }
+
+    .b-table>tbody {
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 1px solid;
+    }
+
+    .right>* {
+        text-align: right !important;
+        margin-right: 0 !important;
+        margin-left: auto !important;
+        padding: 0 !important;
+        border: 0 !important;
+    }
+
+    .page-header,
+    .page-header-space {
+        height: 0;
+    }
+
+    .page-footer,
+    .page-footer-space {
+        height: 2cm;
+    }
+
+    .page-footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        border-top: 1px solid black;
+        /* for demo */
+        counter-increment: page;
+    }
+
+    .page-header {
+        position: fixed;
+        top: 0mm;
+        width: 100%;
+    }
+
+    .page {
+        width: 100%;
+        page-break-after: auto;
+    }
+
+    @page {
+        size: A4 portrait;
+        margin: 10mm;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tfoot {
+        display: table-footer-group;
+    }
+
+    body {
+       margin: 0;
+       font-size: 11pt;
+       line-height:1.1em;
+       font-family: Tahoma;
+    }
+    .FirstRow tr.group-header:not(:first-child) {height:0;}
+    .FirstRow tr.group {height:0;}
+</style>
+<!--header вставлять тут-->
+<div class="page-header" style="text-align: left;"> 
+<p> </p>
+<p> </p>
+</div>
+<p><span style="font-size: 12pt;"><!--футер всталять сюда--></span></p>
+<div class="page-footer">
+<p class="und_line"> </p>
+<p style="text-align: center;"><span style="font-size: 9pt;">Según ley LO15/99 del 13 de Diciembre autorizo a la empresa emisora de la factura a incorporar los datos personales en un fichero de cientes y tratarlos de manera</span></p>
+<p style="text-align: center;"><span style="font-size: 9pt;">como soporte de información a la gestión fiscal, administrativa, comercial y contable de la empresa. Pudiendo ejercer los derechos de acceso, notificación,</span></p>
+<p style="text-align: center;"><span style="font-size: 9pt;">la dirección de la empresa emisora.</span></p>
+</div>
+<table style="width: 100%;">
+<thead>
+<tr>
+<td style="width: 935.508px;"><span style="font-size: 9pt;"><!--place holder for the fixed-position header--></span>
+<div class="page-header-space"> </div>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 100%;">
+<div class="page"><span style="font-size: 12pt;"><!--*** CONTENT GOES HERE ***--></span>
+<p class="und_line"> </p>
+<table style="border-collapse: collapse; width: 99%; height: auto; margin-left: auto; margin-right: auto;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr style="height: auto;">
+<td style="width: 49.6654%; height: auto;">
+<p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 14px; line-height: normal; font-family: Helvetica;"><strong><span style="font-size: 12pt;">TEMPLOMOTOR S.L.U</span></strong></p>
+<p class="p2" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: Helvetica;"><span style="font-size: 12pt;">Mecánica en General</span></p>
+<p class="p2" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: Helvetica;"><span style="font-size: 12pt;">Calle Las Rosas 27</span></p>
+<p class="p2" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: Helvetica;"><span style="font-size: 12pt;">46940 Manises</span></p>
+<p class="p2" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: Helvetica;"><span style="font-size: 12pt;">Valencia</span></p>
+<p class="p2" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: Helvetica;"><span style="font-size: 12pt;">Tlf: 965276075 Fax:</span></p>
+<p class="p2" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: Helvetica;"><span style="font-size: 12pt;">N.I.F: B-01608694</span></p>
+</td>
+<td style="width: 49.6654%; text-align: right; vertical-align: top; height: auto;">
+<p> </p>
+<p><span style="font-size: 24pt;"><em>Factura</em></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="und_line"> </p>
+<p> </p>
+<table class="Products FirstRow" style="border-collapse: collapse; width: 99%; height: auto;" border="0" cellspacing="0" cellpadding="4">
+<tbody>
+<tr class="group-header" style="height: auto;">
+<td style="width: 50%; background-color: #f0f0f0; height: auto;">
+<p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 9px; line-height: normal; font-family: Helvetica;"><span style="font-size: 12pt; font-family: tahoma, arial, helvetica, sans-serif;"><strong>Datos Vehículo:</strong></span></p>
+<p class="p2" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: Helvetica;"><span style="font-size: 12pt; font-family: tahoma, arial, helvetica, sans-serif;">Matrícula: {Vehicle Number Plate}</span></p>
+<p class="p2" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: Helvetica;"><span style="font-size: 12pt; font-family: tahoma, arial, helvetica, sans-serif;">Marca: {Asset Brand}</span></p>
+<p class="p2" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: Helvetica;"><span style="font-size: 12pt; font-family: tahoma, arial, helvetica, sans-serif;">Modelo: {Asset Model}</span></p>
+<p class="p2" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: Helvetica;"><span style="font-size: 12pt; font-family: tahoma, arial, helvetica, sans-serif;">Kms:  Combustible:</span></p>
+<p class="p2" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: Helvetica;"><span style="font-size: 12pt; font-family: tahoma, arial, helvetica, sans-serif;">Chasis: {Asset Serial Number}</span></p>
+</td>
+<td style="width: 50%; background-color: #f0f0f0; text-align: right; vertical-align: top; height: auto;">
+<p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 9px; line-height: normal; font-family: Helvetica; text-align: start;"><span style="font-size: 12pt; font-family: tahoma, arial, helvetica, sans-serif;"><strong>Datos Cliente:</strong></span></p>
+<p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 9px; line-height: normal; font-family: Helvetica; text-align: start;"><span style="font-size: 12pt; font-family: tahoma, arial, helvetica, sans-serif;"><strong>{Client Name}</strong></span></p>
+<p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 9px; line-height: normal; font-family: Helvetica; text-align: start;"><span style="font-size: 12pt; font-family: tahoma, arial, helvetica, sans-serif;"><strong>{Client Address}</strong></span></p>
+<p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Helvetica; text-align: start;"><span style="font-size: 12pt; font-family: tahoma, arial, helvetica, sans-serif;">N.I.F: {Client Tax Identification Number}</span></p>
+</td>
+</tr>
+<tr class="group" style="height: 1px;">
+<td style="height: 1px;"> </td>
+<td style="height: 1px;"> </td>
+</tr>
+</tbody>
+</table>
+<p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: Helvetica;"> </p>
+<table style="border-collapse: collapse; width: 99%; height: auto;" border="1" cellspacing="0" cellpadding="1">
+<tbody>
+<tr>
+<td style="width: 13.9859%;">
+<p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 10px; line-height: normal; font-family: Helvetica;"><span style="font-size: 12pt; font-family: tahoma, arial, helvetica, sans-serif;">Número</span></p>
+</td>
+<td style="width: 13.9859%;">Fecha</td>
+<td style="width: 13.9859%;">Cod.Cliente</td>
+<td style="width: 13.9859%;">Fec.Entrada</td>
+<td style="width: 13.9859%;">Precio Hora</td>
+<td style="width: 13.9859%;">Forma de Pago</td>
+<td style="width: 13.9897%;">Pag</td>
+</tr>
+<tr>
+<td style="width: 13.9859%;">{Invoice Number}</td>
+<td style="width: 13.9859%;">{Invoice Date}</td>
+<td style="width: 13.9859%;"> </td>
+<td style="width: 13.9859%;">{Invoice Due Date}</td>
+<td style="width: 13.9859%;"> </td>
+<td style="width: 13.9859%;">{Payment Method}</td>
+<td style="width: 13.9897%;">1</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table class="Products b-table b-table_style_simple" style="border-collapse: collapse; width: 99%; height: auto;" border="0" cellspacing="0" cellpadding="0">
+<thead>
+<tr style="height: 37px;">
+<td style="width: 14.6531%; border-style: none; border-width: 0px; text-align: left; height: auto;">Cod. Artículo</td>
+<td style="width: 37.6699%; border-style: none; border-width: 0px; height: auto; text-align: left;">Descripción</td>
+<td style="width: 11.8509%; border-style: none; border-width: 0px; height: auto;">Cantidad</td>
+<td style="width: 10.6211%; border-style: none; border-width: 0px; height: auto;">Precio</td>
+<td style="width: 10.5093%; border-style: none; border-width: 0px; height: auto;">Dto</td>
+<td style="width: 14.646%; border-style: none; border-width: 0px; height: auto;">Importe</td>
+</tr>
+</thead>
+<tbody style="border-left: 0; border-right: 0; border-bottom: 1px solid;">
+<tr class="group-header" style="height: auto;">
+<td style="border-left: 0px; border-right: 0px; border-bottom: 1px solid; width: 14.6531%; height: auto;"> </td>
+<td class="order-no" style="border-left: 0px; border-right: 0px; border-bottom: 1px solid; height: auto; width: 85.2972%;" colspan="5">Job #{Order Number}</td>
+</tr>
+<tr class="group" style="height: auto;">
+<td style="width: 14.6531%; border-width: 0px; border-style: none; height: auto;">{Product SKU}</td>
+<td style="width: 37.6699%; border-width: 0px; border-style: none; height: auto;">{Product Name}</td>
+<td style="text-align: center; width: 11.8509%; border-width: 0px; border-style: none; height: auto;">{Product Qty}</td>
+<td style="width: 10.6211%; border-width: 0px; border-style: none; height: auto; text-align: center;">{Product Price Without Taxes} €</td>
+<td style="width: 10.5093%; border-width: 0px; border-style: none; height: auto; text-align: center;">{Product Discount Sum}</td>
+<td style="text-align: right; width: 14.646%; border-width: 0px; border-style: none; height: auto;">{Product Amount Without Taxes}</td>
+</tr>
+</tbody>
+</table>
+<p>​</p>
+<table style="border-collapse: collapse; width: 99%; height: auto; margin-left: auto; margin-right: auto;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="width: 49.6654%; vertical-align: top;"> 
+<table class="Products b-table b-table_style_simple" style="border-collapse: collapse; width: 99.0309%; height: 92.5px;" border="0" cellspacing="0" cellpadding="0">
+<thead>
+<tr>
+<td style="border-style: none; border-width: 0px; width: 99.95%; text-align: center;" colspan="5">Desglose de Impuestos</td>
+</tr>
+<tr style="height: 18.5px;">
+<td style="width: 20%; height: 18.5px; text-align: right; border-style: none; border-width: 0px;">Base Imponible</td>
+<td style="width: 20%; height: 18.5px; text-align: right; border-style: none; border-width: 0px;">IVA</td>
+<td style="width: 20%; height: 18.5px; text-align: right; border-style: none; border-width: 0px;">Cuota IVA</td>
+<td style="width: 20%; text-align: right; border-style: none; border-width: 0px;">% RE</td>
+<td style="width: 20%; height: 18.5px; text-align: right; border-style: none; border-width: 0px;">Cuota RE</td>
+</tr>
+</thead>
+<tfoot style="display: table-row-group;">
+<tr style="height: 37px;">
+<td class="no-border" style="width: 20%; height: 37px; text-align: right; border-style: none; border-width: 0px;">{Total Amount Without Taxes} €</td>
+<td style="width: 20%; height: 37px; text-align: right; border-style: none; border-width: 0px;">21%</td>
+<td style="width: 20%; height: 37px; text-align: right; border-style: none; border-width: 0px;">{Tax Value} €</td>
+<td style="width: 20%; text-align: right; border-style: none; border-width: 0px;"> </td>
+<td style="font-weight: bold; width: 20%; height: 37px; text-align: right; border-style: none; border-width: 0px;"> </td>
+</tr>
+<tr style="height: 37px;">
+<td class="no-border" style="width: 20%; height: 37px; text-align: right; border-style: none; border-width: 0px;"><span style="text-align: right;">{Total Amount Without Taxes} </span>€</td>
+<td style="width: 20%; height: 37px; text-align: right; border-style: none; border-width: 0px;"> </td>
+<td style="width: 20%; height: 37px; text-align: right; border-style: none; border-width: 0px;"> </td>
+<td style="width: 20%; text-align: right; border-style: none; border-width: 0px;"> </td>
+<td class="no-border" style="width: 20%; height: 37px; text-align: right; border-style: none; border-width: 0px;"> </td>
+</tr>
+</tfoot>
+</table>
+</td>
+<td style="width: 49.6654%; vertical-align: top;"> 
+<table class="Products" style="border-collapse: collapse; width: 100.037%;" border="1">
+<thead>
+<tr>
+<td style="width: 25.0435%;">Suma Neto</td>
+<td style="width: 25.0435%;">Total IVA</td>
+<td style="width: 25.0435%;">Total RE</td>
+<td style="width: 12.5217%;">Gastos</td>
+<td style="width: 12.5217%;">Portes</td>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td style="width: 25.0435%;">{Total Amount Without Taxes}</td>
+<td style="width: 25.0435%;">{Tax Value}</td>
+<td style="width: 25.0435%;"> </td>
+<td style="width: 12.5217%;"> </td>
+<td style="width: 12.5217%;"> </td>
+</tr>
+</tfoot>
+</table>
+<p> </p>
+<table class="Products" style="border-collapse: collapse; width: 100.037%;" border="1">
+<thead>
+<tr>
+<td style="width: 24.6896%;">Suma Bruto</td>
+<td style="width: 24.6896%;">Dtos. Lineales</td>
+<td style="width: 24.6896%;">% Dto. PP.</td>
+<td style="width: 24.6916%;">Importe Dto. PP.</td>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td style="width: 24.6896%;">{Total Amount Without Taxes}</td>
+<td style="width: 24.6896%;">{Total Discount Sum}</td>
+<td style="width: 24.6896%;">{Total Discount Pct}</td>
+<td style="width: 24.6916%;"> </td>
+</tr>
+</tfoot>
+</table>
+<p> </p>
+<table style="border-collapse: collapse; width: 100.037%;" border="1">
+<tbody>
+<tr>
+<td style="width: 49.6654%; text-align: right;">TOTAL</td>
+<td style="width: 49.6654%; text-align: right;">{Invoice Total Amount} €</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p class="p1"> </p>
+<p> </p>
+<!-- end of page content--></div>
+<!-- Если нужна доп страница <div class="page" style="line-height: 3;"> </div> --></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="width: 935.508px;"><!--place holder for the fixed-position footer-->
+<div class="page-footer-space"> </div>
+</td>
+</tr>
+</tfoot>
+</table>
