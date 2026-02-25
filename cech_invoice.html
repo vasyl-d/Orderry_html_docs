@@ -1,0 +1,266 @@
+<style>
+    @page {
+        margin: 10mm;
+        border: 0;
+    }
+
+    body,
+    tr,
+    td,
+    th {
+        padding: 0;
+        margin: 0;
+        font-size: 11pt;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.1em;
+    }
+</style>
+<p style="text-align: right;"><img id="company-logo" src="https://storage.roapp.io/media/company-assets/200622/company-logo/b68faa931e8f448fa753582e40269dec.PNG" width="80" /></p>
+<p class="p1" style="text-align: right;">Servisni protokol</p>
+<table style="border-collapse: collapse; width: 100%; height: auto;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr style="height: auto;">
+<td style="width: 49.9751%; height: auto;">
+<p class="p1"><strong>Dodavatel:</strong></p>
+<p class="p1"> </p>
+<p><strong>AligatorLZ</strong></p>
+<p>Vinohradská 1698/194</p>
+<p> </p>
+<p class="p1">IC:</p>
+<p class="p1">DIC:</p>
+<p class="p1">Telefon: +</p>
+<p class="p1">E-mail: </p>
+<p class="p1"> </p>
+<p class="p1">{Barcode}</p>
+<table style="border-collapse: collapse; width: 100%;" border="0">
+<tbody>
+<tr>
+<td style="width: 49.3197%; border-style: none;">
+<p class="p1">Cislo servisu:</p>
+</td>
+<td style="width: 49.3218%; border: 1px solid #000000;">{Order Number}</td>
+</tr>
+<tr>
+<td style="width: 49.3197%; border-style: none;">
+<p class="p1">Datum prijeti do servisu:</p>
+</td>
+<td style="width: 49.3218%; border: 1px solid #000000;">{Order Created Date}</td>
+</tr>
+<tr>
+<td style="width: 49.3197%; border-style: none;">
+<p class="p1">Datum vyřizeni servisu:</p>
+</td>
+<td style="width: 49.3218%; border: 1px solid #000000;">{Order Due Date}</td>
+</tr>
+</tbody>
+</table>
+<p class="p1"> </p>
+</td>
+<td style="width: 49.9751%; height: auto;">
+<p class="p1">Datum nakupu: {Order Done Date}</p>
+<p class="p1">Cislo dokladu: </p>
+<p> </p>
+<table style="border-collapse: collapse; width: 100%; height: 10em;" border="2" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="width: 99.2202%;">
+<p class="p1"><strong>Odbératel</strong>.</p>
+<p class="p1"> </p>
+<p class="p1">IC: {Payer Business Registration Number}</p>
+<p class="p1"> </p>
+<p class="p1">DIC: {Payer Tax Identification Number}</p>
+<p class="p1"> </p>
+<p class="p1">{Payer Name}</p>
+<p class="p1">{Payer Address}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p class="p1"><strong>Kontaktni osoba:</strong></p>
+<table style="border-collapse: collapse; width: 100%; height: auto;" border="0" cellpadding="2">
+<tbody>
+<tr style="height: auto;">
+<td style="width: 19.8284%; height: auto; text-align: right;">
+<p class="p1">Jméno: </p>
+</td>
+<td style="width: 80.1459%; height: auto;">{Client Name}</td>
+</tr>
+<tr style="height: 18.3333px;">
+<td style="width: 19.8284%; height: auto; text-align: right;">Tel: </td>
+<td style="width: 80.1459%; height: auto;">{Client Phone}</td>
+</tr>
+<tr style="height: 18.3333px;">
+<td style="width: 19.8284%; height: auto; text-align: right;">Email: </td>
+<td style="width: 80.1459%; height: auto;">{Client Email}</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr style="height: auto;">
+<td style="width: 49.9751%; height: auto;">
+<p class="p1">Pozadované ükony</p>
+<p class="p1"> </p>
+</td>
+<td style="width: 49.9751%; height: auto;">
+<table class="Service" style="border-collapse: collapse; width: 100%;" border="0">
+<tfoot>
+<tr>
+<td style="width: 49.3197%;">
+<p class="p1">Odhadovaná cena prace</p>
+</td>
+<td style="width: 49.3218%; text-align: right;">{Total Amount} Kc vc DPH</td>
+</tr>
+</tfoot>
+</table>
+<table class="Parts" style="border-collapse: collapse; width: 100%;" border="0">
+<tfoot>
+<tr>
+<td style="width: 49.3197%;">
+<p class="p1">Odhadovana cena materiâlu</p>
+</td>
+<td style="width: 49.3218%; text-align: right;">{Total Amount} Kc vc DPH</td>
+</tr>
+</tfoot>
+</table>
+<table class="Products" style="border-collapse: collapse; width: 100%; height: auto;" border="0">
+<tfoot>
+<tr style="height: auto;">
+<td style="width: 49.3197%; height: auto;">
+<p class="p1"><strong>Odhadovaná cena práce včeté materialu</strong></p>
+<p class="p1">Poznámka při přijeti</p>
+</td>
+<td style="width: 49.3218%; height: auto; text-align: right; vertical-align: top;">{Total Amount} Kc vc DPH</td>
+</tr>
+</tfoot>
+</table>
+</td>
+</tr>
+<tr style="height: auto;">
+<td style="width: 99.9502%; height: auto;" colspan="2">
+<table class="Products b-table b-table_style_simple" style="border-collapse: collapse; width: 100%; height: auto;" border="0" cellspacing="0">
+<thead>
+<tr>
+<th style="width: 51.0712%;">Práce, služba a název materiálu</th>
+<th style="width: 7.44084%;">
+<p class="p1"><strong>Mnozstvi</strong></p>
+</th>
+<th style="width: 7.44084%;"><strong>J.cena</strong></th>
+<th style="width: 7.3281%;">
+<p class="p1"><strong>Sleva</strong></p>
+</th>
+<th style="width: 7.21536%;">
+<p class="p1"><strong>Cena %DPH</strong></p>
+</th>
+<th style="width: 9.69564%;">
+<p class="p1"><strong>DPH</strong></p>
+</th>
+<th style="width: 9.80838%;">
+<p class="p1"><strong>Kč Celkem</strong></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 51.0712%;">{Product Name}</td>
+<td class="center" style="text-align: right; width: 7.44084%;">{Product Qty}</td>
+<td class="right" style="text-align: right; width: 7.44084%;">{Product Price Without Discount And Without Taxes}</td>
+<td style="text-align: right; width: 7.3281%;">{Product Discount Sum}</td>
+<td style="text-align: right; width: 7.21536%;">{Product Amount Without Taxes}</td>
+<td class="right" style="text-align: right; width: 9.69564%;">{Product Tax Amount}</td>
+<td class="right" style="text-align: right; width: 9.80838%;">{Product Amount}</td>
+</tr>
+</tbody>
+<tfoot style="display: table-row-group; border-style: none;">
+<tr>
+<td class="report-total-cell no-border" style="font-weight: bold; text-align: left; width: 51.0712%;">Celkem:</td>
+<td style="font-weight: bold; text-align: left; width: 7.44084%; border-style: none; border-width: 0px;"> </td>
+<td style="font-weight: bold; text-align: left; width: 7.44084%; border-style: none; border-width: 0px;"> </td>
+<td style="font-weight: bold; width: 7.3281%; border-style: none; border-width: 0px; text-align: right;">{Total Discount Sum}</td>
+<td style="font-weight: bold; text-align: left; width: 7.21536%; border-style: none; border-width: 0px;"> </td>
+<td style="font-weight: bold; width: 9.69564%; border-style: none; border-width: 0px; text-align: right;">{Tax Value}</td>
+<td class="right no-border" style="font-weight: bold; text-align: right; width: 9.80838%;">{Total Amount}</td>
+</tr>
+<tr>
+<td class="report-total-cell no-border" style="text-align: right; font-weight: bold; width: 51.0712%;">
+<p class="p1"><strong>Zackrouhleni</strong></p>
+</td>
+<td style="text-align: right; font-weight: bold; width: 7.44084%; border-style: none; border-width: 0px;">
+<p class="p1"><strong> </strong></p>
+</td>
+<td style="text-align: right; font-weight: bold; width: 7.44084%; border-style: none; border-width: 0px;">
+<p class="p1"><strong> </strong></p>
+</td>
+<td style="text-align: right; font-weight: bold; width: 7.3281%; border-style: none; border-width: 0px;">
+<p class="p1"><strong> </strong></p>
+</td>
+<td style="text-align: right; font-weight: bold; width: 7.21536%; border-style: none; border-width: 0px;">
+<p class="p1"><strong> </strong></p>
+</td>
+<td style="text-align: right; font-weight: bold; width: 9.69564%; border-style: none; border-width: 0px;">
+<p class="p1"><strong> </strong></p>
+</td>
+<td class="right no-border" style="font-weight: bold; text-align: right; width: 9.80838%;">0</td>
+</tr>
+<tr>
+<td class="report-total-cell no-border" style="text-align: right; font-weight: bold; width: 51.0712%;">
+<p class="p1"><strong>CELKEM K ÚHRADÉ</strong></p>
+</td>
+<td style="text-align: right; font-weight: bold; width: 7.44084%; border-style: none; border-width: 0px;">
+<p class="p1"><strong> </strong></p>
+</td>
+<td style="text-align: right; font-weight: bold; width: 7.44084%; border-style: none; border-width: 0px;">
+<p class="p1"><strong> </strong></p>
+</td>
+<td style="text-align: right; font-weight: bold; width: 7.3281%; border-style: none; border-width: 0px;">
+<p class="p1"><strong> </strong></p>
+</td>
+<td style="text-align: right; font-weight: bold; width: 7.21536%; border-style: none; border-width: 0px;">
+<p class="p1"><strong> </strong></p>
+</td>
+<td style="text-align: right; font-weight: bold; width: 9.69564%; border-style: none; border-width: 0px;">
+<p class="p1"><strong> </strong></p>
+</td>
+<td class="right no-border" style="font-weight: bold; text-align: right; width: 9.80838%;">{Total Amount}</td>
+</tr>
+</tfoot>
+</table>
+<p class="p1"> </p>
+<p class="p1">Popis závady:</p>
+<p class="p1"> </p>
+<p class="p1">Navrhovaný zpusob reseni:</p>
+<p class="p1"> </p>
+</td>
+</tr>
+<tr style="height: 50px;">
+<td style="width: 99.9502%; height: 50px;" colspan="2">
+<p class="p1" style="text-align: center;">Pokud bude Kolofixem zjištěna úprava rychlostniho limitu dopomoci pohonu kola, veškeré náklady za diagnostiku a odpovědnost za śkody zpúsobené v düsledku této üpravy rychlostniho limitu dopomoci pohonu nese zakaznik.</p>
+<p class="p1" style="text-align: center;">Kolofix neneseme odpovědnost za škody zpúsobené v düsledku této upravy rychlostniho limitu dopomoci pohonu.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 99.9502%;" colspan="2">
+<p class="p1"> </p>
+<p class="p1"> 🔲 Chci být v obraze - informujte mě o novinkäch a akcich kolofixu.</p>
+<p class="p1"> </p>
+<p class="p1">Seznámil(a) jsem se se Zásadami ochrany osobnich údajü dostupnými na pobočce nebo na www.kolofix.cz/osobni-udaje.</p>
+<p class="p1"> </p>
+<p class="p1">Svým podpisem potvrzuji seznámeni se skutečnosti, że za každý den prodieni vyzvednuti, bude üčtován poplatek 150 Kč.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 49.9751%;">
+<p class="p1"> </p>
+<p class="p1">Datum: {Today Datetime}</p>
+<p class="p1"> </p>
+<p class="p1">Predal:</p>
+<p class="p1"> </p>
+</td>
+<td style="width: 49.9751%;">
+<p class="p1"> </p>
+<p class="p1">Plevzal:</p>
+</td>
+</tr>
+</tbody>
+</table>
