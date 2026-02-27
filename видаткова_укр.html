@@ -1,0 +1,100 @@
+<style>
+@page {
+   size: A4 portrait;
+   margin:10mm 10mm 10 mm 10mm;   
+  }
+body {counter-reset: Count;}
+.Count {counter-increment: Count;}
+#Count::after {content: counter(Count)}
+ span {margin:0; padding:0; border:0;}
+</style>
+<table style="border-collapse: collapse; width: 100.046%;" border="1">
+<tbody>
+<tr>
+<td style="width: 49.7035%;"><img src="https://i.ibb.co/d0QLN97p/Bona-Vita.png" alt="" width="100" height="100" /></td>
+<td style="width: 49.7035%;"><img id="company-logo" style="float: right;" src="https://storage.roapp.io/media/company-assets/201226/company-logo/5b9e20f90f3c481aa060b78ba68f8b12.png" width="100" /></td>
+</tr>
+</tbody>
+</table>
+<p style="margin: 0px; padding: 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-align: center;"> </p>
+<p style="margin: 0px; padding: 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-align: center;"><span style="font-size: 11pt;"><span style="font-size: 12pt;"><strong>Видаткова накладна </strong></span>{<span style="font-size: 12pt;">Order Number} від {Today Date}</span></span></p>
+<p style="margin: 0px; padding: 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-align: center;"> </p>
+<table style="border-collapse: collapse; width: 99.8943%; height: 130px;" border="0">
+<tbody>
+<tr style="height: 56px;">
+<td style="width: 15.2833%; height: 56px;"><span style="font-size: 11pt;"><strong>Постачальник</strong>:</span></td>
+<td style="width: 83.9273%; height: 56px;">
+<p class="p1" style="font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-language-override: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 9px; line-height: normal; font-family: Arial;"><span style="font-size: 12pt;"><strong>ФОП Сова Наталія Вікторівна,<span class="Apple-converted-space">  </span>ЄДРФО 2936314901, р/р UA373052990000026005006010070 у банку ПАТ "ПРИВАТБАНК", м.Київ,<span class="Apple-converted-space">  </span>Не є платником податку на прибуток на загальних підставах <span class="Apple-converted-space"> </span></strong></span></p>
+</td>
+</tr>
+<tr style="height: 56px;">
+<td style="width: 15.2833%; height: 56px;"><span style="font-size: 11pt;"><strong>Покупець</strong>:</span></td>
+<td style="width: 83.9273%; height: 56px;">
+<p><span style="font-size: 11pt;">{Client Name},</span></p>
+<p><span style="font-size: 11pt;">{Client Address},</span></p>
+<p><span style="font-size: 11pt;">{Client ​​EDRPOU}, {Client IFI}, {Client Bank Account}</span></p>
+</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 15.2833%; height: 18px;"><span style="font-size: 11pt;"><strong>Магазин</strong>:</span></td>
+<td style="width: 83.9273%; height: 18px;">{Location}</td>
+</tr>
+</tbody>
+</table>
+<p style="margin: 0px; padding: 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px;"> </p>
+<table class="Products b-table b-table_style_simple" style="border-collapse: collapse; width: 100%; height: auto; margin-left: auto; margin-right: auto;" border="0" cellspacing="0" cellpadding="0">
+<thead>
+<tr style="height: 37px;">
+<th style="width: 7.84402%; height: 37px;"><span style="font-size: 11pt;">№</span></th>
+<th style="width: 53.7876%; height: 37px;"><span style="font-size: 11pt;">Назва товару</span></th>
+<th style="width: 9.61827%; height: 37px;"><span style="font-size: 11pt;">Гарантія</span></th>
+<th style="width: 9.61827%; height: 37px;"><span style="font-size: 11pt;">Кол-во</span></th>
+<th style="width: 9.61827%; height: 37px;"><span style="font-size: 11pt;">Ціна, {Currency}</span></th>
+<th style="width: 9.61827%; height: 37px;"><span style="font-size: 11pt;">Сума, {Currency}</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="Count" style="height: 56px;">
+<td class="center" style="width: 7.84402%; height: 56px;"><span style="font-size: 11pt;">{Row Number}</span></td>
+<td style="width: 53.7876%; height: 56px;"><span style="font-size: 11pt;">{Product Name}</span></td>
+<td class="center" style="width: 9.61827%; height: 56px;"><span style="font-size: 11pt;">{Product Client Warranty}</span></td>
+<td class="center" style="width: 9.61827%; height: 56px;"><span style="font-size: 11pt;">{Product Qty}</span></td>
+<td class="right" style="width: 9.61827%; height: 56px;"><span style="font-size: 11pt;">{Product Price}</span></td>
+<td class="right" style="width: 9.61827%; text-align: right; height: 56px;"><span style="font-size: 11pt;">{Product Amount}</span></td>
+</tr>
+</tbody>
+<tfoot style="display: table-row-group;">
+<tr style="height: 37px;">
+<td class="report-total-cell no-border" style="text-align: right; width: 90.4864%; height: 37px;" colspan="5">
+<p style="text-align: right;"><strong><span style="font-size: 11pt;">Всього одиниць: {Total Qty}, без ПДВ:</span></strong></p>
+</td>
+<td class="right" style="font-weight: bold; width: 9.61827%; text-align: right; height: 37px;"><span style="font-size: 11pt;">{Total Amount}</span></td>
+</tr>
+</tfoot>
+</table>
+<p> </p>
+<table class="Products b-table b-table_style_simple" style="border-collapse: collapse; width: 100%; border-style: hidden;" border="0" cellspacing="0" cellpadding="0">
+<tfoot style="display: table-row-group;">
+<tr>
+<td style="font-weight: bold; width: 100%; border-style: hidden;">Всього найменувань: <span id="Count"></span>,на сумму: {Total Amount}</td>
+</tr>
+<tr>
+<td style="font-weight: bold; width: 100%; border-style: hidden;">{Total Amount Spelled Out}</td>
+</tr>
+</tfoot>
+</table>
+<p> </p>
+<table style="border-collapse: collapse; width: 99.7934%; height: 36px;" border="0">
+<tbody>
+<tr style="height: 18px;">
+<td style="width: 49.6268%; height: 18px;">Відвантажив(ла):</td>
+<td style="width: 49.6268%; height: 18px;"><span style="font-size: 11pt;"> Отримав (ла)</span></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 49.6268%; height: 18px;"><span style="font-size: 11pt;">______________________ /{Manager Name}/</span></td>
+<td style="width: 49.6268%; height: 18px;"><span style="font-size: 11pt;">____________________ /____________________ /</span></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p> </p>
