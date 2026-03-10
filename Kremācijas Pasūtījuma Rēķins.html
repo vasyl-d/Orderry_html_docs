@@ -1,0 +1,222 @@
+<style>
+  /* Styles go here */
+  .page-header,
+  .page-header-space {
+    height: 0;
+  }
+
+  .page-footer,
+  .page-footer-space {
+    height: 6cm;
+  }
+
+  .page-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid black;
+  }
+
+  .page-header {
+    position: fixed;
+    top: 0mm;
+    width: 100%;
+  }
+
+  .page {
+    width: 100%;
+    /* page-break-after: always; */
+  }
+
+  @page {
+    margin: 15mm;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tfoot {
+    display: table-footer-group;
+  }
+  body {
+    margin: 0;
+  }
+
+  .Products tbody tr {
+    border-top: 1px solid black;
+  }
+
+  .Products tfoot tr:first-child td {
+    padding-top: 40px;
+  }
+</style>
+<p> </p>
+<p> </p>
+<div class="page-header" style="text-align: center;">  <!--header вставлять тут--></div>
+<div class="page-footer"><!--футер всталять сюда-->
+<p> </p>
+<p><strong>SIA "Apbedišanas nams - krematorija",</strong></p>
+<p>reg.Nr.40103201487</p>
+<p>PVN reg.Nr.LV40103201487</p>
+<p>Konts: <strong>LV93PARX0016709830001</strong></p>
+<p>Banka: AS CITADELE</p>
+<p>Juridiskā adrese: Jēkabpils iela 28, Rīga, LV-1003</p>
+<p>Rēķins ir sagatavots elektroniski un ir derīgs bez paraksta, tā apmaksa ir uzskatāma par</p>
+<p>elektroniski sagatavotā rēķina akceptēšanu</p>
+<p> </p>
+<table style="border-collapse: collapse; width: 100%; height: auto;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr style="height: 37.5px;">
+<td style="width: 24.7293%; height: 37.5px;">
+<p>VALMIERA</p>
+<p>Kocēnu pag., Valmieras nov.</p>
+<p>20888989</p>
+<p>info@krematorija.ly</p>
+</td>
+<td style="width: 24.7293%; height: 37.5px;">
+<p>SARKANDAUGAVA</p>
+<p>Aptiekas iela 13</p>
+<p>20018333</p>
+<p>riga@krematorija.lv</p>
+</td>
+<td style="width: 24.7293%; height: 37.5px;">
+<p>PURVCIEMS</p>
+<p>Ilükstes iela 54/2</p>
+<p>29574745</p>
+<p>koroner@krematorija.lv</p>
+</td>
+<td style="width: 24.7311%; height: 37.5px;">
+<p>PĀRDAUGAVA</p>
+<p>Bulju ela</p>
+<p>46 23371744</p>
+<p>pardaugava@krematorija.Jy</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<table style="width: 100%;">
+<thead>
+<tr>
+<td style="width: 935.508px;"><!--place holder for the fixed-position header-->
+<div class="page-header-space"> </div>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 100%;">
+<div class="page"><!--*** CONTENT GOES HERE ***-->
+<p style="text-align: center;"><span style="font-size: 14pt;">Kremācijas Pasūtījuma Rēķins Nr.{Order Number}</span></p>
+<p style="text-align: right;">daturms:{Today Date}</p>
+<table style="border-collapse: collapse; width: 100%; height: auto;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="width: 12.9741%;"><strong>Mirušais</strong></td>
+<td style="width: 19.9745%;"> </td>
+<td style="width: 11.2138%;"><strong>Pasūtitājs</strong></td>
+<td style="width: 55.8034%;"> </td>
+</tr>
+<tr>
+<td style="width: 12.9741%;">Vārds, Uzvārds:</td>
+<td style="width: 19.9745%;">{Client First Name} {Client Last Name}</td>
+<td style="width: 11.2138%;">Nosaukums:</td>
+<td style="width: 55.8034%;">{Payer Name}</td>
+</tr>
+<tr>
+<td style="width: 12.9741%;">Personas Kods:</td>
+<td style="width: 19.9745%;">{Client Personas Kods 10435488}</td>
+<td style="width: 11.2138%;">Reg.Nr: </td>
+<td style="width: 55.8034%;">{Payer Business Registration Number}</td>
+</tr>
+<tr>
+<td style="width: 12.9741%;"> </td>
+<td style="width: 19.9745%;"> </td>
+<td style="width: 11.2138%;">PVN Reg.Nr.:</td>
+<td style="width: 55.8034%;">{Payer Tax Identification Number}</td>
+</tr>
+<tr>
+<td style="width: 12.9741%;"> </td>
+<td style="width: 19.9745%;"> </td>
+<td style="width: 11.2138%;">Adrese:</td>
+<td style="width: 55.8034%;">{Payer Legal Address}</td>
+</tr>
+<tr>
+<td style="width: 12.9741%;"> </td>
+<td style="width: 19.9745%;"> </td>
+<td style="width: 11.2138%;">Banka:</td>
+<td style="width: 55.8034%;">{Payer Legal Address}</td>
+</tr>
+<tr>
+<td style="width: 12.9741%;"> </td>
+<td style="width: 19.9745%;"> </td>
+<td style="width: 11.2138%;">Konts:</td>
+<td style="width: 55.8034%;">{Payer Bank Account}</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table class="Products" style="border-collapse: collapse; width: 100%; height: auto;" border="0" cellspacing="0" cellpadding="2">
+<thead>
+<tr>
+<th style="width: 6.62705%;">#</th>
+<th style="width: 50%;">Pakalpojuma nosaukums</th>
+<th style="width: 12%;">Skaits</th>
+<th style="width: 12%;">Cena</th>
+<th style="width: 12%;">Summa ar PVN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="center" style="text-align: center; width: 6.62705%;">{Row Number}</td>
+<td style="width: 50%;">{Product Name}</td>
+<td class="center" style="text-align: right; width: 6.44037%;">{Product Qty}</td>
+<td class="right" style="text-align: right; width: 8.58716%;">{Product Price}</td>
+<td class="right" style="text-align: right; width: 8.58716%;">{Product Amount}</td>
+</tr>
+</tbody>
+<tfoot style="display: table-row-group; border-style: none;">
+<tr>
+<td class="report-total-cell no-border" style="text-align: right; font-weight: bold; width: 91.3786%;" colspan="4">Kopējā summa ar PVN (EUR):</td>
+<td class="right no-border" style="font-weight: bold; text-align: right; width: 8.58716%;">{Total Amount}</td>
+</tr>
+<tr>
+<td class="report-total-cell no-border" style="text-align: right; font-weight: bold; width: 91.3786%;" colspan="4">Summa bez PVN (EUR):</td>
+<td class="right no-border" style="font-weight: bold; text-align: right; width: 8.58716%;">{Total Amount Without Taxes}</td>
+</tr>
+<tr>
+<td class="report-total-cell no-border" style="text-align: right; font-weight: bold; width: 91.3786%;" colspan="4">PVN likme (21%): </td>
+<td class="right no-border" style="font-weight: bold; text-align: right; width: 8.58716%;"><span style="display: inline-flex; justify-content: right; border: none;">{Tax Value}</span></td>
+</tr>
+<tr>
+<td class="report-total-cell no-border" style="text-align: right; font-weight: bold; width: 91.3786%;" colspan="4">Sociālā palīdzība (EUR):</td>
+<td class="right no-border" style="font-weight: bold; text-align: right; width: 8.58716%;">{Order Sociālā palīdzība EUR 10462358}</td>
+</tr>
+<tr>
+<td class="report-total-cell no-border" style="text-align: right; font-weight: bold; width: 91.3786%;" colspan="4">Pabalsts no VSAA (EUR):</td>
+<td class="right no-border" style="font-weight: bold; text-align: right; width: 8.58716%;">{Order Pabalsts no VSAA EUR 10462359}</td>
+</tr>
+<tr>
+<td class="report-total-cell no-border" style="text-align: right; font-weight: bold; width: 91.3786%;" colspan="4">SUMMA APMAKSAI (EUR): </td>
+<td class="right no-border" style="font-weight: bold; width: 8.58716%; text-align: right; vertical-align: bottom;">  <img src="https://calc2svg.vercel.app/calc/?str={Order sum}-{Order Sociālā palīdzība EUR 10462358}-{Order Pabalsts no VSAA EUR 10462359}&amp;isbold=true" /></td>
+</tr>
+</tfoot>
+</table>
+<p> </p>
+<p>Apmaksat 1 (vienu) dienu pirms pakalpojuma sniegšanas. </p>
+<p> </p>
+<p>Atvadas notiks {Order Atvadas notiks 10454429}</p>
+<p> </p>
+</div>
+<!-- Если нужна доп страница <div class="page" style="line-height: 3;"> </div> --></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="width: 935.508px;"><!--place holder for the fixed-position footer-->
+<div class="page-footer-space"> </div>
+</td>
+</tr>
+</tfoot>
+</table>
