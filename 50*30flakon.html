@@ -1,0 +1,38 @@
+<style>
+.date-cut {
+  display: inline-block;
+  overflow: hidden !important;
+  white-space: nowrap;
+  width: 7ch; /* Adjust width to fit "mm.yyyy" */
+  text-indent: -3ch; /* Moves the "dd." out of the visible area */
+}
+tr, td {margin:0; padding:0;}
+</style>
+<div style="height: 25%; overflow: hidden; width: 100%; border-bottom: 1px solid black; text-align: left;"><img id="company-logo" src="https://storage.roapp.io/media/company-assets/204234/company-logo/7227a64b86264c30a8a5b64a1c086f6d.png" width="80" /></div>
+<div style="height: 25%; overflow: hidden; width: 100%; border-bottom: 1px solid black; text-align: center;"><strong>{Product Title}</strong></div>
+<div style="margin: 0px auto; text-align: center; width: 100%; border-bottom: 1px solid black;">
+<table style="border-collapse: collapse; width: 98%; height: auto; margin-left: auto; margin-right: auto;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="width: 17.9484%;" rowspan="2"><img src="https://barcode.tec-it.com/barcode.ashx?data={Product Serial Number}&amp;code=DataMatrix&amp;dmsize=Default" /></td>
+<td style="width: 14.065%;"> </td>
+<td style="width: 18.6861%;">ref</td>
+<td style="width: 16.3756%;">{Product Serial Number}</td>
+<td style="width: 16.3756%;">lot</td>
+<td style="width: 16.3756%;">{Product Article}</td>
+</tr>
+<tr>
+<td style="width: 14.065%;"><span style="font-size: 10pt;">ISBT128</span></td>
+<td style="width: 18.6861%;"><img src="blob:https://web.roapp.io/47e82559-4368-4b51-ba96-f9b3ceddcac3" alt="" width="12" height="16" /></td>
+<td style="width: 16.3756%;">
+<div class="date-cut">{Product Expiration Date}</div>
+</td>
+<td style="width: 16.3756%;"><img src="blob:https://web.roapp.io/8b6747b7-1e43-468e-acea-c117c5d78f19" alt="" height="20" /></td>
+<td style="width: 16.3756%;">
+<div class="date-cut">{Income Date}</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="text-align: center; margin: 0 auto;">U300326150067</p>
