@@ -1,4 +1,5 @@
 <style>
+    /* with T Celsium near the img */
 .date-cut {
   display: inline-block;
   overflow: hidden !important;
@@ -7,6 +8,29 @@
   text-indent: -3ch; /* Moves the "dd." out of the visible area */
 }
 tr, td {margin:0; padding:0;}
+
+.t-label {
+ position: absolute;
+ font-size: 8pt; 
+ margin:0; padding:0; border:0;
+}
+.t-cont {
+  position: relative;
+  display: inline-block; /* Щоб контейнер був розміром з картинку */
+}
+.t-img {
+  display: block;
+  max-width: 100%;
+}
+/* Позиціонування */
+.top-right {
+  top: 0;
+  right: -14px;
+}
+.bottom-left {
+  bottom: 0;
+  left: -12px;
+}
 </style>
 <table style="border-collapse: collapse; width: 98%; height: auto; margin-left: auto; margin-right: auto;" border="0" cellspacing="0" cellpadding="0">
 <tbody>
@@ -24,7 +48,7 @@ tr, td {margin:0; padding:0;}
 <tr>
 <td style="width: 5.36358%; text-align: left; border: 1px solid #000000;">LOT</td>
 <td style="width: 37.8225%;">{Product LOT 10751007}</td>
-<td style="width: 7.67547%; text-align: center;"><img style="text-align: center;" src="blob:https://web.roapp.io/d489167d-737f-4a12-b5fa-59b0ad306c51" alt="" width="12" height="16" /></td>
+<td style="width: 7.67547%; text-align: center;"><img style="text-align: center;" src="blob:https://web.roapp.io/e29e9088-3285-41e7-be50-c8f960d26e37" alt="" width="12" height="16" /></td>
 <td style="width: 49.1045%;">
 <div class="date-cut" style="text-align: right;">{Product Expiration Date}</div>
 </td>
@@ -36,10 +60,16 @@ tr, td {margin:0; padding:0;}
 <td style="width: 49.1045%;"> </td>
 </tr>
 <tr>
-<td style="width: 99.966%; text-align: center;" colspan="4"><img src="https://i.ibb.co/CsszMLq0/Screenshot-2026-04-15-at-10-59-12.png" alt="" height="30" /><img src="blob:https://web.roapp.io/a018fc78-a740-4df5-993b-696e67406dbd" alt="" height="30" /><img src="https://i.ibb.co/CKSWW8mD/temperature-13355943.png" alt="" height="30" /><img src="blob:https://web.roapp.io/a8f84438-e07e-4400-801b-9d41328467a1" alt="" height="30" /><img src="blob:https://web.roapp.io/a486783a-c9b7-422a-9353-d7c35b7238c1" alt="" height="30" /></td>
+<td style="width: 99.966%; text-align: center;" colspan="4"><img src="https://i.ibb.co/CsszMLq0/Screenshot-2026-04-15-at-10-59-12.png" alt="" height="30" /><img src="blob:https://web.roapp.io/e558085b-1262-4f66-aa88-ec726cb628c9" alt="" height="30" />
+<div class="t-cont">
+<div class="t-label bottom-left">{Product Tmin 10753984}°C</div>
+<img class="t-img" src="https://i.ibb.co/CKSWW8mD/temperature-13355943.png" alt="" height="30" />
+<div class="t-label top-right">{Product Tmax 10753985}°C</div>
+</div>
+<img src="blob:https://web.roapp.io/4cd12327-7836-41d3-a081-a454d61de766" alt="" height="30" /><img src="blob:https://web.roapp.io/75566fa3-9deb-4b73-a1c1-c2be7f983e92" alt="" height="30" /></td>
 </tr>
 <tr>
-<td style="width: 5.36358%;"><img style="display: block; margin-left: auto; margin-right: auto;" src="blob:https://web.roapp.io/f9ee07ab-c846-49ff-854f-0b44003c6e5c" alt="" height="30" /></td>
+<td style="width: 5.36358%;"><img style="display: block; margin-left: auto; margin-right: auto;" src="blob:https://web.roapp.io/042fe130-c96d-49b8-88f7-4d728819c753" alt="" height="30" /></td>
 <td style="width: 94.6025%;" colspan="3">
 <p>ТОВ «ПРОБОНЕС»</p>
 <p>02090, Україна, м. Київ, вул. Алматинська, 2/1 </p>

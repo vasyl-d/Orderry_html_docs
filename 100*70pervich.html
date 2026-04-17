@@ -7,6 +7,29 @@
   text-indent: -3ch; /* Moves the "dd." out of the visible area */
 }
 tr, td {margin:0; padding:0;}
+.t-label {
+ position: absolute;
+ font-size: 8pt; 
+ margin:0; padding:0; border:0;
+}
+.t-cont {
+  position: relative;
+  display: inline-block; /* Щоб контейнер був розміром з картинку */
+  margin-left: 10px;
+}
+.t-img {
+  display: block;
+  max-width: 100%;
+}
+/* Позиціонування */
+.top-right {
+  top: 0;
+  right: -14px;
+}
+.bottom-left {
+  bottom: 0;
+  left: -12px;
+}
 </style>
 <table style="border-collapse: collapse; width: 100%; height: auto;" border="0" cellspacing="0" cellpadding="0">
 <tbody>
@@ -19,26 +42,32 @@ tr, td {margin:0; padding:0;}
 <td style="width: 23.8587%; text-align: center; height: auto;"> <img src="https://barcode.tec-it.com/barcode.ashx?data={Product Serial Number}&amp;code=DataMatrix&amp;dmsize=Default" height="60" /></td>
 </tr>
 <tr style="height: auto;">
-<td style="width: 40.5968%; height: auto;" rowspan="2"><img src="https://i.ibb.co/CKSWW8mD/temperature-13355943.png" alt="" height="30" /><img src="blob:https://web.roapp.io/7785e108-8df0-4cf1-9377-6a5b90176dfb" alt="" height="30" /><img src="blob:https://web.roapp.io/22fdb30f-6053-47b9-b0e1-d9eba185deda" alt="" height="30" /><img src="https://i.ibb.co/9HhLpYMY/umbrella-10812801.png" alt="" height="30" /></td>
-<td style="width: 5.63971%; text-align: right; height: auto;">REF </td>
+<td style="width: 40.5968%; height: auto;" rowspan="2"><img src="blob:https://web.roapp.io/75566fa3-9deb-4b73-a1c1-c2be7f983e92" alt="" height="30" /><img src="blob:https://web.roapp.io/4cd12327-7836-41d3-a081-a454d61de766" alt="" height="30" /><img src="https://i.ibb.co/9HhLpYMY/umbrella-10812801.png" alt="" height="30" />
+<div class="t-cont">
+<div class="t-label bottom-left">{Product Tmin 10753984}°C</div>
+<img class="t-img" src="https://i.ibb.co/CKSWW8mD/temperature-13355943.png" alt="" height="30" />
+<div class="t-label top-right">{Product Tmax 10753985}°C</div>
+</div>
+</td>
+<td style="width: 5.63971%; height: auto; text-align: right; border: 1px solid #000000;">REF </td>
 <td style="width: 29.9634%; text-align: left; height: auto;">{Product Serial Number}</td>
 <td style="width: 23.8587%; text-align: center; height: auto;"> </td>
 </tr>
 <tr style="height: auto;">
-<td style="width: 5.63971%; text-align: right; height: auto;">LOT </td>
+<td style="width: 5.63971%; height: auto; text-align: right; border: 1px solid #000000;">LOT </td>
 <td style="width: 29.9634%; text-align: left; height: auto;">{Product Article}</td>
 <td style="width: 23.8587%; text-align: center; height: auto;"> </td>
 </tr>
 <tr style="height: auto;">
-<td style="width: 40.5968%; height: auto;" rowspan="2"><img src="blob:https://web.roapp.io/7102e4be-9623-4ee7-9543-facf97a56f1e" alt="" height="30" /><img src="blob:https://web.roapp.io/6d19cdfc-2cba-446a-8b18-42dcc28367e8" alt="" height="30" /><img src="https://i.ibb.co/CsszMLq0/Screenshot-2026-04-15-at-10-59-12.png" alt="" height="40" /></td>
-<td style="width: 5.63971%; text-align: right; height: auto;"><img style="text-align: center;" src="blob:https://web.roapp.io/8b6747b7-1e43-468e-acea-c117c5d78f19" alt="" height="30" /></td>
+<td style="width: 40.5968%; height: auto;" rowspan="2"><img src="blob:https://web.roapp.io/e558085b-1262-4f66-aa88-ec726cb628c9" alt="" height="30" /><img src="blob:https://web.roapp.io/511d9477-df5e-49ef-ab31-8b1e15821cf5" alt="" height="30" /><img src="https://i.ibb.co/CsszMLq0/Screenshot-2026-04-15-at-10-59-12.png" alt="" height="40" /></td>
+<td style="width: 5.63971%; text-align: right; height: auto;"><img style="text-align: center;" src="blob:https://web.roapp.io/db94efca-660c-43cc-a0b9-7aeea76d23de" alt="" height="30" /></td>
 <td style="width: 29.9634%; text-align: left; height: auto;">
 <div class="date-cut">{Product Expiration Date}</div>
 </td>
 <td style="width: 23.8587%; text-align: center; height: auto;"> </td>
 </tr>
 <tr style="height: auto;">
-<td style="width: 5.63971%; text-align: right; height: auto;"><img src="blob:https://web.roapp.io/47e82559-4368-4b51-ba96-f9b3ceddcac3" alt="" height="26" /> </td>
+<td style="width: 5.63971%; text-align: right; height: auto;"><img src="blob:https://web.roapp.io/e29e9088-3285-41e7-be50-c8f960d26e37" alt="" height="26" /> </td>
 <td style="width: 29.9634%; text-align: left; height: auto;">
 <div class="date-cut">{Product Proddate 10751073}</div>
 </td>
