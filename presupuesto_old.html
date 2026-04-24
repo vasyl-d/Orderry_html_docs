@@ -1,0 +1,104 @@
+<style>
+ .b-table > thead {background: #f0f0f0;
+   border-left: 0; border-right: 0; border-bottom: 1px solid;
+ }
+ .b-table > thead > th { border-width: 0px; border-style: none;
+}
+ .b-table >tbody> tr:nth-child(2n) {
+    background: #f0f0f0; /* background color */
+}
+ .b-table >tfoot>tr > td.right:nth-child(n+1) {
+    background: #f0f0f0; 
+}
+.b-table >tbody { border-left: 0; border-right: 0; border-bottom: 1px solid;}
+.right > * {text-align: right !important; margin-right: 0 !important; margin-left: auto !important; padding:0 !important; border:0 !important;}
+</style>
+<table style="border-collapse: collapse; width: 99.9839%;" border="0">
+<tbody>
+<tr>
+<td style="width: 50%;"><span style="font-size: 18pt;"><strong>PRESUPUESTO</strong></span></td>
+<td style="width: 50%; text-align: right;">
+<p>{Company Name}</p>
+<p>{Company Email}</p>
+<p>{Company Address}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table style="border-collapse: collapse; width: 99.9839%; height: 75.6364px;" border="0">
+<tbody>
+<tr style="height: 18.9091px;">
+<td style="width: 15.7711%; height: 18.9091px;"><strong>Cliente</strong></td>
+<td style="width: 31.6624%; height: 18.9091px;">{Client Name}</td>
+<td style="width: 8.37787%; height: 18.9091px;"> </td>
+<td style="width: 9.85631%; height: 18.9091px;"><strong>Mail</strong></td>
+<td style="width: 34.2507%; height: 18.9091px;">{Client Email}</td>
+</tr>
+<tr style="height: 18.9091px;">
+<td style="width: 15.7711%; height: 18.9091px;"><strong>Numero</strong></td>
+<td style="width: 31.6624%; height: 18.9091px;">{Order Number}</td>
+<td style="width: 8.37787%; height: 18.9091px;"> </td>
+<td style="width: 9.85631%; height: 18.9091px;"><strong>Teléfono</strong></td>
+<td style="width: 34.2507%; height: 18.9091px;">{Client Phone}</td>
+</tr>
+<tr style="height: 18.9091px;">
+<td style="width: 15.7711%; height: 18.9091px;"><strong>Fecha</strong></td>
+<td style="width: 31.6624%; height: 18.9091px;">{Today Date}</td>
+<td style="width: 8.37787%; height: 18.9091px;"> </td>
+<td style="width: 9.85631%; height: 18.9091px;"><strong>Dirección</strong></td>
+<td style="width: 34.2507%; height: 18.9091px;">{Client Address}</td>
+</tr>
+<tr>
+<td style="width: 15.7711%;"><strong>Vencimiento</strong></td>
+<td style="width: 31.6624%;">{Order Due Date}</td>
+<td style="width: 8.37787%;"> </td>
+<td style="width: 9.85631%;"><strong> </strong></td>
+<td style="width: 34.2507%;"> </td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<table class="Products b-table b-table_style_simple" style="border-collapse: collapse; width: 100.025%; border-style: none;" border="0" cellspacing="0" cellpadding="0">
+<thead>
+<tr style="height: 37px;">
+<th style="width: 9.35385%; border-style: none; border-width: 0px; height: 37px;">#</th>
+<th style="width: 48.6146%; border-style: none; border-width: 0px; height: 37px;">Concepto</th>
+<th style="width: 8.12383%; border-style: none; border-width: 0px; height: 37px;">Unidades</th>
+<th style="width: 12.6769%; border-style: none; border-width: 0px;">Precio</th>
+<th style="width: 9.10769%; border-style: none; border-width: 0px; height: 37px;">IVA</th>
+<th style="width: 12.1846%; border-style: none; border-width: 0px; height: 37px;">Total</th>
+</tr>
+</thead>
+<tbody style="border-left: 0; border-right: 0; border-bottom: 1px solid;">
+<tr style="height: 37px;">
+<td class="center" style="width: 9.35385%; border-width: 0px; border-style: none; height: 37px;">{Row Number}</td>
+<td style="width: 48.6146%; border-width: 0px; border-style: none; height: 37px;">{Product Name}</td>
+<td class="center" style="width: 8.12383%; border-width: 0px; border-style: none; height: 37px; text-align: center;">{Product Qty}</td>
+<td style="width: 12.6769%; border-width: 0px; border-style: none; text-align: center;">{Product Price Without Taxes}</td>
+<td class="right" style="width: 9.10769%; border-width: 0px; border-style: none; height: 37px; text-align: center;">{Product Tax Amount}</td>
+<td class="right" style="width: 12.1846%; border-width: 0px; border-style: none; height: 37px; text-align: right;">{Product Amount}</td>
+</tr>
+</tbody>
+<tfoot style="display: table-row-group;">
+<tr style="height: 38px;">
+<td class="report-total-cell no-border" style="width: 87.8769%; text-align: right; border-width: 0px; border-style: none; border-left-color: initial; border-right-color: initial; border-bottom-color: initial; height: 38px;" colspan="5"><strong>Base Imponible:</strong></td>
+<td class="right" style="font-weight: bold; width: 12.1846%; border-left: 0px; border-right: 0px; border-bottom: 1px solid; height: 38px; text-align: right;">{Total Amount Without Taxes}</td>
+</tr>
+<tr style="height: 20px;">
+<td class="report-total-cell no-border" style="width: 87.8769%; text-align: right; border-width: 0px; border-style: none; border-left-color: initial; border-right-color: initial; border-bottom-color: initial; height: 20px;" colspan="5"><strong>{Tax Name} {Tax Rate} </strong></td>
+<td class="right report-total-cell no-border" style="text-align: right; width: 12.1846%;"><strong>{Tax Value}</strong></td>
+</tr>
+<tr style="height: 20px;">
+<td class="report-total-cell no-border" style="width: 87.8769%; text-align: right; border-width: 0px; border-style: none; border-left-color: initial; border-right-color: initial; border-bottom-color: initial; height: 20px;" colspan="5"><strong>Total:</strong></td>
+<td class="right" style="font-weight: bold; width: 12.1846%; border-left: 0px; border-right: 0px; border-bottom: 1px solid; height: 20px; text-align: right;">{Total Amount}</td>
+</tr>
+</tfoot>
+</table>
+<p> </p>
+<p><strong>TÉRMINOS Y CONDICIONES</strong></p>
+<p>Descuento por pronto pago 5%.</p>
+<p> </p>
+<p> </p>
+<p><strong>CONDICIONES DE PAGO:</strong> El pago deberán realizarse a 30 días fecha factura.</p>
+<p> </p>
